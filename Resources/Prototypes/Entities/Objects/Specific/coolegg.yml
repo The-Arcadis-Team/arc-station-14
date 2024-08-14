@@ -1,0 +1,71 @@
+- type: entity
+  parent: [FoodInjectableBase, ItemHeftyBase]
+  id: FoodEggBcool
+  description: A cool egg! You feel like it's good at its job of... uh... being an egg.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Egg
+      - Meat
+  - type: Food
+    trash: Eggshells
+  - type: Sprite
+    sprite: Objects/Specific/Cool_egg.rsi
+    state: doc
+  - type: Item
+    sprite: Objects/Specific/Cool_egg.rsi
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Egg
+          Quantity: 6
+  - type: DrawableSolution
+    solution: food
+  - type: SolutionSpiker
+    sourceSolution: food
+    ignoreEmpty: true
+    popup: spike-solution-egg
+  # egg fragile
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Eggshells:
+            min: 1
+            max: 1
+          # Wow double-yolk you're so lucky!
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: FoodEggBcool
+  id: Coolegg
+  name: Cool egg
+  components:
+  - type: Sprite
+    layers:
+      - state: doc
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Construction
+    graph: Egg
+    node: start

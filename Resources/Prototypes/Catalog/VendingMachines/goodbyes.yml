@@ -99,3 +99,9 @@
   values:
     prefix: thankyou-syndiedrobe-
     count: 5
+
+- type: localizedDataset
+  id: NTPDGoodbyes
+  values:
+    prefix: thankyou-NTPD-
+    count: 4

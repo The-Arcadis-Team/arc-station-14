@@ -200,6 +200,9 @@
       "name": "warden"
     },
     {
+      "name": "NTPDeva"
+    },
+    {
       "name": "zookeeper"
     }
   ]

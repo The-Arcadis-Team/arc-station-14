@@ -640,3 +640,52 @@
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingMaskGasERT
+  id: ClothingMaskGasNTPD
+  name: NTPD gas mask
+  description: A unique gas mask for the NTPD's most elite squad.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/ntpd.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/ntpd.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.90
+        Heat: 0.90
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskflesh
+  name: Meathunk mask
+  description: thankfully this isn't real flesh.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/Coolmask.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/Coolmask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.80
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskCool
+  name: cool moose mask
+  description: the mask makes you look like a vary mad moose.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/Madmoose.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/Madmoose.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout

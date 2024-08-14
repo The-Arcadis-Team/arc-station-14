@@ -1,0 +1,110 @@
+- type: entity
+  parent: [ SimpleMobBase, MobCombat ]
+  id: BaseMobvoid
+  name: Abyss creature
+  description: A shambling mass of the void, animated through anomalous energy.
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - Flesh
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/void.rsi
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1.5
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Stamina
+    critThreshold: 50
+  - type: Butcherable
+    spawned:
+    - id: AnomalyCorereality
+      amount: 1
+  - type: Bloodstream
+    bloodMaxVolume: 100
+  - type: CombatMode
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        blunt: 5
+        poison: 6
+  - type: ReplacementAccent
+    accent: genericAggressive
+
+- type: entity
+  parent: BaseMobvoid
+  id: MobvoidGolem
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: golem
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: golem
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 8
+
+- type: entity
+  parent: BaseMobvoid
+  id: MobvoidClamp
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: clamp
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: clamp
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      30: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2.5

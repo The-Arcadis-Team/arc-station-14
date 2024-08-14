@@ -1,0 +1,14 @@
+- type: entity
+  id: LockerNTPDFilled
+  suffix: Filled, NTPD
+  parent: LockerNTPD
+  components:
+  - type: StorageFill
+    contents:
+      - id: NTPDPDA
+      - id: ClothingHeadsetNTPD
+      - id: DoorRemoteNTPD
+      - id: ClothingMaskGasNTPD
+      - id: ClothingBackpackNTPDFilled
+      - id: ClothingUniformJumpskirtNTPD
+      - id: ClothingUniformJumpsuitNTPD

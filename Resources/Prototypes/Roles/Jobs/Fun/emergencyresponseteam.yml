@@ -475,3 +475,20 @@
     - Soap
     - CrowbarRed
     - AdvMopItem
+
+- type: startingGear
+  id: NTPDGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTPD
+    back: ClothingBackpackNTPDFilled
+    shoes: ClothingShoesBootsMagAdvNTPD
+    mask: ClothingMaskGasNTPD
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitNTPD
+    suitstorage: AirTankFilled
+    id: NTPDPDA
+    ears: ClothingHeadsetNTPD
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponNTPDPulsePistol
+    pocket2: FlashlightSeclite

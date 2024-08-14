@@ -94,3 +94,43 @@
   id: RevenantAbilities
   name: store-category-abilities
 
+#NTPD
+- type: storeCategory
+  id: UplinkWeaponryntpd
+  name: store-category-weapons
+  priority: 0
+
+- type: storeCategory
+  id: UplinkAmmontpd
+  name: store-category-ammo
+  priority: 1
+
+- type: storeCategory
+  id: UplinkExplosivesntpd
+  name: store-category-explosives
+  priority: 2
+
+- type: storeCategory
+  id: UplinkWearablesntpd
+  name: store-category-wearables
+  priority: 3
+
+- type: storeCategory
+  id: UplinkChemicalsntpd
+  name: store-category-chemicals
+  priority: 4
+
+- type: storeCategory
+  id: UplinkDeceptionntpd
+  name: store-category-deception
+  priority: 5
+
+- type: storeCategory
+  id: UplinkDisruptionntpd
+  name: store-category-disruption
+  priority: 6
+
+- type: storeCategory
+  id: UplinkImplantsntpd
+  name: store-category-implants
+  priority: 7

@@ -600,6 +600,15 @@
     - type: Sprite
       state: poster63_contraband
 
+- type: entity
+  parent: PosterBase
+  id: PosterContrabandmerc
+  name: "Urban solutions poster"
+  description: "because Urban problems require Urban solutions"
+  components:
+  - type: Sprite
+    state: poster64_contraband
+
 # Legit
 - type: entity
   parent: PosterBase

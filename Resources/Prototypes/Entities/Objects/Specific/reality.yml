@@ -1,0 +1,86 @@
+- type: entity
+  abstract: true
+  id: coolAnomaly
+  name: reality rupture
+  description: a rupture in reality. 
+  components:
+  - type: Anomaly
+    pulseSound:
+      collection: RadiationPulse
+      params:
+        volume: 5
+    anomalyContactDamage:
+      types:
+        Radiation: 10
+  - type: AmbientSound
+    range: 5
+    volume: -5
+    sound:
+      path: /Audio/Ambience/anomaly_drone.ogg
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Static
+    bodyStatus: InAir
+  - type: Sprite
+    noRot: true
+    drawdepth: Effects
+    sprite: Structures/Specific/Reality.rsi
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Damageable
+  - type: Appearance
+  - type: AnimationPlayer
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Effects/summon.ogg
+  - type: SecretDataAnomaly
+    randomStartSecretMin: 0
+    randomStartSecretMax: 2
+  - type: Fixtures
+    fixtures:
+     fix1:
+       shape:
+         !type:PhysShapeCircle
+         radius: 0.7
+       density: 301
+       mask:
+       - MobMask
+       layer:
+       - MobLayer
+
+- type: entity
+  id: Anomalyreality
+  parent: coolAnomaly
+  suffix: reality
+  components:
+  - type: Anomaly
+    corePrototype: AnomalyCorereality
+    coreInertPrototype: AnomalyCorereality
+  - type: Sprite
+    layers:
+    - state: core
+      map: 
+      - enum.AnomalyVisualLayers.Base
+    - state: core
+      map: 
+      - enum.AnomalyVisualLayers.Animated
+      visible: false
+  - type: PointLight
+    radius: 6.0
+    energy: 50
+    color: "#08F1F5"
+    castShadows: true
+  - type: ElectricityAnomaly
+  - type: Electrified
+  - type: GravityAnomaly
+  - type: GravityWell
+  - type: RadiationSource
+  - type: Physics
+    bodyType: Dynamic
+    bodyStatus: InAir
+  - type: CanMoveInAir
+  - type: RandomWalk
+  - type: SingularityDistortion
+    intensity: 1000
+    falloffPower: 2.7

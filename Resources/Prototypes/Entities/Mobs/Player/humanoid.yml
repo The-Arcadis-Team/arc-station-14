@@ -848,3 +848,33 @@
         settings: short
     - type: Loadout
       prototypes: [ SyndicateOperativeGearCivilian ]
+
+# NTPD
+
+- type: randomHumanoidSettings
+  id: NTPDop
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  components:
+    - type: Loadout
+      prototypes: [ NTPDGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+
+# MERC
+
+- type: randomHumanoidSettings
+  id: Mercop
+  parent: EventHumanoidMindShielded
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-merc-name
+      description: ghost-role-information-merc-description
+      rules: ghost-role-information-merc-rules
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ mercoutfit ]

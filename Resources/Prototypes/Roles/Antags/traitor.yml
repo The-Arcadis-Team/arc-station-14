@@ -87,3 +87,87 @@
     gloves: ClothingHandsGlovesCombat
     pocket1: BaseUplinkRadio40TC
     id: SyndiPDA
+
+- type: startingGear
+  id: Towegoutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    back: ClothingBackpackHoldingNTPD
+    shoes: ClothingShoesBootsCombatFilled
+    neck: ClothingNeckCloakToweg
+    ears: ClothingHeadsetNTPD
+    id: NTPDPDA
+  storage:
+    back:
+    - BoxSurvivalSyndicate
+    - WeaponNTPDPulsePistol
+
+- type: startingGear
+  id: mercoutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    back: ClothingBackpackMerc
+    mask: ClothingMaskGasMerc
+    ears: ClothingHeadsetMerc
+    gloves: ClothingHandsMercGlovesCombat
+    shoes: ClothingShoesBootsMercFilled
+    id: MercPDA
+  storage:
+    back:
+    - BoxSurvivalEngineering
+    - BoxFlashbang
+    - DeathAcidifierImplanter
+
+- type: startingGear
+  id: modmercoutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    back: ClothingBackpackMerc
+    mask: ClothingMaskGasMerc
+    ears: ClothingHeadsetMerc
+    gloves: ClothingHandsMercGlovesCombat
+    shoes: ClothingShoesBootsMercFilled
+    id: MercPDA
+  inhand:
+    - SurvivalKnife
+  storage:
+    back:
+    - BoxSurvivalEngineering
+
+- type: startingGear
+  id: METAoutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+    back: ClothingBackpackHolding
+    shoes: ClothingShoesBootsCombatFilled
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMETA
+    suitstorage: AirTankFilled
+    id: MercPDAmeta
+    ears: ClothingHeadsetMETA
+    belt: ClothingBeltSecurityFilled
+    pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: FlashlightSeclite
+  storage:
+    back:
+    - BoxSurvivalEngineering
+    - WeaponDisabler
+    - MedicatedSuture
+    - RegenerativeMesh
+    - BoxZiptie
+    - CrowbarRed
+    - MagazineMagnumSubMachineGunPiercing
+    - MagazineMagnumSubMachineGunPiercing
+    - MagazineMagnumSubMachineGunPiercing
+    - MagazineMagnumSubMachineGunPiercing
+    - MagazineMagnumSubMachineGunPiercing
+    - MagazineMagnumSubMachineGunPiercing
+    - WeaponSubMachineGunVector
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - CombatMedipen
+    - SyringeEphedrine
+    - BruteAutoInjector
+    - BurnAutoInjector

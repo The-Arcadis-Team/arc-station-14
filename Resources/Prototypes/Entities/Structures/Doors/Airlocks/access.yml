@@ -1212,3 +1212,43 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSyndicateAgent ]
+
+#NTPD
+
+- type: entity
+  parent: AirlockExternal
+  id: AirlockExternalLockedNTPD
+  suffix: External, Locked, NTPD
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD ]
+
+- type: entity
+  parent: AirlockNTPD
+  id: AirlockNTPDLocked
+  suffix: NTPD, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD ]
+
+- type: entity
+  parent: AirlockNTPDGlass
+  id: AirlockNTPDGlassLocked
+  suffix: NTPD, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD  ]
+
+#Merc
+
+- type: entity
+  parent: AirlockMerc
+  id: AirlockMercLocked
+  suffix: Merc, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsmerc ]

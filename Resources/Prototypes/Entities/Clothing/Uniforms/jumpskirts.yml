@@ -843,3 +843,14 @@
     sprite: Clothing/Uniforms/Jumpskirt/musician.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpskirt/musician.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtNTPD
+  name: NTPD jumpskirt
+  description: It's a blue jumpskirt with some Dark markings.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/NTPD.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/NTPD.rsi

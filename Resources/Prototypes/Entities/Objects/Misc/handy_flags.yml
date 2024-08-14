@@ -57,3 +57,15 @@
     state: icon
   - type: Item
     sprite: Objects/Misc/Handy_Flags/pirate_handy_flag.rsi
+
+- type: entity
+  parent: BaseItem
+  id: MercHandyFlag
+  name: merc handheld flag
+  description: "Because Urban Problems require Urban Solutions!"
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/Handy_Flags/merc_handy_flag.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/Handy_Flags/merc_handy_flag.rsi

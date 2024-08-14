@@ -57,6 +57,42 @@
 
 - type: entity
   parent: BaseMobFlesh
+  id: fleshrunner
+  name: flesh runner
+  description: when it walks you hear little ploshes.
+  components:
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 6
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: Runner
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: Runner
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      25: Dead
+    globalReceive: true
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+
+- type: entity
+  parent: BaseMobFlesh
   id: MobFleshJared
   components:
   - type: Sprite

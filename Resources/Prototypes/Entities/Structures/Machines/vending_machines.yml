@@ -2136,3 +2136,35 @@
   - type: AccessReader
     access: [["SyndicateAgent"]]
 
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineNTPDDrobe
+  name: NTPDrobe
+  description: The NTPD's fashion is, not the best...
+  components:
+  - type: VendingMachine
+    pack: VendingMachineNTPDDrobe
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/ntpddrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Advertise
+    pack: NTPDad
+  - type: SpeakOnUIClosed
+    pack: NTPDGoodbyes
+  - type: Speech
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#003154"
+  - type: AccessReader
+    access: [["NTPD"]]

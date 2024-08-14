@@ -45,4 +45,11 @@
 - type: lobbyBackground
   id: ReclaimerNuke
   background: /Textures/LobbyScreens/reclaimer-nuke.webp
-  
+
+- type: lobbyBackground
+  id: Hunted
+  background: /Textures/LobbyScreens/Hunted.webp
+
+- type: lobbyBackground
+  id: meth
+  background: /Textures/LobbyScreens/meth.webp

@@ -1,0 +1,10 @@
+- type: vendingMachineInventory
+  id: VendingMachineNTPDDrobe
+  startingInventory:
+    ClothingBackpackHoldingNTPD: 1
+    ClothingBackpackSatchelNTPDHolding: 1
+    ClothingHeadHatNTPDBeret: 3
+    ClothingHeadHatNTPDcap: 3
+    ClothingMaskGasNTPD: 3
+    ClothingUniformJumpskirtNTPD: 3
+    ClothingUniformJumpsuitNTPD: 3

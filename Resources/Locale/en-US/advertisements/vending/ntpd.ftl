@@ -1,0 +1,9 @@
+advertisement-NTPD-1 = IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING IT KEEPS CHANGING 
+advertisement-NTPD-2 = I bet you would look nice in blue!
+advertisement-NTPD-3 = Buy some [CLASSIFIED]!
+advertisement-NTPD-4 = [ERROR] I'M LOOKING TO FASHIONABLE [ERROR]
+advertisement-NTPD-5 = For a [DATA EXPUNGED] style!
+thankyou-NTPD-1 = Enjoy your killing!
+thankyou-NTPD-2 = Go get em!
+thankyou-NTPD-3 = that looks [redacted] on you!
+thankyou-NTPD-4 = The NTPD thanks you for keeping your clothes on.

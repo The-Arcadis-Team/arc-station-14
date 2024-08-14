@@ -57,3 +57,13 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "GetOutMarutak,aka.Snicket on Discord/github/Cara/Ko-fi"
   source: "https://github.com/space-wizards/space-station-14"
+
+- files: ["Hunted.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Guloveos on discord"
+  source: "https://github.com/space-wizards/space-station-14"
+
+- files: ["meth.webp"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "p.r.ospector on discord"
+  source: "https://github.com/space-wizards/space-station-14"

@@ -1346,3 +1346,14 @@
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/familiar_garbs.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitNTPD
+  name: NTPD jumpsuit
+  description: It's a blue jumpsuit with some dark markings, for some reason you feel slightly scared.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/ntpd1.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/ntpd1.rsi

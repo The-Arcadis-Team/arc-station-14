@@ -49,6 +49,9 @@ ghost-role-information-angry-slimes-name = Slime
 ghost-role-information-angry-slimes-description = Everyone around you irritates your instincts, destroy them!
 ghost-role-information-angry-slimes-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with all other angry slimes.
 
+ghost-role-information-Meathunk-name = Meat Hunk
+ghost-role-information-Meathunk-description = You are a meat hunk! Burn everything that is not associated with the great meat!
+
 ghost-role-information-smile-name = Smile the Slime
 ghost-role-information-smile-description = The sweetest creature in the world. Smile Slime!
 
@@ -142,6 +145,9 @@ ghost-role-information-cerberus-description = Obey your master. Spread chaos.
 
 ghost-role-information-ert-leader-name = ERT Leader
 ghost-role-information-ert-leader-description = Lead a team of specialists to resolve the station's issues.
+
+ghost-role-information-NTPD = NTPD
+ghost-role-information-NTPD-description = Get rid of any anomalys on the station, Keep an eye out for 0305-6.
 
 ghost-role-information-ert-chaplain-name = ERT Chaplain
 ghost-role-information-ert-chaplain-description = Assist with mourning to resolve the station's crew moral issues.
@@ -238,3 +244,7 @@ ghost-role-information-artifact-description = Enact your eldritch whims. Forcibl
 
 ghost-role-information-syndie-assaultborg-name = Syndicate Assault Borg
 ghost-role-information-syndie-assaultborg-description = Nuclear operatives needs reinforcements. You, a cold silicon killing machine, will help them. More dakka!
+
+ghost-role-information-merc-name = Mercenary
+ghost-role-information-merc-description = You are an elite mercenary hired by Urban Solutions to capture a target.
+ghost-role-information-merc-rules = You are a [color=red][bold]mercenary[/bold][/color] You can kill anyone in your way but NOT your target, make sure the target is taken and shipped.

@@ -1099,3 +1099,19 @@
     sprite: Clothing/Head/Hats/beret_medic.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_medic.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatNTPDcap
+  name: NTPD cap
+  description: A grand, stylish offical NTPD cap.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/NTPDcap.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/NTPDcap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+    - HamsterWearable

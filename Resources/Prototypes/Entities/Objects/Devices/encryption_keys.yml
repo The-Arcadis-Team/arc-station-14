@@ -243,3 +243,33 @@
       layers:
         - state: crypt_rusted
         - state: pirate_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyNTPD
+  name: NTPD encryption key
+  description: An encryption key used by captain's bosses bosses.
+  components:
+  - type: EncryptionKey
+    channels:
+    - NTPD
+    defaultChannel: NTPD
+  - type: Sprite
+    layers:
+    - state: crypt_blue
+    - state: nano_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionMerc
+  name: mercenary encryption key
+  description: An encryption key used by mercenaries.
+  components:
+  - type: EncryptionKey
+    channels:
+    - merc
+    defaultChannel: merc
+  - type: Sprite
+    layers:
+    - state: crypt_rusted
+    - state: Merc_label

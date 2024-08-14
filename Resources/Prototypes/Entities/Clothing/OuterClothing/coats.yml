@@ -466,3 +466,14 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
+
+- type: entity
+  parent: [ClothingOuterArmorHoS, ClothingOuterStorageBase]
+  id: ClothingOuterCoatNTPDENGI
+  name: NTPD engineer armored coat
+  description: A greatcoat enhanced with a special alloy for some extra protection and style for those with a engineering presence.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/NTPD-Engi.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/NTPD-Engi.rsi

@@ -3,21 +3,11 @@
   copyright: "-Sector11 by MashedByMachines. Converted from MP3 to OGG."
   source: "https://www.newgrounds.com/audio/listen/312622"
 
-- files: ["endless_space.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "Endless Space by SolusLunes. Converted from MP3 to OGG."
-  source: "https://www.newgrounds.com/audio/listen/67583"
-
 - files: ["space_asshole.ogg"]
   license: "Custom"
   copyright: "Space Asshole by Chris Remo is used with special permission from the author, under the condition that the project remains non-commercial and open source. The author also requested that a link to his bandcamp be included: https://chrisremo.bandcamp.com/"
   source: "https://idlethumbs.bandcamp.com/track/space-asshole"
   # The source is a direct link the the track, but not the "main" bandcamp of the author. Hence the link is also included separately in the copyright.
-
-- files: ["absconditus.ogg"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "Absconditus by ZhayTee. Converted from MP3 to OGG."
-  source: "https://bandcamp.zhaytee.net/track/absconditus"
 
 - files: ["atomicamnesiammx.ogg"]
   license: "CC-BY-NC-SA-3.0"
@@ -53,11 +43,6 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "Spac Stac by Hayabusa. Converted from MP3 to OGG."
   source: "https://www.youtube.com/watch?v=grUBe-SZgr0"
-
-- files: ["pwmur.ogg"]
-  license: "CC-BY-NC-SA-3.0"
-  copyright: "phoron will make us rich by Alexander Divine."
-  source: "https://soundcloud.com/alexanderdivine/phoron-will-make-us-rich"
 
 - files: ["lasers_rip_apart_the_bulkhead.ogg"]
   license: "CC-BY-NC-SA-3.0"

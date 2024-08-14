@@ -14,6 +14,10 @@
       "name": "dead"
     },
     {
+      "name": "Runner",
+      "directions": 4
+    },
+    {
       "name": "golem",
       "directions": 4
     },
