@@ -1,0 +1,13 @@
+- type: vendingMachineInventory
+  id: ERPDrobeInventory
+  startingInventory:
+    ClothingHandcuffs: 2
+    ClothingMaskMuzzle: 2
+    ClothingEyesBlindfold: 2
+    ClothingUniformJumpskirtJanimaidmini: 2
+    ClothingUniformJumpskirtJanimaid: 2
+    ClothingUniformJumpskirtTacticalMaid: 2
+    ClothingHandsTacticalMaidGloves: 2
+    ClothingShoesBootsLaceup: 2
+    ClothingUnderSocksCoder: 2
+    ClothingUnderSocksBee: 2

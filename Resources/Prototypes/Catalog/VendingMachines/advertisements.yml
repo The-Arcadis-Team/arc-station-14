@@ -267,3 +267,9 @@
   values:
     prefix: advertisement-NTPD-
     count: 5
+
+- type: localizedDataset
+  id: ERPDrobeAds
+  values:
+    prefix: advertisement-erpdrobe-
+    count: 1
