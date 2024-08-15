@@ -11,6 +11,15 @@
       "name": "full"
     },
     {
+      "name": "toweg"
+    },
+    {
+      "name": "merc"
+    },
+    {
+      "name": "meta"
+    },
+    {
       "name": "head_f",
       "directions": 4
     },

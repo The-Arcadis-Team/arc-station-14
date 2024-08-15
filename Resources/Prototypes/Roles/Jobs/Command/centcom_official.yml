@@ -27,3 +27,14 @@
     belt: WeaponPistolN1984
     pocket1: BoxFolderBlack
     pocket2: PenCentcom
+
+- type: startingGear
+  id: CentcominternGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitcentcomintern
+    shoes: ClothingShoesBootsCombatFilled
+    eyes: ClothingEyesGlassesSunglasses
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    pocket1: BoxFolderBlack
+    pocket2: PenCentcom

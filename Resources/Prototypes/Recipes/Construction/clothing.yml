@@ -118,3 +118,14 @@
   description: Can hold up to 15 arrows, and fits snug around your waist.
   icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
   objectType: Item
+
+- type: construction
+  name: gauntlets
+  id: Clothinghandsgauntlets
+  graph: Clothingcoolgauntlets
+  startNode: start
+  targetNode: shoes
+  category: construction-category-clothing
+  description: Just an awesome gauntlet
+  icon: { sprite: Clothing/Hands/Gloves/gauntlets.rsi, state: icon }
+  objectType: Item

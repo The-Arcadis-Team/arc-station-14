@@ -1,0 +1,28 @@
+- type: constructionGraph
+  id: Clothingcoolgauntlets
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: shoes
+          steps:
+            - tag: Metal
+              name: Steel
+              icon:
+                sprite: /Textures/Objects/Materials/Sheets/metal.rsi
+                state: steel
+              doAfter: 1
+            - tag: Metal
+              name: Steel
+              icon:
+                sprite: /Textures/Objects/Materials/Sheets/metal.rsi
+                state: steel
+              doAfter: 1
+            - tag: Plastic
+              name: plastic
+              icon:
+                sprite: Objects/Materials/Sheets/other.rsi
+                state: plastic
+              doAfter: 1
+    - node: shoes
+      entity: ClothingHandsgauntlets

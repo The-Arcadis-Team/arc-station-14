@@ -1032,3 +1032,36 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitNTPD
+
+#META
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitMETA
+  name: Urban Solutions Command Shell
+  description: A durable exosuit worn by Urban Solutions High Command personnel. If you're close enough to examine this suit and you're not dead, consider yourself lucky.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Hardsuits/meta.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Hardsuits/meta.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.3
+        Heat: 0.3
+        Radiation: 0.25
+        Caustic: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMETA
+  - type: Unremoveable

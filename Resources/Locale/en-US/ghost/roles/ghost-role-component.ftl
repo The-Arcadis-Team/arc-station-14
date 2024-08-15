@@ -146,9 +146,6 @@ ghost-role-information-cerberus-description = Obey your master. Spread chaos.
 ghost-role-information-ert-leader-name = ERT Leader
 ghost-role-information-ert-leader-description = Lead a team of specialists to resolve the station's issues.
 
-ghost-role-information-NTPD = NTPD
-ghost-role-information-NTPD-description = Get rid of any anomalys on the station, Keep an eye out for 0305-6.
-
 ghost-role-information-ert-chaplain-name = ERT Chaplain
 ghost-role-information-ert-chaplain-description = Assist with mourning to resolve the station's crew moral issues.
 
@@ -248,3 +245,6 @@ ghost-role-information-syndie-assaultborg-description = Nuclear operatives needs
 ghost-role-information-merc-name = Mercenary
 ghost-role-information-merc-description = You are an elite mercenary hired by Urban Solutions to capture a target.
 ghost-role-information-merc-rules = You are a [color=red][bold]mercenary[/bold][/color] You can kill anyone in your way but NOT your target, make sure the target is taken and shipped.
+
+ghost-role-information-centcom-intern-name = CentComm intern
+ghost-role-information-centcom-intern-description = An underpaid, expendable nobody Centcomm uses to do their most terrifying and dangerous jobs. Listen to your "higher ups"!

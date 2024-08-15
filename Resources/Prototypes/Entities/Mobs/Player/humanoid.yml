@@ -866,7 +866,22 @@
       prototypes: [ SyndicateOperativeGearCivilian ]
       roleLoadout: [ RoleSurvivalStandard ]
 
-# NTPD
+#NTPD
+
+- type: entity
+  id: RandomHumanoidSpawnerNTPD
+  name: NTPD Opritive
+  suffix: NTPD
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: NTPDeva
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: NTPDop
 
 - type: randomHumanoidSettings
   id: NTPDop
@@ -880,10 +895,25 @@
         - NamesFirstMilitaryLeader
         - NamesLastMilitary
 
-# MERC
+#Merc
+
+- type: entity
+  id: RandomHumanoidSpawnerMerc
+  name: Mercop
+  suffix: ERTRole, Death Squad
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Human/parts.rsi
+      state: merc
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: Mercinfo
 
 - type: randomHumanoidSettings
-  id: Mercop
+  id: Mercinfo
   parent: EventHumanoidMindShielded
   randomizeName: false
   components:
@@ -895,3 +925,33 @@
         settings: short
     - type: Loadout
       prototypes: [ mercoutfit ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirstMilitaryLeader
+        - NamesLastMilitary
+
+#centcom intern
+
+- type: entity
+  name: CentComm intern
+  id: RandomHumanoidSpawnerCentcomintern
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: intern
+    - type: RandomHumanoidSpawner
+      settings: Centcomintern
+
+- type: randomHumanoidSettings
+  id: Centcomintern
+  parent: EventHumanoidMindShielded
+  components:
+    - type: GhostRole
+      name: ghost-role-information-centcom-intern-name
+      description: ghost-role-information-centcom-intern-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: default
+    - type: Loadout
+      prototypes: [ CentcominternGear ]
+      roleLoadout: [ RoleSurvivalStandard ]

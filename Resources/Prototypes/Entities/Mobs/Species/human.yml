@@ -71,3 +71,18 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobtoweg
+  name: The one whom whom games
+  abstract: true
+  components:
+  - type: Icon 
+    sprite: Mobs/Species/Human/parts.rsi
+    state: toweg
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout

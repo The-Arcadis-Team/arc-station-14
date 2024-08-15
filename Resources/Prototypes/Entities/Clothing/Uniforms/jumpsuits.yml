@@ -1357,3 +1357,14 @@
     sprite: Clothing/Uniforms/Jumpsuit/ntpd1.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/ntpd1.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitcentcomintern
+  name: Centcom intern jumpsuit
+  description: It's a green jumpsuit of your bosses boss's intern.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/centcom_intern.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/centcom_intern.rsi

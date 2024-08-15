@@ -443,3 +443,42 @@
     fiberMaterial: fibers-rubber
     fiberColor: fibers-yellow
   - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsgauntlets
+  name: gauntlets
+  description: These gloves allow you to punch incredibly hard.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/gauntlets.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/gauntlets.rsi
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 1
+    damage:
+      types:
+       Blunt: 5
+    soundHit:
+      collection: metal
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-blue
+  - type: FingerprintMask
+  - type: MeleeSpeech
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
+  - type: StaticPrice
+    price: 0
+  - type: Construction
+    graph: Clothingcoolgauntlets
+    node: shoes

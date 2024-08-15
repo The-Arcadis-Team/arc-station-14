@@ -4,12 +4,6 @@
   description: A cool egg! You feel like it's good at its job of... uh... being an egg.
   abstract: true
   components:
-  - type: Tag
-    tags:
-      - Egg
-      - Meat
-  - type: Food
-    trash: Eggshells
   - type: Sprite
     sprite: Objects/Specific/Cool_egg.rsi
     state: doc

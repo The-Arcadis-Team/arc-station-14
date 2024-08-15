@@ -1,0 +1,7 @@
+- type: soundCollection
+  id: metal
+  files:
+    - /Audio/Weapons/metalhit1.ogg
+    - /Audio/Weapons/metalhit2.ogg
+    - /Audio/Weapons/metalhit3.ogg
+    - /Audio/Weapons/metalhit4.ogg

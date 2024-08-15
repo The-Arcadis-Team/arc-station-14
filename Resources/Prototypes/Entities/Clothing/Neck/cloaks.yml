@@ -272,3 +272,11 @@
   - type: Sprite
     sprite: Clothing/Neck/Cloaks/pan.rsi
 
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakToweg
+  name: The one whom enjoys game's cloak
+  description: It's nothingness.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/Toweg.rsi
