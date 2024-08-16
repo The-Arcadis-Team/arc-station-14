@@ -36,10 +36,10 @@
       0: Alive
       100: Dead
   - type: Stamina
-    critThreshold: 50
+    critThreshold: 60
   - type: Butcherable
     spawned:
-    - id: AnomalyCorereality
+    - id: FoodMeatvoid
       amount: 1
   - type: Bloodstream
     bloodMaxVolume: 100
