@@ -1119,3 +1119,19 @@
     - ClothMade
     - WhitelistChameleon
     - HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatNTPDBeret
+  name: NTPD beret
+  description: A beret.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hats/NTPDberet.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hats/NTPDberet.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - HamsterWearable
+    - WhitelistChameleon

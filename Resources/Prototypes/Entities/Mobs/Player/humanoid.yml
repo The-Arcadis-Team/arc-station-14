@@ -872,7 +872,7 @@
 
 - type: entity
   id: RandomHumanoidSpawnerNTPD
-  name: NTPD Opritive
+  name: NTPD Operative
   suffix: NTPD
   components:
     - type: Sprite
@@ -902,7 +902,7 @@
 - type: entity
   id: RandomHumanoidSpawnerMerc
   name: Mercop
-  suffix: ERTRole, Death Squad
+  suffix: Merc
   components:
     - type: Sprite
       sprite: Mobs/Species/Human/parts.rsi

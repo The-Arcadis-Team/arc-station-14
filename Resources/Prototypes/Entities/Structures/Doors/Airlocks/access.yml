@@ -1252,3 +1252,12 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsmerc ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttlemercLocked
+  suffix: External, Glass, Docking, Locked, merc
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsmerc ]
