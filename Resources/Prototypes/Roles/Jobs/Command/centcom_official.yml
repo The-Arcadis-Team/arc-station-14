@@ -32,9 +32,8 @@
   id: CentcominternGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitcentcomintern
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSunglasses
+    shoes: ClothingShoesBootsLaceup
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
     pocket1: BoxFolderBlack
-    pocket2: PenCentcom
+    pocket2: BoxFolderCentCom

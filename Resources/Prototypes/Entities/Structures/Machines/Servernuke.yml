@@ -1,0 +1,86 @@
+- type: entity
+  parent: [BaseStructure, StructureWheeled, BaseMajorContraband]
+  id: RealityBomb
+  name: Reality bomber
+  description: server destroyer™️ supremacy.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: Objects/Devices/Realitybomb.rsi
+    noRot: true
+    layers:
+    - state: realitybomb_base
+      map: ["enum.NukeVisualLayers.Base"]
+    - state: realitybomb_deployed_unlit
+      map: ["enum.NukeVisualLayers.Unlit"]
+      shader: unshaded
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.NukeVisuals.Deployed:
+        enum.NukeVisualLayers.Base:
+          False: { state: realitybomb_base }
+          True:  { state: realitybomb_deployed }
+        enum.NukeVisualLayers.Unlit:
+          True:  { visible: true }
+          False: { visible: false }
+      enum.NukeVisuals.State:
+        enum.NukeVisualLayers.Unlit:
+          Idle:        { state: realitybomb_deployed_unlit }
+          Armed:       { state: realitybomb_timing }
+          YoureFucked: { state: realitybomb_exploding }
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 2000
+        mask:
+        - MachineMask
+        layer:
+        - HalfWallLayer
+  - type: PointLight
+    enabled: false
+    radius: 15
+    energy: 5.0
+    color: "#5ebcff"
+    mask: /Textures/Effects/LightMasks/double_cone.png
+  - type: RotatingLight
+    speed: 150
+  - type: NukeLabel
+  - type: Nuke
+    explosionType: Default
+    maxIntensity: 10000
+    intensitySlope: 5
+    totalIntensity: 5000000
+    diskSlot:
+      name: nuke-slot-component-slot-name-disk
+      insertSound:
+        path: /Audio/Machines/terminal_insert_disc.ogg
+      ejectSound:
+        path: /Audio/Machines/terminal_insert_disc.ogg
+      whitelist:
+        components:
+        - NukeDisk
+    alertLevelOnActivate: delta
+    alertLevelOnDeactivate: green
+  - type: InteractionOutline
+  - type: ActivatableUI
+    key: enum.NukeUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.NukeUiKey.Key:
+        type: NukeBoundUserInterface
+  - type: CargoSellBlacklist
+  - type: ArrivalsBlacklist
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      Nuke: !type:ContainerSlot
+  - type: WarpPoint
+    follow: true
+    location: Reality bomber

@@ -1539,3 +1539,33 @@
       params:
         volume: -9
         maxDistance: 3
+
+- type: entity
+  parent: BasePlushie
+  id: Plushiedusty
+  name: captain plushie
+  description: A small stuffed doll of a moff captain, its a little dusty.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    state: plushie_dusty
+  - type: StaticPrice
+    price: 42
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Misc/yippe.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Misc/yippe.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToyFall
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 1.0

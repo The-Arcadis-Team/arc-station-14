@@ -47,3 +47,23 @@
   license: "CC-BY-SA-3.0"
   copyright: "Taken from Citadel Station 13"
   source: "https://github.com/Skyrat-SS13/Skyrat13/commit/2d4f2d1b489590b559e4073f41b126cef56f4c50"
+
+- files: ["ntpd.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Gulos voice with the alert of epsilon and intercept audio files"
+  source: "Tbd"
+
+- files: ["meatalert.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "gulos voice"
+  source: "My voice"
+
+- files: ["battlehorn.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Horn found on the internet"
+  source: "I sadly lost it :("
+
+- files: ["yippeeeeeeeeeeeeee.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "YIPPIE!"
+  source: "https://www.myinstants.com/en/instant/yippeeeeeeeeeeeeee-34261/"
