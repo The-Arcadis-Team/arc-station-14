@@ -18,6 +18,16 @@
       role: JobPassenger
       time: 72000 #20 hrs, fun mantle for the most experienced greytiders
 
+# Doesn't go outside
+- type: loadoutEffectGroup
+  id: GreyTideLord
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobPassenger
+      time: 7200000 #2000 hrs, no life
+
 # Face
 - type: loadout
   id: PassengerFace
@@ -26,6 +36,14 @@
     proto: GreyTider
   equipment:
     mask: ClothingMaskGas
+
+- type: loadout
+  id: PassengerFaceBlacklight
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTideLord
+  equipment:
+    mask: ClothingMaskGasBlacklight
 
 # Jumpsuits
 # Grey
@@ -95,6 +113,14 @@
     proto: GreyTider
   equipment:
     gloves: ClothingHandsGlovesFingerlessInsulated
+
+- type: loadout
+  id: PassengerGlovesBlacklight
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GreyTideLord
+  equipment:
+    gloves: ClothingHandsGlovesBlacklight
 
 # Outerclothing
 - type: loadout

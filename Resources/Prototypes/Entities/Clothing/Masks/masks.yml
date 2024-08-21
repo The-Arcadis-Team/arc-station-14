@@ -691,3 +691,18 @@
   - type: HideLayerClothing
     slots:
     - Snout
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasBlacklight
+  name: blacklight gas mask
+  description: A flameproof gas mask that any honourable greytider arrives with.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/gasexecute.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/gasexecute.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.80
