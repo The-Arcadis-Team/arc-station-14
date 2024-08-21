@@ -482,3 +482,33 @@
   - type: Construction
     graph: Clothingcoolgauntlets
     node: shoes
+
+- type: entity
+  parent: ClothingHandsGlovesColorPurple
+  id: ClothingHandsGlovesBlacklight
+  name: blacklight gloves
+  description: The gloves that every honourable greytider arrives with. Resistant against some cuts, insulated and has an extra padding for some extra damage. You do have to charge the punches a little more, though!
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/execute.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/execute.rsi
+  - type: MeleeWeapon
+    attackRate: 0.9
+    damage:
+      types:
+       Blunt: 3
+       Slash: 3
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Blunt: 0.95
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-purple
