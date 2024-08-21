@@ -55,8 +55,8 @@
   suffix: reality
   components:
   - type: Anomaly
-    corePrototype: AnomalyCorereality
-    coreInertPrototype: AnomalyCorereality
+    corePrototype: arcaneniteraw
+    coreInertPrototype: arcaneniteraw
   - type: Sprite
     layers:
     - state: core

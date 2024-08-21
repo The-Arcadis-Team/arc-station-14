@@ -81,7 +81,6 @@
     thresholds:
       0: Alive
       25: Dead
-    globalReceive: true
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -358,6 +357,7 @@
         Base: clamp
       Critical:
         Base: dead
+
       Dead:
         Base: dead
   - type: MobThresholds

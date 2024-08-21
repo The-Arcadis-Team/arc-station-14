@@ -273,3 +273,9 @@
   values:
     prefix: advertisement-erpdrobe-
     count: 2
+
+- type: localizedDataset
+  id: mercDrobeAds
+  values:
+    prefix: advertisement-mercdrobe-
+    count: 5

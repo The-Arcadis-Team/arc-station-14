@@ -51,19 +51,24 @@
 - files: ["ntpd.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Gulos voice with the alert of epsilon and intercept audio files"
-  source: "Tbd"
+  source: "https://www.youtube.com/watch?v=pCsXMMV1TV4"
 
 - files: ["meatalert.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "gulos voice"
-  source: "My voice"
+  source: "https://www.youtube.com/watch?v=pCsXMMV1TV4"
 
 - files: ["battlehorn.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "Horn found on the internet"
-  source: "I sadly lost it :("
+  source: "https://www.youtube.com/watch?v=pCsXMMV1TV4"
 
 - files: ["yippeeeeeeeeeeeeee.ogg"]
   license: "CC-BY-SA-3.0"
   copyright: "YIPPIE!"
   source: "https://www.myinstants.com/en/instant/yippeeeeeeeeeeeeee-34261/"
+
+- files: ["begging.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Gulo`s voice"
+  source: "https://www.youtube.com/watch?v=pCsXMMV1TV4"

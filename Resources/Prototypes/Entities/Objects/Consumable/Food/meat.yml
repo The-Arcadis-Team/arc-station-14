@@ -2206,3 +2206,10 @@
           Quantity: 10
         - ReagentId: Protein
           Quantity: 5
+  - type: FoodSequenceElement
+    sprite:
+      sprite: Objects/Consumable/Food/meat.rsi
+      state: plain_cooked_void
+    entries:
+      burger:
+        name: food-sequence-burger-content-meat

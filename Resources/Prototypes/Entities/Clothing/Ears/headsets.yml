@@ -292,8 +292,8 @@
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetMerc
-  name: Merc headset
-  description: A headset used by mercenaries.
+  name: merc headset
+  description: a headset used by mercenaries.
   components:
   - type: ContainerFill
     containers:

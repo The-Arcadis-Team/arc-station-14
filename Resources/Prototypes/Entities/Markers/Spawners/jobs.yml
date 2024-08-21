@@ -607,15 +607,3 @@
     layers:
       - state: green
       - state: zookeeper
-
-- type: entity
-  id: SpawnPointNTPDOP
-  parent: SpawnPointJobBase
-  name: NTPD Operative
-  components:
-  - type: SpawnPoint
-    job_id: NTPDOP
-  - type: Sprite
-    layers:
-      - state: green
-      - state: NTPDeva
