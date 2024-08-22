@@ -395,7 +395,7 @@
 - type: entity
   parent: BaseStructure
   id: WeaponTurretflesh
-  name: Flesh Hub
+  name: flesh Hub
   description: Its growing and oozing blood.
   abstract: true
   components:
@@ -495,7 +495,7 @@
       color: "#ba0000"
 
 - type: entity
-  name: Flesh Hub
+  name: flesh Hub
   parent: WeaponTurretflesh
   id: Mobmeathub
   suffix: "flesh"

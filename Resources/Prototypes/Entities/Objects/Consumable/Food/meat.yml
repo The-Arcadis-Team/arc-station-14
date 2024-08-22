@@ -2154,8 +2154,8 @@
 - type: entity
   name: raw void?
   parent: FoodMeatRawBase
-  id: FoodMeatvoid
-  description: A slab of raw... void?
+  id: FoodMeatvoidraw
+  description: A slab of the uh... void?
   components:
   - type: Sprite
     state: plain_void
@@ -2173,22 +2173,24 @@
     graph: MeatSteakvoid
     node: start
     defaultTarget: meat steak void
-  - type: FoodSequenceElement
-    entries:
-      burger:
-        name: food-sequence-burger-content-raw-meat
-        sprite:
-          sprite: Objects/Consumable/Food/meat.rsi
-          state: plain_void
   - type: Tag
     tags:
     - Meat
+  - type: FoodSequenceElement
+    sprite:
+      sprite: Objects/Consumable/Food/meat.rsi
+      state: plain_void
+    entries:
+      burger:
+        name: food-sequence-burger-content-raw-meat
+      taco:
+        name: food-sequence-content-raw-meat
 
 - type: entity
-  name: void steak
+  name: cooked void steak
   parent: FoodMeatBase
   id: FoodMeatCookedvoid
-  description: A cooked slab of... the void?
+  description: A cooked slab of the void?
   components:
   - type: Tag
     tags:
@@ -2206,6 +2208,12 @@
           Quantity: 10
         - ReagentId: Protein
           Quantity: 5
+  - type: SliceableFood
+    count: 3
+    slice: FoodMeatCutletCooked
+  - type: Construction
+    graph: MeatSteakvoid
+    node: meat steak void
   - type: FoodSequenceElement
     sprite:
       sprite: Objects/Consumable/Food/meat.rsi

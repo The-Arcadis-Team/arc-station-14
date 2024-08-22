@@ -1202,6 +1202,15 @@
     containers:
       board: [ DoorElectronicsArmory ]
 
+- type: entity
+  parent: HighSecDoor
+  id: HighSecNTPDLocked
+  suffix: NTPD, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTPD ]
+
 #Airtight hatch
 
 - type: entity

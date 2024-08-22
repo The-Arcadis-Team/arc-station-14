@@ -298,8 +298,6 @@
     sprite: Structures/Doors/Airlocks/Standard/NTPD.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
-  - type: PaintableAirlock
-    department: NTPD
   - type: Wires
     layoutId: AirlockCommand
 
@@ -310,8 +308,6 @@
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/NTPD.rsi
-  - type: PaintableAirlock
-    department: Command
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires

@@ -1,7 +1,7 @@
 - type: entity
   id: voidBlocker
   parent: BaseStructure
-  name: Abyss clump
+  name: abyss clump
   description: An annoying clump of... uh.. the void?
   components:
   - type: InteractionOutline

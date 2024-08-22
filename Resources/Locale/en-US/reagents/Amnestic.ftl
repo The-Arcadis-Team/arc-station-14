@@ -1,0 +1,11 @@
+﻿Amnestic-effect-a = You don't remember anything in the last 2 hours!
+Amnestic-effect-b = You don't remember anything in the last day!
+Amnestic-effect-d = You don't remember anything small that has happened in your life!
+Amnestic-effect-e = You feel like everything is normal.
+Amnestic-effect-g = You feel like you were just dreaming everything that happened.
+Amnestic-effect-h = You are not forming any memories!
+Amnestic-effect-i = You can't remember your past!
+Amnestic-effect-w = Your memories feel more potent.
+Amnestic-effect-x = You begin to remember things you had long forgotten.
+Amnestic-effect-y = You begin to have perfect memory
+Amnestic-effect-z = You can't forget anything, your heart begins to beat faster!

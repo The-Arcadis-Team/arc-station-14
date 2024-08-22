@@ -1,5 +1,5 @@
 - type: accessGroup
-  id: metaAccess
+  id: meta
   tags:
   - EmergencyShuttleRepealAll
   - HeadOfPersonnel

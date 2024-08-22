@@ -270,3 +270,17 @@ flavor-complex-sax = like jazz
 flavor-complex-bottledlightning = like lightning in a bottle
 flavor-complex-punishment = like punishment
 flavor-weh = like weh
+
+#amnestica
+
+flavor-complex-amnestica = crappy
+flavor-complex-amnesticb = really crappy
+flavor-complex-amnesticd = like shit
+flavor-complex-amnestice = just fine
+flavor-complex-amnesticg = dream like
+flavor-complex-amnestich = bland
+flavor-complex-amnestici = salty
+flavor-complex-amnesticw = clear?
+flavor-complex-amnesticx = tangy
+flavor-complex-amnesticy = amazing
+flavor-complex-amnesticz = everything

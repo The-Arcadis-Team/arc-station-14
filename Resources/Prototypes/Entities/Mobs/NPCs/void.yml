@@ -1,7 +1,7 @@
 - type: entity
   parent: [ SimpleMobBase, MobCombat ]
   id: BaseMobvoid
-  name: Abyss creature
+  name: abyss creature
   description: A shambling mass of the void, animated through anomalous energy.
   abstract: true
   components:
@@ -36,10 +36,10 @@
       0: Alive
       100: Dead
   - type: Stamina
-    critThreshold: 60
+    critThreshold: 75
   - type: Butcherable
     spawned:
-    - id: FoodMeatvoid
+    - id: FoodMeatvoidraw
       amount: 1
   - type: Bloodstream
     bloodMaxVolume: 100

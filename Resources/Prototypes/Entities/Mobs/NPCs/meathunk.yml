@@ -1,5 +1,5 @@
 - type: entity
-  name: Meat Hunk
+  name: meat Hunk
   parent:
   - BaseSimpleMob
   - MobCombat
@@ -106,7 +106,7 @@
           - MobLayer
 
 - type: entity
-  name: Meat Hunk
+  name: meat Hunk
   parent: BaseMobmeathunk
   id: Mobmeathunk
   suffix: "flesh"

@@ -478,7 +478,7 @@
         volume: 12
 
 - type: entity
-  name: Void husk grenade
+  name: void husk grenade
   description: Grenade that opens a small portal to spawn void husks. what are void husks? We don't know.
   parent: GrenadeBase
   id: voidhuskGrenade
