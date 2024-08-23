@@ -279,3 +279,9 @@ reagent-desc-watermelon-wakeup = If you want to be awake, this will do it... Als
 
 reagent-name-rubberneck = rubberneck
 reagent-desc-rubberneck = A popular drink amongst those adhering to an all synthetic diet.
+
+reagent-desc-Base-amnestic = Only the best from the NTPD!
+
+reagent-desc-amnestice = A perfectly normal drink.
+
+reagent-desc-amnesticz = WARNING [DO NOT INJEST] WARNING

@@ -2149,75 +2149,27 @@
           sprite: Objects/Consumable/Food/meat.rsi
           state: xenocutlet-cooked
 
-#void
-
 - type: entity
   name: raw void?
-  parent: FoodMeatRawBase
-  id: FoodMeatvoidraw
-  description: A slab of the uh... void?
-  components:
-  - type: Sprite
-    state: plain_void
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 9
-        - ReagentId: Fat
-          Quantity: 9
-  - type: InternalTemperature
-    conductivity: 0.43
-  - type: Construction
-    graph: MeatSteakvoid
-    node: start
-    defaultTarget: meat steak void
-  - type: Tag
-    tags:
-    - Meat
-  - type: FoodSequenceElement
-    sprite:
-      sprite: Objects/Consumable/Food/meat.rsi
-      state: plain_void
-    entries:
-      burger:
-        name: food-sequence-burger-content-raw-meat
-      taco:
-        name: food-sequence-content-raw-meat
-
-- type: entity
-  name: cooked void steak
   parent: FoodMeatBase
-  id: FoodMeatCookedvoid
-  description: A cooked slab of the void?
+  id: Foodvoid
+  description: null.
   components:
   - type: Tag
     tags:
-    - Cooked
+    - Raw
     - Meat
-    - Steak
+    - Trash
+    - Recyclable
   - type: Sprite
-    layers:
-    - state: plain_cooked_void
+    state: void
   - type: SolutionContainerManager
     solutions:
       food:
         reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
-        - ReagentId: Protein
-          Quantity: 5
-  - type: SliceableFood
-    count: 3
-    slice: FoodMeatCutletCooked
-  - type: Construction
-    graph: MeatSteakvoid
-    node: meat steak void
-  - type: FoodSequenceElement
-    sprite:
-      sprite: Objects/Consumable/Food/meat.rsi
-      state: plain_cooked_void
-    entries:
-      burger:
-        name: food-sequence-burger-content-meat
+        - ReagentId: amnesticz
+          Quantity: 1
+        - ReagentId: GastroToxin
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 4

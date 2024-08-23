@@ -28,7 +28,7 @@
   id: amnestica
   name: class A amnestic
   parent: Baseamnestic
-  desc: crappy
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastea
   color: "#7ae645"
@@ -53,7 +53,7 @@
   id: amnesticb
   name: class B amnestic
   parent: Baseamnestic
-  desc: really crappy
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatasteb
   color: "#7a282e"
@@ -78,7 +78,7 @@
   id: amnesticd
   name: class D amnestic
   parent: Baseamnestic
-  desc: shit
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatasted
   color: "#355442"
@@ -103,7 +103,7 @@
   id: amnestice
   name: class E amnestic
   parent: Baseamnestic
-  desc: fine
+  desc: reagent-desc-amnestice
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastee
   color: "#b0a400"
@@ -128,7 +128,7 @@
   id: amnesticg
   name: class G amnestic
   parent: Baseamnestic
-  desc: dream like
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatasteg
   color: "#ffa47a"
@@ -153,7 +153,7 @@
   id: amnestich
   name: class H amnestic
   parent: Baseamnestic
-  desc: bland
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatasteh
   color: "#1e2594"
@@ -178,7 +178,7 @@
   id: amnestici
   name: class I amnestic
   parent: Baseamnestic
-  desc: salty
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastei
   color: "#15241b"
@@ -203,7 +203,7 @@
   id: amnesticw
   name: class W amnestic
   parent: Baseamnestic
-  desc: clear?
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastew
   color: "#66495e"
@@ -228,7 +228,7 @@
   id: amnesticx
   name: class X amnestic
   parent: Baseamnestic
-  desc: tangy
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastex
   color: "#97b08f"
@@ -253,7 +253,7 @@
   id: amnesticy
   name: class Y amnestic
   parent: Baseamnestic
-  desc: amazing
+  desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastey
   color: "#1a0307"
@@ -278,7 +278,7 @@
   id: amnesticz
   name: class Z amnestic
   parent: Baseamnestic
-  desc: everything
+  desc: reagent-desc-amnesticz
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: amnesticatastez
   color: "#300061"

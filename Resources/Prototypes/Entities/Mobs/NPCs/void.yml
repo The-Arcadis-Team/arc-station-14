@@ -39,7 +39,7 @@
     critThreshold: 75
   - type: Butcherable
     spawned:
-    - id: FoodMeatvoidraw
+    - id: Foodvoid
       amount: 1
   - type: Bloodstream
     bloodMaxVolume: 100
