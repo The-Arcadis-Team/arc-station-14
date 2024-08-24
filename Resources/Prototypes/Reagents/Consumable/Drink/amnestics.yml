@@ -289,12 +289,21 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   metabolisms:
-    Drink:
+    Poison:
+      metabolismRate: 0.1
       effects:
-      - !type:SatiateThirst
-        factor: 2
       - !type:PopupMessage
         visualType: MediumCaution
         type: Local
         messages:
         - Amnestic-effect-z
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 5
+      - !type:Emote
+        emote: Scream
+        probability: 10
+      - !type:Emote
+        emote: Laugh
+        probability: 10
