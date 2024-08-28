@@ -7,7 +7,6 @@ namespace Content.Shared.Light.EntitySystems;
 public sealed class LightCollideSystem : EntitySystem
 {
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly SlimPoweredLightSystem _lights = default!;
 
     public override void Initialize()
     {
