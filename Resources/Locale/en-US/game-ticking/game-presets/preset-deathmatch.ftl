@@ -77,3 +77,6 @@ death-match-kill-callout-env-7 = {CAPITALIZE($victim)} didn't try very hard!
 death-match-kill-callout-env-8 = {CAPITALIZE($victim)} took out the trash themselves!
 death-match-kill-callout-env-9 = {CAPITALIZE($victim)} looked extremely dumb!
 death-match-kill-callout-env-10 = {CAPITALIZE($victim)} clowned around!
+
+flesh-zombie-title = Flesh survival
+flesh-zombie-description = The station has been over run with flesh monsters! survive until evac gets to the station!

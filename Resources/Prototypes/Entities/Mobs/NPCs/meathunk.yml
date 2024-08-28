@@ -16,6 +16,9 @@
       raffle:
         settings: default
     - type: GhostTakeoverAvailable
+    - type: RotationVisuals
+      defaultRotation: 90
+      horizontalRotation: 90
     - type: HTN
       rootTask:
         task: SimpleRangedHostileCompound
@@ -28,6 +31,10 @@
     - type: BatterySelfRecharger
       autoRecharge: true
       autoRechargeRate: 40
+    - type: Reflect
+      reflectProb: 0.7
+      reflects:
+      - Energy
     - type: Gun
       fireRate: 0.75
       useKey: false
@@ -41,6 +48,14 @@
     - type: Speech
       speechVerb: Cluwne
     - type: CombatMode
+    - type: Tag
+      tags:
+        - CannotSuicide
+        - DoorBumpOpener
+        - FootstepSound
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepThud
     - type: MobMover
     - type: InputMover
     - type: MovementSpeedModifier
@@ -69,7 +84,7 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        425: Dead
+        450: Dead
     - type: Metabolizer
       solutionOnBody: false
       updateInterval: 0.25

@@ -234,3 +234,16 @@
   - KesslerSyndromeScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Fleshsurvival
+  alias:
+    - Flesh
+  name: flesh-zombie-title
+  description: flesh-zombie-description
+  maxPlayers: 30
+  showInVote: true
+  supportedMaps: survivalMapPool
+  rules:
+    - Fleshsurvivalmode
+    - SpaceTrafficControlEventScheduler

@@ -1,0 +1,30 @@
+# Jumpsuit
+- type: loadout
+  id: ruinedJumpsuit1
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruined
+
+- type: loadout
+  id: ruinedJumpsuit2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruinedbar
+
+- type: loadout
+  id: ruinedJumpsuit3
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruinedblood
+
+- type: loadout
+  id: ruinedJumpsuit4
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruinedskirt
+
+- type: loadout
+  id: ruinedJumpsuit5
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruinedskirtbar
+
+- type: loadout
+  id: ruinedJumpsuit6
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruinedskirtblood

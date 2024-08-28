@@ -49,3 +49,16 @@
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
+
+- type: entity
+  id: StandardStationzombie
+  parent:
+  - BaseStation
+  - BaseStationJobsSpawning
+  - BaseStationRecords
+  - BaseStationNanotrasen
+  - BaseStationCentcomm
+  - BaseStationEvacuation
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform

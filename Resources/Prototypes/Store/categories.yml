@@ -134,3 +134,34 @@
   id: UplinkImplantsntpd
   name: store-category-implants
   priority: 7
+
+#last-stop
+- type: storeCategory
+  id: UplinkWeaponrylaststop
+  name: store-category-weapons
+  priority: 0
+
+- type: storeCategory
+  id: UplinkAmmolaststop
+  name: store-category-ammo
+  priority: 1
+
+- type: storeCategory
+  id: UplinkExplosiveslaststop
+  name: store-category-explosives
+  priority: 2
+
+- type: storeCategory
+  id: UplinkWearableslaststop
+  name: store-category-wearables
+  priority: 3
+
+- type: storeCategory
+  id: Uplinkfoodwaterlaststop
+  name: store-category-foodwater
+  priority: 4
+
+- type: storeCategory
+  id: Uplinkmatslaststop
+  name: store-category-mats
+  priority: 5

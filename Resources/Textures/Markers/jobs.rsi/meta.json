@@ -206,6 +206,9 @@
       "name": "NTPDeva"
     },
     {
+      "name": "survivor"
+    },
+    {
       "name": "zookeeper"
     }
   ]

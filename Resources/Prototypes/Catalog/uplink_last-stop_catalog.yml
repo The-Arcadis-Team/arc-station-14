@@ -1,0 +1,204 @@
+# Guns
+
+- type: listing
+  id: UplinkEswordlaststop
+  name: uplink-esword-name
+  description: Dont ask why we have so many energy swords.
+  icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword.rsi, state: icon }
+  productEntity: EnergySword
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWeaponrylaststop
+
+- type: listing
+  id: Uplinkgunmk58
+  name: MK58
+  description: A cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary (us). Uses .35 auto ammo.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Pistols/mk58.rsi, state: base }
+  productEntity: WeaponPistolMk58
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkWeaponrylaststop
+
+- type: listing
+  id: Uplinkguncobra
+  name: cobra
+  description: A rugged, robust handgun with inbuilt silencer, we dont know why you would need it but we dont really care. Uses .25 caseless ammo.
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Pistols/cobra.rsi, state: base }
+  productEntity: WeaponPistolCobra
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkWeaponrylaststop
+
+# Explosives
+
+- type: listing
+  id: UplinkExplosiveGrenadelaststop
+  name: uplink-explosive-grenade-name
+  description: uplink-explosive-grenade-desc
+  productEntity: ExGrenade
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkExplosiveslaststop
+
+- type: listing
+  id: UplinkExplosiveGrenadeFlashlaststop
+  name: uplink-flash-grenade-name
+  description: uplink-flash-grenade-desc
+  productEntity: GrenadeFlashBang
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkExplosiveslaststop
+
+- type: listing
+  id: UplinkC4laststop
+  name: uplink-c4-name
+  description: uplink-c4-desc
+  productEntity: C4
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkExplosiveslaststop
+
+- type: listing
+  id: UplinkGrenadeShrapnellaststop
+  name: uplink-shrapnel-grenade-name
+  description: uplink-shrapnel-grenade-desc
+  productEntity: GrenadeShrapnel
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkExplosiveslaststop
+
+# Ammo
+
+- type: listing
+  id: BoxMagazinePistolHighCapacitylaststop
+  name: box of magazines (.35)
+  description: .35 ammo for reliable guns.
+  productEntity: BoxMagazinePistolHighCapacity
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmolaststop
+
+- type: listing
+  id: uplinkBoxMagazinePistolCaselessRiflelaststop
+  name: .25 magazine box (.25).
+  description: .25 ammo. In a box!
+  productEntity: BoxMagazinePistolCaselessRifle
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkAmmolaststop
+
+# Wearables
+
+- type: listing
+  id: UplinkgClothingArmorBasiclaststop
+  name: Basic armor
+  description: Some basic armor to keep you in the fight.
+  productEntity: ClothingOuterArmorBasic
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkWearableslaststop
+
+- type: listing
+  id: UplinkgClothingBootsMaglaststop
+  name: Ironclad armor
+  description: Some ironclad armor to keep you in the fight, for much longer than the basic armor.
+  productEntity: ClothingOuterArmorPodWars
+  cost:
+    Telecrystal: 15
+  categories:
+  - UplinkWearableslaststop
+
+- type: listing
+  id: UplinkgClothingUtilityFilledlaststop
+  name: Filled Utility belt
+  description: Gotta keep the machines running some way.
+  productEntity: ClothingBeltUtilityFilled
+  cost:
+    Telecrystal: 3
+  categories:
+  - UplinkWearableslaststop
+
+- type: listing
+  id: UplinkgClothingArmorPodWarslaststop
+  name: Basic magboots
+  description: Magboots! if power goes out you can keep walking!
+  productEntity: ClothingShoesBootsMag
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWearableslaststop
+
+ # food and water
+
+- type: listing
+  id: UplinkgfoodMRElaststop
+  name: MRE box
+  description: The MRE. what else do you want?
+  productEntity: BoxMRE
+  cost:
+    Telecrystal: 2
+  categories:
+  - Uplinkfoodwaterlaststop
+
+- type: listing
+  id: UplinkgfoodDrinkSodaWaterlaststop
+  name: crappy water
+  description: Crappy water that will probably hydrate you
+  productEntity: DrinkSodaWaterBottleFull
+  cost:
+    Telecrystal: 2
+  categories:
+  - Uplinkfoodwaterlaststop
+
+- type: listing
+  id: UplinkgfoodDrinkWatermelonlaststop
+  name: watermelon
+  description: An awesome watermelon.
+  productEntity: FoodWatermelon
+  cost:
+    Telecrystal: 2
+  categories:
+  - Uplinkfoodwaterlaststop
+
+# mats
+
+- type: listing
+  id: Uplinkgwoodlaststop
+  name: wood
+  description: Wood used for building whatever you need.
+  productEntity: MaterialWoodPlank
+  cost:
+    Telecrystal: 3
+  categories:
+  - Uplinkmatslaststop
+
+- type: listing
+  id: Uplinkgmetallaststop
+  name: Metal
+  description: Metal used for building whatever you need.
+  productEntity: SheetSteel
+  cost:
+    Telecrystal: 3
+  categories:
+  - Uplinkmatslaststop
+
+- type: listing
+  id: Uplinkgclothlaststop
+  name: cloth
+  description: Cloth. can be used for building things or eating if your a moff.
+  productEntity: MaterialCloth
+  cost:
+    Telecrystal: 3
+  categories:
+  - Uplinkmatslaststop

@@ -187,6 +187,9 @@
             "name": "InitialInfected"
         },
         {
+            "name": "survivor"
+        },
+        {
             "name": "Admin"
         }
     ]

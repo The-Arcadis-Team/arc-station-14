@@ -342,3 +342,20 @@
     - id: BloodbathPuddleMessVariationPass
       prob: 0.01
       orGroup: puddleMess
+
+- type: entity
+  id: Fleshsurvivalmode
+  parent: BaseGameRule
+  components:
+  - type: RoundstartStationVariationRule
+    rules:
+    - id: BasicPoweredLightVariationPass
+    - id: BasicTrashVariationPass
+    - id: SolidWallRustingVariationPass
+    - id: ReinforcedWallRustingVariationPass
+    - id: BasicPuddleMessVariationPass
+      prob: 1
+      orGroup: puddleMess
+    - id: BloodbathPuddleMessVariationPass
+      prob: 0.2
+      orGroup: puddleMess

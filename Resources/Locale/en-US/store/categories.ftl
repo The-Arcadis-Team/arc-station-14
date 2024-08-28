@@ -12,6 +12,8 @@ store-category-allies = Allies
 store-category-job = Job
 store-category-wearables = Wearables
 store-category-pointless = Pointless
+store-category-foodwater = Food and water
+store-category-mats = Materials
 
 # Revenant
 store-category-abilities = Abilities

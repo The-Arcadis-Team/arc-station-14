@@ -1,0 +1,16 @@
+- type: gameMap
+  id: zombiesurvival
+  mapName: DIN station
+  mapPath: /Maps/Survival/sm.yml
+  minPlayers: 0
+  stations:
+    DIN:
+      stationProto: StandardStationzombie
+      components:
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_delta.yml
+        - type: StationNameSetup
+          mapNameTemplate: "DIN station"
+        - type: StationJobs
+          availableJobs:
+            survivor: [ -1, -1 ]

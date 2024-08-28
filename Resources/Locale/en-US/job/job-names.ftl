@@ -46,6 +46,7 @@ job-name-ertjanitor = ERT Janitor
 job-name-boxer = Boxer
 job-name-zookeeper = Zookeeper
 job-name-visitor = Visitor
+job-name-survivor = Survivor
 
 # unused jobs
 # these are required for the agent ID job icon tooltips
@@ -108,3 +109,4 @@ JobTechnicalAssistant = Technical Assistant
 JobVisitor = Visitor
 JobWarden = Warden
 JobZookeeper = Zookeeper
+Jobsurvivor = Survivor

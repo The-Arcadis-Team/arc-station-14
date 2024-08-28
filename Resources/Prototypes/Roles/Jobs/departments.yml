@@ -33,6 +33,7 @@
   - Visitor
   - Zookeeper
   - ServiceWorker
+  - survivor
 
 - type: department
   id: Command
@@ -109,4 +110,5 @@
   - Reporter
   - Zookeeper
   - Psychologist
+  - survivor
   primary: false
