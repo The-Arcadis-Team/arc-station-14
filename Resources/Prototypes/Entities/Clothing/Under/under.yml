@@ -22,3 +22,14 @@
     sprite: Clothing/Under/Socks/coder.rsi
   - type: Clothing
     sprite: Clothing/Under/Socks/coder.rsi
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingUndercoolSocksCoder
+  name: cool coder socks
+  description: cool socks of a cool coder.
+  components:
+  - type: Sprite
+    sprite: Clothing/Under/Socks/Gulo_socks.rsi
+  - type: Clothing
+    sprite: Clothing/Under/Socks/Gulo_socks.rsi

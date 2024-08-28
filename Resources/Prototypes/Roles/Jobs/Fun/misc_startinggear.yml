@@ -346,3 +346,16 @@
     back: ClothingBackpackSatchelScience
     ears: ClothingHeadsetRD
     outerClothing: ClothingOuterCoatRD
+
+# Flesh gear
+
+- type: startingGear
+  id: survivalGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruined
+    shoes: ClothingShoesBootsJack
+    ears: ClothingHeadsetGrey
+    pocket1: ShellShotgunImprovised
+    pocket2: Brutepack
+  inhand:
+    - WeaponShotgunImprovised

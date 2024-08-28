@@ -1,0 +1,260 @@
+- type: entity
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  id: BaseMobFleshzombie
+  name: aberrant flesh
+  suffix: "zombie gamemode"
+  description: A shambling mass of flesh, animated through anomalous energy.
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - Flesh
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/flesh.rsi
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1.5
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Stamina
+    critThreshold: 50
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+    - id: Telecrystal1
+      amount: 4
+  - type: Bloodstream
+    bloodMaxVolume: 100
+  - type: CombatMode
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 6
+  - type: ReplacementAccent
+    accent: genericAggressive
+  - type: SalvageMobRestrictions
+
+- type: entity
+  parent: BaseMobFleshzombie
+  id: fleshzombiejared
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: jared
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: jared
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 8
+
+- type: entity
+  parent: BaseMobFleshzombie
+  id: fleshzombiegolem
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: golem
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: golem
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 8
+
+- type: entity
+  parent: BaseMobFleshzombie
+  id: fleshzombieclamp
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: clamp
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: clamp
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2.5
+
+- type: entity
+  parent: BaseMobFleshzombie
+  id: fleshzombielover
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: lover
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: lover
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2.5
+
+- type: entity
+  parent: BaseMobFleshzombie
+  id: fleshrunnerzombie
+  name: flesh runner
+  description: when it walks you hear little ploshes.
+  components:
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 6
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: Runner
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: Runner
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      25: Dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+
+- type: entity
+  name: meat Hunk
+  parent: BaseMobmeathunk
+  id: Mobmeathunkzombie
+  suffix: "flesh, zombie gamemode"
+  components:
+    - type: PyroclasticAnomaly
+    - type: TempAffectingAnomaly
+      tempChangePerSecond: 25
+      hotspotExposeTemperature: 1000
+    - type: GasProducerAnomaly
+      releasedGas: 3
+      releaseOnMaxSeverity: true
+      spawnRadius: 0
+    - type: Butcherable
+      spawned:
+      - id: FoodMeat
+        amount: 4
+      - id: Telecrystal1
+        amount: 8
+
+- type: entity
+  name: flesh zombie Timed Spawner
+  id: fleshTimedSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Mobs/Aliens/flesh.rsi
+          state: clamp
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - fleshzombielover
+        - fleshzombieclamp
+        - fleshzombiejared
+        - fleshzombiegolem
+        - fleshrunnerzombie
+      chance: 0.3
+      intervalSeconds: 150
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 3
+
+- type: entity
+  name: flesh boss zombie Timed Spawner
+  id: fleshhunkTimedSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: blue
+        - sprite: Mobs/Demons/Meathunk.rsi
+          state: alive
+    - type: Timer
+    - type: TimedSpawner
+      prototypes:
+        - Mobmeathunkzombie
+      chance: 0.2
+      intervalSeconds: 450
+      minimumEntitiesSpawned: 1
+      maximumEntitiesSpawned: 1

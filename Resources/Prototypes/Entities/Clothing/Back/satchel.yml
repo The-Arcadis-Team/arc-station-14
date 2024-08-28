@@ -178,3 +178,23 @@
     maxItemSize: Huge
     grid:
     - 0,0,19,9
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelNTPDHolding
+  name: NTPD satchel of holding
+  description: A satchel that opens into a localized pocket of bluespace.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/NTPDholding.rsi
+    state: icon
+    layers:
+    - state: icon
+    - state: icon-unlit
+      shader: unshaded
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,19,9

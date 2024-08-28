@@ -261,3 +261,21 @@
   values:
     prefix: advertisement-medibot-
     count: 17
+
+- type: localizedDataset
+  id: NTPDad
+  values:
+    prefix: advertisement-NTPD-
+    count: 5
+
+- type: localizedDataset
+  id: ERPDrobeAds
+  values:
+    prefix: advertisement-erpdrobe-
+    count: 2
+
+- type: localizedDataset
+  id: mercDrobeAds
+  values:
+    prefix: advertisement-mercdrobe-
+    count: 5

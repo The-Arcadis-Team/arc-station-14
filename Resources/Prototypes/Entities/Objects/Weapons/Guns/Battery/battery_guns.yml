@@ -767,3 +767,59 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25 #takes 42 seconds to fully recharge, the answer to life, the universe and everything
+
+- type: entity
+  name: super pulse pistol
+  parent: BaseWeaponBatterySmall
+  id: WeaponNTPDPulsePistol
+  description: A state of the art energy pistol favoured as a sidearm by NTPD operatives.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/NTPD_pulse_pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/NTPD_pulse_pistol.rsi
+  - type: Gun
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: Pulse
+    fireCost: 1
+  - type: Battery
+    maxCharge: 400
+    startingCharge: 400
+
+- type: entity
+  name: Pure darkness
+  parent: BaseWeaponBatterySmall
+  id: Weapondark
+  description: Pure darkness, When you look into it you hear screams.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/Pure_dark.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Gun
+    fireRate: 2
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/Soul.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: Darklaser
+    fireCost: 50
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 750

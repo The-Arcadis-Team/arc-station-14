@@ -95,3 +95,6 @@ hugging-success-generic-target = { CAPITALIZE(THE($user)) } hugs you.
 
 petting-success-tesla = You pet {THE($target)}, violating the laws of nature and physics.
 petting-failure-tesla = You reach out towards {THE($target)}, but {SUBJECT($target)} {CONJUGATE-BASIC($target, "zap", "zaps")} your hand away.
+
+petting-success-flesh = You uh... tap {THE($target)} on its skin?
+petting-failure-flesh = You reach out to pet {THE($target)}, but something tells you to not pet it.

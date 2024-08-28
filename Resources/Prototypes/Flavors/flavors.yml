@@ -1108,3 +1108,58 @@
   id: paintthinner
   flavorType: Complex
   description: flavor-complex-paint-thinner
+
+- type: flavor
+  id: amnesticatastea
+  flavorType: Complex
+  description: flavor-complex-amnestica
+
+- type: flavor
+  id: amnesticatasteb
+  flavorType: Complex
+  description: flavor-complex-amnesticb
+
+- type: flavor
+  id: amnesticatasted
+  flavorType: Complex
+  description: flavor-complex-amnesticd
+
+- type: flavor
+  id: amnesticatastee
+  flavorType: Complex
+  description: flavor-complex-amnestice
+
+- type: flavor
+  id: amnesticatasteg
+  flavorType: Complex
+  description: flavor-complex-amnesticg
+
+- type: flavor
+  id: amnesticatasteh
+  flavorType: Complex
+  description: flavor-complex-amnestich
+
+- type: flavor
+  id: amnesticatastei
+  flavorType: Complex
+  description: flavor-complex-amnestici
+
+- type: flavor
+  id: amnesticatastew
+  flavorType: Complex
+  description: flavor-complex-amnesticw
+
+- type: flavor
+  id: amnesticatastex
+  flavorType: Complex
+  description: flavor-complex-amnesticx
+
+- type: flavor
+  id: amnesticatastey
+  flavorType: Complex
+  description: flavor-complex-amnesticy
+
+- type: flavor
+  id: amnesticatastez
+  flavorType: Complex
+  description: flavor-complex-amnesticz

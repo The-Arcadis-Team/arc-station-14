@@ -1,0 +1,29 @@
+- type: entity
+  parent: [ BaseComputer, StorePresetUplinklaststop ]
+  id: Computerzombiestore
+  name: last-stop
+  description: Last-stop corp! your one stop shop for everything survival!
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: last-stop
+    - map: ["computerLayerKeys"]
+      state: tech_key
+  - type: Computer
+    board: laststopCircuitboard
+  - type: Transform
+    anchored: true
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Telecrystal: 50

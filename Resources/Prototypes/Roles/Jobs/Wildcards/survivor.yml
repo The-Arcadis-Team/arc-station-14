@@ -1,0 +1,19 @@
+- type: job
+  id: survivor
+  name: job-name-survivor
+  description: job-description-survivor
+  playTimeTracker: Jobsurvivor
+  startingGear: survivorGear
+  icon: "JobIconsurvivor"
+  supervisors: job-supervisors-hop
+  access:
+  - Service
+  - Maintenance
+
+- type: startingGear
+  id: survivorGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitruined
+    shoes: ClothingShoesColorWhite
+    id: PassengerPDA
+    ears: ClothingHeadsetService

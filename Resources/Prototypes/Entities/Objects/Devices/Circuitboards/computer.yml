@@ -406,3 +406,12 @@
       state: cpu_science
     - type: ComputerBoard
       prototype: ComputerRoboticsControl
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: laststopCircuitboard
+  name: last-stop board
+  description: A computer printed circuit board for a last-stop store.
+  components:
+    - type: ComputerBoard
+      prototype: Computerzombiestore

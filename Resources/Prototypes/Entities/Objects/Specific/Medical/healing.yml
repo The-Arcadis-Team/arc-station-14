@@ -1016,3 +1016,161 @@
         reagents:
         - ReagentId: Stimulants
           Quantity: 15
+
+#amnestics
+
+- type: entity
+  name: class A amnestic pill
+  parent: Pill
+  id: PillclassA
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: amnestica
+              Quantity: 10
+
+- type: entity
+  name: class B amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclassb
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnesticb
+          Quantity: 15
+
+- type: entity
+  name: class D amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclassd
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnesticd
+          Quantity: 15
+
+- type: entity
+  name: class E amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclasse
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnestice
+          Quantity: 15
+
+- type: entity
+  name: class G amnestic pill
+  parent: Pill
+  id: Pillclassg
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: amnesticg
+              Quantity: 10
+
+- type: entity
+  name: class H amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclassh
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnestich
+          Quantity: 15
+
+- type: entity
+  name: class I amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclassi
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnestici
+          Quantity: 15
+
+- type: entity
+  name: class I amnestic pill
+  parent: Pill
+  id: Pillclassi
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: amnestici
+              Quantity: 10
+
+- type: entity
+  name: class W amnestic pill
+  parent: Pill
+  id: PillclassW
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 20
+          reagents:
+            - ReagentId: amnesticw
+              Quantity: 10
+
+- type: entity
+  name: class X amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclassx
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnesticx
+          Quantity: 15
+
+- type: entity
+  name: class Y amnestic syringe
+  parent: PrefilledSyringe
+  id: Syringeclassy
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnesticy
+          Quantity: 15
+
+- type: entity
+  name: class Z amnestic syringe [WARNING | DO NOT INJECT]
+  parent: PrefilledSyringe
+  id: Syringeclassz
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: amnesticz
+          Quantity: 15

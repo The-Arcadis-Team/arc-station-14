@@ -476,3 +476,60 @@
       path: /Audio/Effects/minibombcountdown.ogg
       params:
         volume: 12
+
+- type: entity
+  name: void husk grenade
+  description: Grenade that opens a small portal to spawn void husks. what are void husks? We don't know.
+  parent: GrenadeBase
+  id: voidhuskGrenade
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/voidgrenade.rsi
+  - type: OnUseTimerTrigger
+    delay: 3
+    beepInterval: 0.46
+    beepSound:
+      path: /Audio/Effects/Grenades/Voidgrenade/Voidbeep.ogg
+      params:
+        volume: -5
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/Grenades/Voidgrenade/Voidbeep.ogg
+      params:
+        volume: -5
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 200
+    intensitySlope: 30
+    maxIntensity: 120
+  - type: SoundOnTrigger
+    removeOnTrigger: true
+    sound:
+      path: /Audio/Effects/Grenades/Voidgrenade/Voidstart.ogg
+      volume: 3
+  - type: AnchorOnTrigger
+    removeOnTrigger: true
+  - type: TwoStageTrigger
+    triggerDelay: 5.45
+    components:
+      - type: AmbientSound
+        enabled: true
+        volume: -8
+        range: 14
+        sound:
+          path: /Audio/Effects/Grenades/Voidgrenade/Voidloop.ogg
+      - type: SpawnOnTrigger 
+        proto: MobvoidGolem
+      - type: SoundOnTrigger
+        sound:
+          path: /Audio/Effects/Grenades/Voidgrenade/voidend.ogg
+          params:
+            volume: 5
+      - type: EmpOnTrigger
+        range: 3
+        energyConsumption: 30000
+      - type: DeleteOnTrigger
+      - type: Appearance
+      - type: TimerTriggerVisuals
+        primingSound:
+          path: /Audio/Effects/countdown.ogg

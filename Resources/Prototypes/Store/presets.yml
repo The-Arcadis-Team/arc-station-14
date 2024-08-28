@@ -35,3 +35,41 @@
     - SpellbookEvents       #Summon Weapons, Summon Ghosts
     currencyWhitelist:
     - WizCoin
+
+- type: entity
+  id: StorePresetUplinkNTPD
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkWeaponryntpd
+    - UplinkAmmontpd
+    - UplinkExplosivesntpd
+    - UplinkWearablesntpd
+    - UplinkChemicalsntpd
+    - UplinkDeceptionntpd
+    - UplinkDisruptionntpd
+    - UplinkImplantsntpd
+    currencyWhitelist:
+    - Telecrystal
+    balance:
+      Telecrystal: 0
+
+- type: entity
+  id: StorePresetUplinklaststop
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-laststop
+    categories:
+    - UplinkWeaponrylaststop
+    - UplinkExplosiveslaststop
+    - UplinkAmmolaststop
+    - Uplinkfoodwaterlaststop
+    - UplinkWearableslaststop
+    - Uplinkmatslaststop
+    currencyWhitelist:
+    - Telecrystal
+    balance:
+      Telecrystal: 0

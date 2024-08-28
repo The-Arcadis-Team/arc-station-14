@@ -2137,3 +2137,120 @@
   - type: AccessReader
     access: [["SyndicateAgent"]]
 
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineNTPDDrobe
+  name: NTPDrobe
+  description: The NTPD's fashion is, not the best...
+  components:
+  - type: VendingMachine
+    pack: VendingMachineNTPDDrobe
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/ntpddrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Advertise
+    pack: NTPDad
+  - type: SpeakOnUIClosed
+    pack: NTPDGoodbyes
+  - type: Speech
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#003154"
+  - type: AccessReader
+    access: [["NTPD"]]
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineERPDrobe
+  name: ERPDrobe
+  description: A machine designed to dispense clothing known only to people who are really, really desperate.
+  components:
+  - type: VendingMachine
+    pack: ERPDrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: ERPDrobeAds
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/robodrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Maintenance"]]
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachinemercDrobe
+  name: UrbanDrobe™️
+  description: Only the best from Urban Solutions!
+  components:
+  - type: VendingMachine
+    pack: mercDrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: mercDrobeAds
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/mercdrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["merc"]]
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineAmmohacked
+  name: Hacked liberation station
+  description: An overwhelming amount of ancient patriotism washes over you just by looking at the machine, thankfully it's hacked so true freedom has been achieved.
+  components:
+  - type: VendingMachine
+    pack: AmmoVendInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: AmmoVendAds
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/ammo.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - type: AccessReader
+      access: [["merc"]]

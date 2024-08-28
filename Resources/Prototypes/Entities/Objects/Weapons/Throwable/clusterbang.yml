@@ -262,3 +262,32 @@
     maxGrenadesCount: 30
     grenadeType: enum.GrenadeType.Throw
     velocity: 70
+
+- type: entity
+  parent: GrenadeBase
+  id: ClusterGrenadevoid
+  name: cluster void grenade
+  description: The top of the line in using other worldy powers for our battles!
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/clustervoid.rsi
+    layers:
+    - state: icon
+      map: ["enum.TriggerVisualLayers.Base"]
+  - type: ClusterGrenade
+    fillPrototype: voidhuskGrenade
+    velocity: 3.5
+    distance: 5
+  - type: OnUseTimerTrigger
+    beepSound:
+      path: "/Audio/Effects/Grenades/Voidgrenade/Voidbeep.ogg"
+      params:
+        volume: 4
+    initialBeepDelay: 0
+    beepInterval: 0.5
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Machines/door_lock_off.ogg"
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container

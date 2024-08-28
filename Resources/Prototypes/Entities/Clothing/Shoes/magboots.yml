@@ -114,3 +114,23 @@
   - type: InstantAction
     itemIconStyle: BigItem
     event: !type:ToggleActionEvent
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagAdvNTPD
+  name: advanced NTPD magboots
+  description: State-of-the-art magnetic boots that do not slow down their wearer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/magboots-NTPD.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/magboots-NTPD.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 750

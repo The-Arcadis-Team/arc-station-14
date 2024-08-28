@@ -59,6 +59,9 @@
             "name": "stamp-trader"
         },
         {
+            "name": "stamp-ntpd"
+        },
+        {
             "name": "stamp-warden"
         },
         {

@@ -118,3 +118,32 @@
   components:
   - type: Sprite
     state: pen_hop
+
+- type: entity
+  name: NTPD pen
+  parent: PenEmbeddable
+  id: NTPDPen
+  description: The best way to keep secrets, Write it down on paper!
+  components:
+  - type: Tag
+    tags:
+    - Write
+    - WriteIgnoreStamps
+    - Pickaxe
+    - Pen
+  - type: Sprite
+    state: pen_NTPD
+  - type: Item
+    heldPrefix: pen_NTPD
+  - type: MeleeWeapon
+    wideAnimationRotation: -45
+    damage:
+      types:
+        Piercing: 15
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Tool
+    qualities:
+      - Screwing
+    useSound:
+      collection: Screwdriver

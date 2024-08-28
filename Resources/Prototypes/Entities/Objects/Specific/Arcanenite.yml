@@ -1,0 +1,21 @@
+- type: entity
+  name: arcanenite
+  parent: BaseItem
+  id: arcaneniteraw
+  description: A uh... purple thing?
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Arcanenite.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Specific/Arcanenite.rsi
+    size: Tiny
+  - type: AmbientSound
+    range: 5
+    volume: 10
+    sound:
+      path: /Audio/Misc/begging.ogg
+  - type: PointLight
+    radius: 3
+    energy: 5
+    color: "#300061"

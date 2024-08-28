@@ -295,3 +295,20 @@
       - minTemperature: 345
   - node: xeno cutlet
     entity: FoodMeatXenoCutletCooked
+
+# void steak
+- type: constructionGraph
+  id: MeatSteakvoid
+  start: start
+  graph:
+
+  - node: start
+    edges:
+    - to: meat steak void
+      completed:
+      - !type:PlaySound
+        sound: /Audio/Effects/sizzle.ogg
+      steps:
+      - minTemperature: 335
+  - node: meat steak void
+    entity: FoodMeatCookedvoid

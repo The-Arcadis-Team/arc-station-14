@@ -4,12 +4,14 @@
     - "Sit!"
     - "Stay!"
     - "Stop!"
+    - "Ayo! Chill!"
 
 - type: dataset
   id: RatKingCommandFollow
   values:
     - "Heel!"
     - "Follow!"
+    - "Get over here!"
 
 - type: dataset
   id: RatKingCommandCheeseEm
@@ -18,9 +20,11 @@
     - "Sic!"
     - "Kill!"
     - "Cheese 'Em!"
+    - "get there legs!"
 
 - type: dataset
   id: RatKingCommandLoose
   values:
     - "Free!"
     - "Loose!"
+    - "get the hell away from me."

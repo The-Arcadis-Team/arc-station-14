@@ -310,3 +310,19 @@
   components:
   - type: AccessReader
     access: [["Security"], ["Command"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNTPD
+  suffix: NTPD, Locked
+  components:
+  - type: AccessReader
+    access: [["NTPD"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsmerc
+  suffix: merc, Locked
+  components:
+  - type: AccessReader
+    access: [["merc"]]

@@ -396,3 +396,25 @@
   - type: Storage
     grid:
     - 5,5,11,8
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackHoldingNTPD
+  name: NTPD bag of holding
+  description: A backpack that opens into a localized pocket of bluespace.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/NTPDholding.rsi
+    state: holding
+    layers:
+    - state: holding
+    - state: holding-unlit
+      shader: unshaded
+  - type: Clothing
+    equippedPrefix: holding
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,20,10

@@ -32,6 +32,9 @@
       "name": "pen_red"
     },
     {
+      "name": "pen_NTPD"
+    },
+    {
       "name": "pen-inhand-left",
       "directions": 4
     },
@@ -53,6 +56,14 @@
     },
     {
       "name": "pen_centcom-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "pen_NTPD-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "pen_NTPD-inhand-right",
       "directions": 4
     }
   ]

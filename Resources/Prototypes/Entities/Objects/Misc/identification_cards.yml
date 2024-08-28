@@ -814,8 +814,56 @@
     jobIcon: JobIconAdmin
   - type: Access
     groups:
-    - AllAccess
+    - TrueAllAccess
     tags:
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+
+- type: entity
+  parent: IDCardStandard
+  id: IDCardNTPD
+  name: NTPD officer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: ntpd
+    - state: idcentcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: NTPD operative
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    groups:
+    - TrueAllAccess
+    tags:
+    - NTPD
+
+- type: entity
+  parent: IDCardStandard
+  id: MercIDCard
+  name: merc ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: Merc
+  - type: Access
+    tags:
+    - merc
+  - type: IdCard
+    jobTitle: Urban Solutions Guardsman
+
+- type: entity
+  parent: IDCardStandard
+  id: MercIDCardmeta
+  name: META ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: Merc
+  - type: Access
+    tags:
+    - meta
+  - type: IdCard
+    jobTitle: Urban Solutions Scenario Manager

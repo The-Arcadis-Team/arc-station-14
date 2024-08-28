@@ -1079,3 +1079,54 @@
       whitelist:
         components:
           - Cartridge
+
+- type: entity
+  parent: BasePDA
+  id: NTPDPDA
+  name: NTPD PDA
+  description: An NTPD PDA, now say that 5 times.
+  components:
+  - type: Pda
+    id: IDCardNTPD
+    state: pda-ntpd
+    penSlot:
+      startingItem: NTPDPen
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#00842e"
+  - type: Icon
+    state: pda-ntpd
+
+#Merc
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: MercPDA
+  name: Merc PDA
+  description: The only Urban Solution is your death.
+  components:
+  - type: Pda
+    id: MercIDCard
+    state: pda-merc
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Icon
+    state: pda-merc
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: MercPDAmeta
+  name: META PDA
+  description: The only Urban Solution is your death.
+  components:
+  - type: Pda
+    id: MercIDCardmeta
+    state: pda-merc
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Icon
+    state: pda-merc

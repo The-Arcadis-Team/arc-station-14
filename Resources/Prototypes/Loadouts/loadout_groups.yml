@@ -1275,6 +1275,17 @@
   - GreenBoxingGloves
   - YellowBoxingGloves
 
+- type: loadoutGroup
+  id: ruinedJumpsuit
+  name: loadout-group-ruined-jumpsuit
+  loadouts:
+  - ruinedJumpsuit1
+  - ruinedJumpsuit2
+  - ruinedJumpsuit3
+  - ruinedJumpsuit4
+  - ruinedJumpsuit5
+  - ruinedJumpsuit6
+
 # Other
 - type: loadoutGroup
   id: SurvivalSyndicate

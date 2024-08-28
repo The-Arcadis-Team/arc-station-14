@@ -200,6 +200,15 @@
       "name": "warden"
     },
     {
+      "name": "intern"
+    },
+    {
+      "name": "NTPDeva"
+    },
+    {
+      "name": "survivor"
+    },
+    {
       "name": "zookeeper"
     }
   ]

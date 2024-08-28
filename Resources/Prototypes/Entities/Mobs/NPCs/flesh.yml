@@ -57,6 +57,41 @@
 
 - type: entity
   parent: BaseMobFlesh
+  id: fleshrunner
+  name: flesh runner
+  description: when it walks you hear little ploshes.
+  components:
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 6
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: Runner
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: Runner
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      25: Dead
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    angle: 0
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+
+- type: entity
+  parent: BaseMobFlesh
   id: MobFleshJared
   components:
   - type: Sprite
@@ -322,6 +357,7 @@
         Base: clamp
       Critical:
         Base: dead
+
       Dead:
         Base: dead
   - type: MobThresholds
@@ -355,3 +391,120 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 2.5
+
+- type: entity
+  parent: BaseStructure
+  id: WeaponTurretflesh
+  name: flesh Hub
+  description: Its growing and oozing blood.
+  abstract: true
+  components:
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Actions
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.7
+          density: 50
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+    - type: Sprite
+      sprite: Mobs/Demons/fleshturret.rsi
+      noRot: true
+      layers:
+        - state: alive
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: alive
+        Dead:
+          Base: dead
+    - type: InteractionPopup
+      interactDelay: 1.0
+      successChance: 0.2
+      interactSuccessString: petting-success-flesh
+      interactFailureString: petting-failure-flesh
+      interactSuccessSound:
+        path: /Audio/Animals/snake_hiss.ogg
+    - type: CombatMode
+      toggleMouseRotator: false
+    - type: Damageable
+      damageContainer: Biological
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 2500
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Effects/gib1.ogg
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                FoodMeat:
+                  min: 4
+                  max: 7
+    - type: HitscanBatteryAmmoProvider
+      proto: Darklaser
+      fireCost: 100
+    - type: Battery
+      maxCharge: 1000
+      startingCharge: 1000
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 50
+    - type: Gun
+      fireRate: 0.75
+      useKey: false
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/Soul.ogg
+    - type: HTN
+      rootTask:
+        task: SimpleRangedHostileCompound
+      blackboard:
+        RotateSpeed: !type:Single
+          3.141
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/Misc/meatalert.ogg
+    - type: ReplacementAccent
+      accent: genericAggressive
+    - type: NpcFactionMember
+      factions:
+      - SimpleHostile
+    - type: InnateTool
+      tools:
+        - id: Weapondark
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        2400: Dead
+    - type: AnnounceOnSpawn
+      message: Flesh-hub-rise
+      sender: Flesh-hub-sender
+      sound:
+        path: /Audio/Misc/battlehorn.ogg
+      color: "#ba0000"
+
+- type: entity
+  name: flesh Hub
+  parent: WeaponTurretflesh
+  id: Mobmeathub
+  suffix: "flesh"
+  components:
+    - type: PyroclasticAnomaly
+    - type: TempAffectingAnomaly
+      tempChangePerSecond: 25
+      hotspotExposeTemperature: 1000
+    - type: GasProducerAnomaly
+      releasedGas: 3
+      releaseOnMaxSeverity: true
+      spawnRadius: 0

@@ -284,3 +284,16 @@
     stampState: "paper_stamp-greytide"
   - type: Sprite
     state: stamp-greytide
+
+- type: entity
+  name: NTPD rubber stamp
+  parent: RubberStampBase
+  id: RubberStampNTPD
+  suffix: NTPD
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-ntpd
+    stampedColor: "#003154"
+    stampState: "paper_stamp-NTPD"
+  - type: Sprite
+    state: stamp-ntpd

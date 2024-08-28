@@ -1,0 +1,65 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitruined
+  name: ruined uniform
+  description: All good things come to an end, even clothing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/ruined/ruinedpants.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/ruined/ruinedpants.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitruinedbar
+  name: ruined uniform
+  description: All good things come to an end, even clothing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/ruined/ruinedshirtbar.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/ruined/ruinedshirtbar.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitruinedblood
+  name: ruined uniform
+  description: All good things come to an end, even clothing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/ruined/ruinedshirtblood.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/ruined/ruinedshirtblood.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitruinedskirt
+  name: ruined uniform
+  description: All good things come to an end, even clothing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/ruined/ruinedskirt.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/ruined/ruinedskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitruinedskirtbar
+  name: ruined uniform
+  description: All good things come to an end, even clothing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/ruined/ruinedskirtbar.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/ruined/ruinedskirtbar.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitruinedskirtblood
+  name: ruined uniform
+  description: All good things come to an end, even clothing.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/ruined/ruinedskirtblood.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/ruined/ruinedskirtblood.rsi

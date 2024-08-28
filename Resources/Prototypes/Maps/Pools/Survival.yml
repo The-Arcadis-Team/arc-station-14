@@ -1,0 +1,4 @@
+- type: gameMapPool
+  id: survivalMapPool
+  maps:
+  - zombiesurvival

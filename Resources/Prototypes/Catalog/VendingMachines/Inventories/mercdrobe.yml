@@ -1,0 +1,16 @@
+- type: vendingMachineInventory
+  id: mercDrobeInventory
+  startingInventory:
+    ClothingBackpackMerc: 2
+    ClothingBeltMercWebbing: 3
+    ClothingHeadsetMerc: 2
+    ClothingEyesGlassesMercenary: 2
+    ClothingHandsMercGlovesCombat: 2
+    ClothingHandsGlovesMercFingerless: 2
+    ClothingHeadBandMerc: 2
+    ClothingHeadHatBeretMerc: 2
+    ClothingHeadHelmetMerc: 2
+    ClothingMaskGasMerc: 2
+    ClothingOuterVestWebMerc: 2
+    ClothingShoesBootsMerc: 2
+    ClothingUniformJumpsuitMercenary: 2

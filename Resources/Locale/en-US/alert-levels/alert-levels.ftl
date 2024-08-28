@@ -34,3 +34,7 @@ alert-level-delta-instructions = Crewmembers are advised to listen to heads of s
 alert-level-epsilon = Epsilon
 alert-level-epsilon-announcement = Central Command has ordered the Epsilon security level on the station. Consider all contracts terminated.
 alert-level-epsilon-instructions = Consider all contracts terminated.
+
+alert-level-ERROR = ERROR
+alert-level-ERROR-announcement = The NTPD has ordered the ERROR security level on the station. Consider yourself scrubbed from reality.
+alert-level-ERROR-instructions = Give up.

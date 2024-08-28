@@ -98,3 +98,20 @@
   - type: Cluwne
   - type: Speech
     speechVerb: Cluwne
+
+- type: entity
+  name: Mercenary
+  parent: BaseMobHuman
+  id: Mobmerc
+  components:
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Loadout
+      prototypes:
+        - modmercoutfit
+    - type: InputMover
+    - type: MobMover
+    - type: HTN
+      rootTask:
+        task: SimpleHumanoidHostileCompound

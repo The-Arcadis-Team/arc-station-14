@@ -123,3 +123,46 @@
   - type: Store
     balance:
       Telecrystal: 99999
+
+#NTPD
+- type: entity
+  parent: [ BaseItem, StorePresetUplinkNTPD ]
+  id: NTPDUplinkRadio
+  name: NTPD uplink
+  description: Suspiciously looking old radio...
+  suffix: Empty
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/communication.rsi
+      layers:
+        - state: old-radio
+    - type: Item
+      sprite: Objects/Devices/communication.rsi
+      heldPrefix: old-radio
+    - type: UserInterface
+      interfaces:
+        enum.StoreUiKey.Key:
+          type: StoreBoundUserInterface
+    - type: ActivatableUI
+      key: enum.StoreUiKey.Key
+    - type: Store
+      balance:
+        Telecrystal: 0
+
+- type: entity
+  parent: NTPDUplinkRadio
+  id: NTPDUplinkRadio50TC
+  suffix: 50 TC
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 50
+
+- type: entity
+  parent: NTPDUplinkRadio
+  id: NTPDUplinkRadio9999TC
+  suffix: debug TC
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 9999

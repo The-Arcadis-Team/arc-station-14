@@ -162,3 +162,22 @@
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+
+- type: entity
+  parent: DoorRemoteDefault
+  id: DoorRemoteNTPD
+  name: NTPD remote
+  suffix: NTPD
+  components:
+  - type: Sprite
+    layers:
+    - state: door_remotebase
+    - state: door_remotelightscolour
+      color: "#001C3F"
+    - state: door_remotescreencolour
+      color: "#001C3F"
+  - type: Access
+    groups:
+    - TrueAllAccess
+    tags:
+    - NTPD

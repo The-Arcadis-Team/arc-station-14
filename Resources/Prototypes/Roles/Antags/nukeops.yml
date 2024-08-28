@@ -104,3 +104,20 @@
   parent: SyndicateOperativeGearFull
   equipment:
     pocket2: BaseUplinkRadio60TC
+
+#Merc
+- type: startingGear
+  id: mercOperativeGearFull
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    back: ClothingBackpackMerc
+    mask: ClothingMaskGasMerc
+    ears: ClothingHeadsetMerc
+    gloves: ClothingHandsMercGlovesCombat
+    shoes: ClothingShoesBootsCombatFilled
+    id: MercPDA
+    pocket1: DoubleEmergencyOxygenTankFilled
+  storage:
+    back:
+    - WeaponPistolViper
+    - DeathAcidifierImplanter

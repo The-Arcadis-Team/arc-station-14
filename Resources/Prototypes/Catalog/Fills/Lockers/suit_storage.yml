@@ -274,3 +274,18 @@
         - id: OxygenTankFilled
         - id: ClothingOuterHardsuitWizard
         - id: ClothingMaskBreath
+
+- type: entity
+  id: SuitStorageEVANTPD
+  parent: SuitStorageBase
+  suffix: EVA, NTPD
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: ClothingOuterHardsuitNTPD
+        - id: ClothingMaskGasNTPD
+        - id: ClothingShoesBootsMagAdvNTPD
+        - id: NitrogenTankFilled
+  - type: AccessReader
+    access: [["NTPD"]]

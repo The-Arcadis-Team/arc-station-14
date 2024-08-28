@@ -377,3 +377,16 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen
+
+- type: entity
+  parent: BaseLightTube
+  name: almost broken light tube
+  id: ruinLightTube
+  description: A semi functional light fixture.
+  components:
+  - type: LightBulb
+    color: "#916a30" 
+    lightEnergy: 0.8
+    lightRadius: 6
+    lightSoftness: 1
+    PowerUse: 12

@@ -1,0 +1,136 @@
+- type: entity
+  name: meat Hunk
+  parent:
+  - BaseSimpleMob
+  - MobCombat
+  - MobBloodstream
+  id: BaseMobmeathunk
+  abstract: true
+  description: A flesh demon, aspect of the great meat.
+  components:
+    - type: GhostRole
+      allowMovement: true
+      makeSentient: true
+      name: ghost-role-information-Meathunk-name
+      description: ghost-role-information-Meathunk-description
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: RotationVisuals
+      defaultRotation: 90
+      horizontalRotation: 90
+    - type: HTN
+      rootTask:
+        task: SimpleRangedHostileCompound
+    - type: HitscanBatteryAmmoProvider
+      proto: Darklaser
+      fireCost: 62.5
+    - type: Battery
+      maxCharge: 1000
+      startingCharge: 1000
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 40
+    - type: Reflect
+      reflectProb: 0.7
+      reflects:
+      - Energy
+    - type: Gun
+      fireRate: 0.75
+      useKey: false
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/Soul.ogg
+    - type: NpcFactionMember
+      factions:
+        - SimpleHostile
+    - type: Speech
+      speechVerb: Cluwne
+    - type: CombatMode
+    - type: Tag
+      tags:
+        - CannotSuicide
+        - DoorBumpOpener
+        - FootstepSound
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepThud
+    - type: MobMover
+    - type: InputMover
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 1
+      baseSprintSpeed: 2.5
+      weightlessModifier: 1.5
+    - type: Sprite
+      sprite: Mobs/Demons/Meathunk.rsi
+      layers:
+        - map: [ "enum.DamageStateVisualLayers.Base" ]
+          state: alive
+    - type: DamageStateVisuals
+      states:
+        Alive:
+          Base: alive
+        Dead:
+          Base: dead
+    - type: MobState
+    - type: InnateTool
+      tools:
+        - id: Weapondark
+    - type: UserInterface
+      interfaces:
+        enum.StrippingUiKey.Key:
+          type: StrippableBoundUserInterface
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        450: Dead
+    - type: Metabolizer
+      solutionOnBody: false
+      updateInterval: 0.25
+      metabolizerTypes: [ Dragon ]
+      groups:
+        - id: Medicine
+        - id: Poison
+    - type: Butcherable
+      spawned:
+        - id: Weapondark
+          amount: 1
+    - type: MeleeWeapon
+      soundHit:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+      damage:
+        types:
+          Piercing: 10
+          Slash: 10
+          Structural: 70
+    - type: Input
+      context: "human"
+    - type: Bloodstream
+      bloodMaxVolume: 300
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.7
+          density: 301
+          mask:
+          - MobMask
+          layer:
+          - MobLayer
+
+- type: entity
+  name: meat Hunk
+  parent: BaseMobmeathunk
+  id: Mobmeathunk
+  suffix: "flesh"
+  components:
+    - type: PyroclasticAnomaly
+    - type: TempAffectingAnomaly
+      tempChangePerSecond: 25
+      hotspotExposeTemperature: 1000
+    - type: GasProducerAnomaly
+      releasedGas: 3
+      releaseOnMaxSeverity: true
+      spawnRadius: 0

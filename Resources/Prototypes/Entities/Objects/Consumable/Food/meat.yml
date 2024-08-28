@@ -2142,3 +2142,34 @@
   - type: Construction
     graph: XenoCutlet
     node: xeno cutlet
+    entries:
+      burger:
+        name: food-sequence-burger-content-xeno
+        sprite:
+          sprite: Objects/Consumable/Food/meat.rsi
+          state: xenocutlet-cooked
+
+- type: entity
+  name: raw void?
+  parent: FoodMeatBase
+  id: Foodvoid
+  description: null.
+  components:
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+    - Trash
+    - Recyclable
+  - type: Sprite
+    state: void
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: amnesticz
+          Quantity: 1
+        - ReagentId: GastroToxin
+          Quantity: 4
+        - ReagentId: Fat
+          Quantity: 4

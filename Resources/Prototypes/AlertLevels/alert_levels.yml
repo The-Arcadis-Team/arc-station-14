@@ -70,3 +70,15 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+    ERROR: #NTPD
+      announcement: alert-level-ERROR-announcement
+      selectable: false
+      sound:
+        path: /Audio/Misc/ntpd.ogg
+        params:
+          volume: -2
+      disableSelection: true
+      color: darkturquoise
+      emergencyLightColor: darkturquoise
+      forceEnableEmergencyLights: true
+      shuttleTime: 1500

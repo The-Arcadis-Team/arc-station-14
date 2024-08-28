@@ -41,3 +41,48 @@
           32:
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
+
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobNTPD
+  name: NTPD OP
+  abstract: true
+  components:
+  - type: Icon 
+    sprite: Mobs/Species/Human/parts.rsi
+    state: toweg
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobMETA
+  name: META
+  abstract: true
+  components:
+  - type: Icon 
+    sprite: Mobs/Species/Human/parts.rsi
+    state: meta
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobtoweg
+  name: The one whom whom games
+  abstract: true
+  components:
+  - type: Icon 
+    sprite: Mobs/Species/Human/parts.rsi
+    state: toweg
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout

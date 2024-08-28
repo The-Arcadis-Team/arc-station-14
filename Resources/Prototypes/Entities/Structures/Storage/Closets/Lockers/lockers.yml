@@ -461,3 +461,17 @@
     stateBaseClosed: hop
     stateDoorOpen: hop_open
     stateDoorClosed: representative_door
+
+#NTPD
+- type: entity
+  id: LockerNTPD
+  parent: LockerBaseSecure
+  name: NTPD locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: NTPD
+    stateDoorOpen: NTPD_open
+    stateDoorClosed: NTPD_door
+  - type: AccessReader
+    access: [["NTPD"]]

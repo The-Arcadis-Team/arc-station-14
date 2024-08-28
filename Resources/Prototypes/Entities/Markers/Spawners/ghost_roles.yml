@@ -167,3 +167,24 @@
     - state: green
     - sprite: Objects/Weapons/Melee/energykatana.rsi
       state: icon
+
+- type: entity
+  id: SpawnPointmerc2
+  name: ghost role spawn point
+  suffix: Merc
+  parent: MarkerBase
+  components:
+  - type: GhostRole
+    name: ghost-role-information-merc-name
+    description: ghost-role-information-merc-description
+    rules: You are a [color=red][bold]mercenary[/bold][/color] You can kill anyone in your way but NOT your target, make sure the target is taken and shipped.
+    raffle:
+      settings: short
+  - type: GhostRoleMobSpawner
+    prototype: RandomHumanoidSpawnerMerc
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+      - state: green
+      - sprite: Mobs/Species/Human/parts.rsi
+        state: merc
