@@ -2,7 +2,7 @@
   name: arcanenite
   parent: BaseItem
   id: arcaneniteraw
-  description: A uh... purple thing?
+  description: A uh... purple thing? You feel like you shouldn't eat it.
   components:
   - type: Sprite
     sprite: Objects/Specific/Arcanenite.rsi
