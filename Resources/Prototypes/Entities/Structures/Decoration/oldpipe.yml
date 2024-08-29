@@ -25,3 +25,16 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+
+- type: entity
+  id: oldpipe2
+  parent: oldpipe
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: Structures/Decoration/overhead.rsi
+    state: pipe2
+    drawdepth: OverMobs
+  - type: Icon
+    sprite: Structures/Decoration/overhead.rsi
+    state: pipe2

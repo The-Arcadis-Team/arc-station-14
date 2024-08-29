@@ -1141,7 +1141,7 @@
   components:
   - type: Pda
     id: IDCardtoweg
-    state: pda-ntpd
+    state: pda-game
     penSlot:
       startingItem: NTPDPen
       whitelist:
