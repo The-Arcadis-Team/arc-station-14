@@ -26,4 +26,4 @@
     key: enum.StoreUiKey.Key
   - type: Store
     balance:
-      Telecrystal: 50
+      Telecrystal: 20

@@ -8,7 +8,7 @@
       stationProto: StandardStationzombie
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_delta.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency_run.yml
         - type: StationNameSetup
           mapNameTemplate: "DIN station"
         - type: StationJobs

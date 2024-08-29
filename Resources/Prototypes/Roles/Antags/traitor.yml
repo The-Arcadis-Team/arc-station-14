@@ -85,11 +85,10 @@
   id: Towegoutfit
   equipment:
     jumpsuit: ClothingUniformJumpsuitNanotrasen
-    back: ClothingBackpackHoldingNTPD
     shoes: ClothingShoesBootsCombatFilled
     neck: ClothingNeckCloakToweg
     ears: ClothingHeadsetNTPD
-    id: NTPDPDA
+    id: gamerPDA
   storage:
     back:
     - BoxSurvivalSyndicate

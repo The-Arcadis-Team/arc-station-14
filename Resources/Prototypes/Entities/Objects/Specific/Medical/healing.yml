@@ -1020,7 +1020,7 @@
 #amnestics
 
 - type: entity
-  name: class A amnestic pill
+  name: class A pill
   parent: Pill
   id: PillclassA
   components:
@@ -1033,7 +1033,7 @@
               Quantity: 10
 
 - type: entity
-  name: class B amnestic syringe
+  name: class B syringe
   parent: PrefilledSyringe
   id: Syringeclassb
   components:
@@ -1046,7 +1046,7 @@
           Quantity: 15
 
 - type: entity
-  name: class D amnestic syringe
+  name: class D syringe
   parent: PrefilledSyringe
   id: Syringeclassd
   components:
@@ -1059,7 +1059,7 @@
           Quantity: 15
 
 - type: entity
-  name: class E amnestic syringe
+  name: class E syringe
   parent: PrefilledSyringe
   id: Syringeclasse
   components:
@@ -1072,7 +1072,7 @@
           Quantity: 15
 
 - type: entity
-  name: class G amnestic pill
+  name: class G pill
   parent: Pill
   id: Pillclassg
   components:
@@ -1085,7 +1085,7 @@
               Quantity: 10
 
 - type: entity
-  name: class H amnestic syringe
+  name: class H syringe
   parent: PrefilledSyringe
   id: Syringeclassh
   components:
@@ -1098,7 +1098,7 @@
           Quantity: 15
 
 - type: entity
-  name: class I amnestic syringe
+  name: class I syringe
   parent: PrefilledSyringe
   id: Syringeclassi
   components:
@@ -1111,7 +1111,7 @@
           Quantity: 15
 
 - type: entity
-  name: class I amnestic pill
+  name: class I pill
   parent: Pill
   id: Pillclassi
   components:
@@ -1124,7 +1124,7 @@
               Quantity: 10
 
 - type: entity
-  name: class W amnestic pill
+  name: class W pill
   parent: Pill
   id: PillclassW
   components:
@@ -1137,7 +1137,7 @@
               Quantity: 10
 
 - type: entity
-  name: class X amnestic syringe
+  name: class X syringe
   parent: PrefilledSyringe
   id: Syringeclassx
   components:
@@ -1150,7 +1150,7 @@
           Quantity: 15
 
 - type: entity
-  name: class Y amnestic syringe
+  name: class Y syringe
   parent: PrefilledSyringe
   id: Syringeclassy
   components:
@@ -1163,7 +1163,8 @@
           Quantity: 15
 
 - type: entity
-  name: class Z amnestic syringe [WARNING | DO NOT INJECT]
+  name: class Z syringe [WARNING | DO NOT INJECT]
+  description: "YOU WILL DIE. DO NOT INJECT!"
   parent: PrefilledSyringe
   id: Syringeclassz
   components:

@@ -1130,3 +1130,33 @@
     accentVColor: "#2a4b5b"
   - type: Icon
     state: pda-merc
+
+#Gamer
+
+- type: entity
+  parent: BasePDA
+  id: gamerPDA
+  name: game enjoyer PDA
+  description: Its a cool PDA used by me, The one whom enjoys games :)
+  components:
+  - type: Pda
+    id: IDCardtoweg
+    state: pda-ntpd
+    penSlot:
+      startingItem: NTPDPen
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#800813" # Its fun to mess around in the code of existence :) #Who put this here?
+  - type: Icon
+    state: pda-game
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    color: "#00FFFF"
+    radius: 2
+    energy: 1.5
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false

@@ -233,6 +233,9 @@
       "name": "pda-merc"
     },
     {
+      "name": "pda-game"
+    },
+    {
       "name": "equipped-IDCARD",
       "directions": 4
     }

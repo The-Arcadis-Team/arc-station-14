@@ -26,7 +26,7 @@
 
 - type: reagent
   id: amnestica
-  name: class A amnestic
+  name: reagent-name-amnestic-A
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -51,7 +51,7 @@
 
 - type: reagent
   id: amnesticb
-  name: class B amnestic
+  name: reagent-name-amnestic-B
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -76,7 +76,7 @@
 
 - type: reagent
   id: amnesticd
-  name: class D amnestic
+  name: reagent-name-amnestic-D
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -101,7 +101,7 @@
 
 - type: reagent
   id: amnestice
-  name: class E amnestic
+  name: reagent-name-amnestic-E
   parent: Baseamnestic
   desc: reagent-desc-amnestice
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -126,7 +126,7 @@
 
 - type: reagent
   id: amnesticg
-  name: class G amnestic
+  name: reagent-name-amnestic-G
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -151,7 +151,7 @@
 
 - type: reagent
   id: amnestich
-  name: class H amnestic
+  name: reagent-name-amnestic-H
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -176,7 +176,7 @@
 
 - type: reagent
   id: amnestici
-  name: class I amnestic
+  name: reagent-name-amnestic-I
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -201,7 +201,7 @@
 
 - type: reagent
   id: amnesticw
-  name: class W amnestic
+  name: reagent-name-amnestic-W
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -226,7 +226,7 @@
 
 - type: reagent
   id: amnesticx
-  name: class X amnestic
+  name: reagent-name-amnestic-X
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -251,7 +251,7 @@
 
 - type: reagent
   id: amnesticy
-  name: class Y amnestic
+  name: reagent-name-amnestic-Y
   parent: Baseamnestic
   desc: reagent-desc-Base-amnestic
   physicalDesc: reagent-physical-desc-strong-smelling
@@ -276,7 +276,7 @@
 
 - type: reagent
   id: amnesticz
-  name: class Z amnestic
+  name: reagent-name-amnestic-Z
   parent: Baseamnestic
   desc: reagent-desc-amnesticz
   physicalDesc: reagent-physical-desc-strong-smelling

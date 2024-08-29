@@ -867,3 +867,23 @@
     - meta
   - type: IdCard
     jobTitle: Urban Solutions Scenario Manager
+
+- type: entity
+  parent: IDCardStandard
+  id: IDCardtoweg
+  name: game enjoyer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: ntpd
+    - state: idcentcom
+  - type: Item
+    heldPrefix: blue
+  - type: IdCard
+    jobTitle: Game enjoyer
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    groups:
+    - TrueAllAccess
+    tags:
+    - NTPD
