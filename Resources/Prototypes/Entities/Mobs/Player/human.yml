@@ -106,16 +106,6 @@
 
 - type: entity
   save: false
-  name: The one whom enjoys games
-  parent: BaseMobtoweg
-  id: MobHumantoweg
-  suffix: Human, Base
-  components:
-    - type: Loadout
-      prototypes: [Towegoutfit]
-
-- type: entity
-  save: false
   name: META
   parent: BaseMobMETA
   id: MobHumanMETA

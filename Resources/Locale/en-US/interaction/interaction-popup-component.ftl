@@ -98,3 +98,5 @@ petting-failure-tesla = You reach out towards {THE($target)}, but {SUBJECT($targ
 
 petting-success-flesh = You uh... tap {THE($target)} on its skin?
 petting-failure-flesh = You reach out to pet {THE($target)}, but something tells you to not pet it.
+
+hugging-success-toweg = You hug me, thanks :)

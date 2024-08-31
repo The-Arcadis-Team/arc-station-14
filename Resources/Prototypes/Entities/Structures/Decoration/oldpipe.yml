@@ -38,3 +38,18 @@
   - type: Icon
     sprite: Structures/Decoration/overhead.rsi
     state: pipe2
+
+- type: entity
+  id: overheadpipe1
+  parent: oldpipe
+  name: overhead pipe
+  description: Its a pipe, but up.
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: Structures/Decoration/overhead.rsi
+    state: pipe3
+    drawdepth: OverMobs
+  - type: Icon
+    sprite: Structures/Decoration/overhead.rsi
+    state: pipe3
