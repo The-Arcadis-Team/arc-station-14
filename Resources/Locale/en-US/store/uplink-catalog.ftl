@@ -442,7 +442,6 @@ uplink-backpack-syndicate-desc = Lightweight explosion-proof a backpack for hold
 
 uplink-combat-bakery-name = Combat Bakery Kit
 uplink-combat-bakery-desc = A kit of clandestine baked weapons. Contains a baguette sword, a pair of throwing croissants, and a syndicate microwave board for making more. Once the job is done, eat the evidence.
-uplink-backpack-syndicate-desc = Lightweight explosion-proof а backpack for holding various traitor goods
 
 # Objectives
 uplink-core-extraction-toolbox-name = Core Extraction Toolbox
