@@ -887,3 +887,18 @@
     - TrueAllAccess
     tags:
     - NTPD
+
+- type: entity
+  parent: IDCardStandard
+  id: theDetectiveIDCard
+  name: the detectives ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: iddetective
+  - type: IdCard
+    jobTitle: The detecivte
+  - type: Access
+    groups:
+    - TrueAllAccess

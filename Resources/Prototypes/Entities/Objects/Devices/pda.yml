@@ -1160,3 +1160,19 @@
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
     netsync: false
+
+#TD
+
+- type: entity
+  parent: BasePDA
+  id: theDetectivePDA
+  name: detective PDA
+  description: Smells like rain... pouring down the rooftops...
+  components:
+  - type: Pda
+    id: theDetectiveIDCard
+    state: pda-detective
+  - type: PdaBorderColor
+    borderColor: "#774705"
+  - type: Icon
+    state: pda-detective

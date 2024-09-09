@@ -1,0 +1,29 @@
+- type: guideEntry
+  id: Factions
+  name: guide-entry-factions
+  text: "/ServerInfo/Guidebook/Faction/factions.xml"
+  children:
+  - Nanotereson
+  - syndicate
+  - urbansuluotions
+  - NTPD
+
+- type: guideEntry
+  id: Nanotereson
+  name: guide-entry-nano
+  text: "/ServerInfo/Guidebook/Faction/Nanotereson.xml"
+
+- type: guideEntry
+  id: syndicate
+  name: guide-entry-syndi
+  text: "/ServerInfo/Guidebook/Faction/Syndicate.xml"
+
+- type: guideEntry
+  id: urbansuluotions
+  name: guide-entry-urban
+  text: "/ServerInfo/Guidebook/Faction/Urbansulutions.xml"
+
+- type: guideEntry
+  id: NTPD
+  name: guide-entry-NTPD
+  text: "/ServerInfo/Guidebook/Faction/NTPD.xml"

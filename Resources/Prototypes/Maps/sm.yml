@@ -13,4 +13,6 @@
           mapNameTemplate: "DIN station"
         - type: StationJobs
           availableJobs:
-            survivor: [ -1, -1 ]
+            StationEngineer: [ 2, 2 ]
+            MedicalDoctor: [ 2, 2 ]
+            Passenger: [ -1, -1 ]

@@ -477,3 +477,23 @@
     sprite: Clothing/OuterClothing/Coats/NTPD-Engi.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/NTPD-Engi.rsi
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatoldRobo
+  name: old roboticist lab coat
+  description: Looks like it has been through thousands of years of action.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/labcoat_robo_det.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/labcoat_robo_det.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 1
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatoldRobo]
+  id: ClothingOuterCoatoldRoboOpened
+  name: old roboticist lab coat

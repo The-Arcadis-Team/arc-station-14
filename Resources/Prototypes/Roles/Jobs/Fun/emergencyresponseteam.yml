@@ -469,4 +469,7 @@
     ears: ClothingHeadsetNTPD
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponNTPDPulsePistol
-    pocket2: FlashlightSeclite
+    pocket2: NTPDHypospray
+  storage:
+    back:
+    - NTPDHypospray

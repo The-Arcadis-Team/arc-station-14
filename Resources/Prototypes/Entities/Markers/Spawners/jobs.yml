@@ -607,17 +607,3 @@
     layers:
       - state: green
       - state: zookeeper
-
-# survivor
-
-- type: entity
-  id: SpawnPointsurvivor
-  parent: SpawnPointJobBase
-  name: survivor
-  components:
-  - type: SpawnPoint
-    job_id: survivor
-  - type: Sprite
-    layers:
-      - state: green
-      - state: survivor

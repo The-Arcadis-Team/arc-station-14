@@ -1,0 +1,12 @@
+<Document>
+  # NANOTERESON
+
+  Nanotereson is the faction you work for and are the faction you will fight for.
+
+  <Box>
+    <GuideEntityEmbed Entity="NTFlag"/>
+  </Box>
+
+  You work for a company called Nanotereson, your job is simple. Keep the station running. 
+  The department you work for will change this, security keeps the peace, engineering keeps the lights on, and cargo keeps every other department running.
+</Document>

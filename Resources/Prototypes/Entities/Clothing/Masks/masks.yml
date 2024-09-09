@@ -706,3 +706,30 @@
     modifiers:
       coefficients:
         Heat: 0.80
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskPlaguedet
+  name: creepy plague doctor mask
+  description: A true bad omen.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/TDplaguedoctormask.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/TDplaguedoctormask.rsi
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskbandage
+  name: bandage
+  description: A sad reminder of what happened.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Misc/bandage.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Misc/bandage.rsi

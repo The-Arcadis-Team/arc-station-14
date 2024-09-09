@@ -1,0 +1,96 @@
+# Entities
+- type: entity
+  id: FultonBeaconadmin
+  parent: BaseFoldable
+  name: super fulton beacon
+  description: Beacon to receive supplys.
+  components:
+    - type: Physics
+      bodyType: Dynamic
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.4,0.25,0.1"
+          density: 20
+          mask:
+            - Impassable
+    - type: Item
+      size: Normal
+    - type: Foldable
+      folded: true
+    - type: Clickable
+    - type: InteractionOutline
+    - type: FultonBeacon
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.FoldedVisuals.State:
+          foldedLayer:
+            True: { state: folded_extraction }
+            False: { state: extraction_point }
+    - type: Sprite
+      sprite: Objects/Tools/adminfulton.rsi
+      drawdepth: SmallObjects
+      noRot: true
+      layers:
+        - state: extraction_point
+          map: [ "foldedLayer" ]
+
+- type: entity
+  id: Fultonadmin
+  parent: BaseItem
+  suffix: Full
+  name: super fulton
+  description: Used to extract containers, items, or forcibly recruit people into your base of operations.
+  components:
+  - type: Fulton
+  - type: Item
+    size: Normal
+  - type: Stack
+    stackType: Fulton
+    count: 10
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Objects/Tools/adminfulton.rsi
+    state: extraction_pack
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  id: Fulton1admin
+  parent: Fultonadmin
+  name: super fulton
+  suffix: One
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  id: FultonEffectadmin
+  categories: [ HideSpawnMenu ]
+  name: fulton effect
+  components:
+  - type: TimedDespawn
+    lifetime: 60
+  - type: Sprite
+    drawdepth: Effects
+    noRot: true
+    offset: 0,0.5
+    layers:
+      - map: [ "enum.FultonVisualLayers.Base" ]
+        sprite: Objects/Tools/fulton_balloon.rsi
+        state: fulton_balloon
+  - type: Tag
+    tags:
+      - HideContextMenu
+  - type: AnimationPlayer

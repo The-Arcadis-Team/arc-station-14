@@ -2201,7 +2201,7 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachinemercDrobe
-  name: UrbanDrobe™️
+  name: UrbanDrobe
   description: Only the best from Urban Solutions!
   components:
   - type: VendingMachine

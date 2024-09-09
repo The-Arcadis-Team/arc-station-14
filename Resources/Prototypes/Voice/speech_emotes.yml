@@ -401,3 +401,21 @@
     - pings
     - pinged
     - pinging
+
+# det
+
+- type: emote
+  id: hat_tip
+  name: chat-emote-name-hat-tip
+  category: Hands
+  available: false
+  icon: Interface/Emotes/hat_tip.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-hat-tip"]
+  chatTriggers:
+    - storageRustle

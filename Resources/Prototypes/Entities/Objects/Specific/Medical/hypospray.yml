@@ -451,3 +451,34 @@
     - id: Hypopen
     sound:
       path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: NTPD hypospray
+  parent: BaseItem
+  description: A sterile injector for rapid administration of drugs to "patients".
+  id: NTPDHypospray
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/ntpdhypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: Objects/Specific/Medical/ntpdhypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 500
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 1
+  - type: StaticPrice
+    price: 5000
+  - type: Tag
+    tags:
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: Hypospray

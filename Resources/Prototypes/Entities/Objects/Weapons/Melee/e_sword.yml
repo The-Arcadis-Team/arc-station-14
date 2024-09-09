@@ -1,5 +1,5 @@
 - type: entity
-  id: BaseMeleeWeaponEnergy # more generic naming in case someone makes like, idk, an energy axe
+  id: BaseMeleeWeaponEnergy
   parent: BaseItem
   abstract: true
   components:

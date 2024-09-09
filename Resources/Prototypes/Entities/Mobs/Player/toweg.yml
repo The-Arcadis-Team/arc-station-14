@@ -67,7 +67,7 @@
     damageOverlayGroups:
       Brute:
         sprite: Mobs/Effects/brute_damage.rsi
-        color: "#FF0000"
+        color: "#300061"
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
   - type: GenericVisualizer
@@ -290,11 +290,6 @@
       groups:
         Brute: -0.1
   - type: Perishable
-  - type: Butcherable
-    butcheringType: Spike # TODO human.
-    spawned:
-      - id: FoodMeat
-        amount: 5
   - type: FireVisuals
     alternateState: Standing
   - type: Strippable
@@ -310,3 +305,12 @@
   components:
     - type: Loadout
       prototypes: [Towegoutfit]
+
+- type: startingGear
+  id: Towegoutfit
+  equipment:
+    id: gamerPDA
+    shoes: ClothingShoesBootsCombatFilled
+    jumpsuit: ClothingUniformJumpsuitNanotrasen
+    ears: ClothingHeadsetNTPD
+    neck: ClothingNeckCloakToweg

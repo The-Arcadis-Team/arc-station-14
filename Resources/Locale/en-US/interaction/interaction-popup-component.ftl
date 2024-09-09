@@ -100,3 +100,4 @@ petting-success-flesh = You uh... tap {THE($target)} on its skin?
 petting-failure-flesh = You reach out to pet {THE($target)}, but something tells you to not pet it.
 
 hugging-success-toweg = You hug me, thanks :)
+hugging-success-gib = You got close enough to hug the gib monster.

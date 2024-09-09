@@ -466,7 +466,6 @@
     mustBeEquippedToUse: true
   - type: Fiber
     fiberMaterial: fibers-leather
-    fiberColor: fibers-blue
   - type: FingerprintMask
   - type: MeleeSpeech
   - type: ActivatableUI
@@ -512,3 +511,35 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-purple
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsroboticarm
+  name: combat robo arm
+  description: A robotic arm.
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Combat_robo_arm.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/Combat_robo_arm.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.5
+        Blunt: 0.5
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+       Blunt: 8
+       Slash: 8
+       Structural: 15
+    soundHit:
+      collection: metal
+    animation: WeaponArcFist
+    mustBeEquippedToUse: true
+  - type: Unremoveable
+    deleteOnDrop: true

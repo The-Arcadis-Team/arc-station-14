@@ -137,3 +137,9 @@ guide-entry-rules-ban-durations = Ban Durations
 
 guide-entry-writing = Writing
 guide-entry-glossary = Glossary
+
+guide-entry-factions = Factions
+guide-entry-nano = Nanotereson
+guide-entry-syndi = Syndicate
+guide-entry-urban = Urban Sulutions
+guide-entry-NTPD = NTPD
