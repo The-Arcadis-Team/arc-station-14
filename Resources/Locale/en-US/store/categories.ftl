@@ -14,6 +14,7 @@ store-category-wearables = Wearables
 store-category-pointless = Pointless
 store-category-foodwater = Food and water
 store-category-mats = Materials
+store-category-objectives = Objectives
 
 # Revenant
 store-category-abilities = Abilities
