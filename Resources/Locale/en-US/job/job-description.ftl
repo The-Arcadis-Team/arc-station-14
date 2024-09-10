@@ -47,5 +47,4 @@ job-description-station-ai = Follow your laws, serve the crew.
 job-description-visitor = Enjoy your visit to the station.
 job-description-warden = Patrol the security department, ensure that no one is stealing from the armory, and make sure that all prisoners are processed and let out when their time is up.
 job-description-zookeeper = Put on a joyful display of cute animals and space carps for all the crew to see. Currently available on Oasis.
-job-description-zookeeper = Put on a joyful display of cute animals and space carps for all the crew to see. Currently available on Gemini Station.
 job-description-survivor = Survive hell on station as waves of flesh monsters try to kill you.

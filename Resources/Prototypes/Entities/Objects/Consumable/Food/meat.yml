@@ -2175,42 +2175,6 @@
     node: spider cutlet
 
 - type: entity
-  name: xeno cutlet
-  parent: FoodMeatBase
-  id: FoodMeatXenoCutletCooked
-  description: A cutlet of cooked xeno, dripping with... tastiness?
-  components:
-  - type: Tag
-    tags:
-    - Cooked
-    - Cutlet
-    - Meat
-  - type: Sprite
-    state: xenocutlet-cooked
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 1
-        - ReagentId: Protein
-          Quantity: 1
-  - type: FoodSequenceElement
-    sprite:
-      sprite: Objects/Consumable/Food/meat.rsi
-      state: xenocutlet-cooked
-    entries:
-      burger:
-        name: food-sequence-content-xeno
-  - type: Construction
-    graph: XenoCutlet
-    node: xeno cutlet
-  - type: FoodSequenceElement
-    entries:
-      Burger: XenoCutlet
-      Taco: XenoCutlet
-
-- type: entity
   name: raw void?
   parent: FoodMeatBase
   id: Foodvoid
