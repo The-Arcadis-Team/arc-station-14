@@ -1672,13 +1672,6 @@
     entries:
       Burger: XenoCutlet
       Taco: XenoCutlet
-    node: xeno cutlet
-    entries:
-      burger:
-        name: food-sequence-burger-content-xeno
-        sprite:
-          sprite: Objects/Consumable/Food/meat.rsi
-          state: xenocutlet-cooked
 
 - type: entity
   name: raw void?
