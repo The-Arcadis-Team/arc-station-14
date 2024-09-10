@@ -30,8 +30,8 @@
   - ClothingShoesBootsSecFilled
 
 - type: entity
-  parent: ClothingShoesBootsMerc
   id: ClothingShoesBootsMercFilled
+  parent: ClothingShoesBootsMerc
   suffix: Filled
   components:
   - type: ContainerFill

@@ -99,10 +99,6 @@
   id: RevenantAbilities
   name: store-category-abilities
 
-- type: storeCategory
-  id: DiscountedItems
-  name: store-discounted-items
-  priority: 200
 #NTPD
 - type: storeCategory
   id: UplinkWeaponryntpd
