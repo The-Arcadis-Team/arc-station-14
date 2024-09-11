@@ -1,0 +1,21 @@
+- type: gameMap
+  id: smSaltern
+  mapName: 'Saltern'
+  mapPath: /Maps/Survival/sm-saltern.yml
+  minPlayers: 0
+  maxPlayers: 35
+  fallback: true
+  stations:
+    smSaltern:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Saltern {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            MedicalDoctor: [ 2, 2 ]
+            SecurityOfficer: [ 2, 2 ]
+            Passenger: [ -1, -1 ]
