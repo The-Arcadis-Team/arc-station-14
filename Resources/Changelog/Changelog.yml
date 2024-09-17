@@ -3880,3 +3880,127 @@
   id: 7374
   time: '2024-09-14T17:19:32.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/32070
+- author: lzk228
+  changes:
+  - message: Command intercom now reinforced the same way as the security one.
+    type: Tweak
+  id: 7375
+  time: '2024-09-14T20:40:38.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32169
+- author: de0rix
+  changes:
+  - message: Animals in critical state now all have proper sprites.
+    type: Fix
+  id: 7376
+  time: '2024-09-15T01:53:58.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32175
+- author: notafet
+  changes:
+  - message: Pressure and volume pumps now require power to operate.
+    type: Tweak
+  id: 7377
+  time: '2024-09-15T01:58:10.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/28995
+- author: deltanedas
+  changes:
+  - message: Holoparasites can no longer be summoned from inside containers.
+    type: Tweak
+  id: 7378
+  time: '2024-09-15T19:04:32.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32068
+- author: BackeTako
+  changes:
+  - message: Added French and Spanish speech traits.
+    type: Add
+  id: 7379
+  time: '2024-09-15T20:03:15.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/30966
+- author: Plykiya
+  changes:
+  - message: Meteors break through less walls now.
+    type: Tweak
+  id: 7380
+  time: '2024-09-15T20:04:37.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32109
+- author: drakewill-CRL
+  changes:
+  - message: Produce harvested from sentient plants are no longer sentient themselves.
+    type: Fix
+  id: 7381
+  time: '2024-09-16T00:04:45.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32192
+- author: DrSmugleaf
+  changes:
+  - message: Fixed examine sometimes flickering and closing until you examine something
+      around you.
+    type: Fix
+  id: 7382
+  time: '2024-09-16T08:51:54.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32205
+- author: ArtisticRoomba
+  changes:
+  - message: The Bruise-O-Mat alcohol vendor has been added to the nukie outpost,
+      for all your pre-op drinking needs. Seems to have developed a witty personality,
+      too...
+    type: Add
+  id: 7383
+  time: '2024-09-16T08:59:00.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32107
+- author: ArtisticRoomba
+  changes:
+  - message: The binary translator key in the syndie uplink is now correctly marked
+      as syndicate contraband.
+    type: Tweak
+  id: 7384
+  time: '2024-09-16T10:01:49.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32193
+- author: MissKay1994
+  changes:
+  - message: Lizards are now poisoned by hot chocolate
+    type: Fix
+  id: 7385
+  time: '2024-09-16T12:45:15.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32147
+- author: Alice Liddel
+  changes:
+  - message: Crayon charges increased from 15 to 25
+    type: Add
+  id: 7386
+  time: '2024-09-17T00:35:57.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32061
+- author: TheShuEd
+  changes:
+  - message: Anomalous infections added! People can now be infected by anomalies!
+      This allows you to use abnormal abilities, but can easily kill the host. To
+      cure them, bombard them with containment particles, because if the anomaly inside
+      them explodes, their bodies will be gibbed....
+    type: Add
+  - message: Flesh anomaly resprite
+    type: Tweak
+  - message: anomalies now disconnect from the anomaly synchronizer if they are too
+      far away from it.
+    type: Fix
+  id: 7387
+  time: '2024-09-17T09:49:19.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31876
+- author: TheShuEd
+  changes:
+  - message: fix Tech anomaly loud sounds and superfast flickering
+    type: Fix
+  id: 7388
+  time: '2024-09-17T16:05:38.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32245
+- author: drakewill-CRL
+  changes:
+  - message: Fixed plant mutations carrying over to other plants and future rounds.
+    type: Fix
+  id: 7389
+  time: '2024-09-17T19:45:42.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/32257
+- author: Moomoobeef
+  changes:
+  - message: Added more names to the pool of names the AI can have.
+    type: Add
+  id: 7390
+  time: '2024-09-17T22:09:55.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/31951
