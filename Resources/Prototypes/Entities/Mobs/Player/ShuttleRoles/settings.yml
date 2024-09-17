@@ -426,7 +426,7 @@
     - type: RandomMetadata
       nameSegments:
       - names_clown
-      
+
 - type: randomHumanoidSettings
   id: VisitorJanitor
   parent: VisitorCivilian
@@ -538,15 +538,6 @@
     - type: Loadout
       prototypes: [ VisitorZookeeper, VisitorZookeeperAlt ]
       roleLoadout: [ RoleSurvivalStandard ]
-
-- type: randomHumanoidSettings
-  id: ClownTroupeBanana
-  parent: VisitorClown
-  randomizeName: false
-  components:
-    - type: Loadout
-      prototypes: [ BananaClown ]
-      roleLoadout: [ RoleSurvivalClown ]
 
 # Misc
 

@@ -481,14 +481,6 @@
 
 # Misc
 
-- type: entity
-  id: RandomHumanoidClownTroupeBanana
-  name: banana clown troupe
-  parent: RandomHumanoidVisitorClown
-  components:
-    - type: RandomHumanoidSpawner
-      settings: ClownTroupeBanana
-
 ### Visitors missing equipment for challenges
 
 # Command
