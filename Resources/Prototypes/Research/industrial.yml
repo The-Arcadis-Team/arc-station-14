@@ -150,6 +150,8 @@
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
   - HolofanProjector
+  technologyPrerequisites:
+  - AtmosphericTech
 
 - type: technology
   id: AdvancedToolsTechnology

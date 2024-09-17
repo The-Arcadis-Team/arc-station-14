@@ -65,7 +65,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     head: ClothingHeadHelmetSwatSyndicate
-    mask: ClothingMaskGas
+    mask: ClothingMaskGasSyndicate
     outerClothing: ClothingOuterArmorBasic
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpack
@@ -78,9 +78,29 @@
 # Syndicate Footsoldier Gear
 - type: startingGear
   id: SyndicateFootsoldierGear
-  parent: SyndicateFootsoldierGearRuin
+  parent: SyndicateOperativeGearCivilian
   equipment:
-    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterArmorBasic
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpack
+    shoes: ClothingShoesBootsCombatFilled
+  storage:
+    back:
+    - BoxSurvivalSyndicate
+
+- type: startingGear
+  id: SyndicateFootsoldierTeamLeaderGear
+  parent: SyndicateFootsoldierGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    head: ClothingHeadHatOutlawHat
+    outerClothing: ClothingOuterArmorBasicSlim
+    back: ClothingBackpackSatchel
+    pocket1: BaseUplinkRadio25TC
+    pocket2: EnergySword
 
 # Nanotrasen Paramilitary Unit Gear
 - type: startingGear
@@ -203,7 +223,7 @@
 - type: startingGear
   id: BananaClown
   equipment:
-    id: ClownPDA
+    id: VisitorPDA
     back: ClothingBackpackClown
     shoes: ClothingShoesClownBanana
     jumpsuit: ClothingUniformJumpsuitClownBanana

@@ -36,17 +36,16 @@ public sealed class FoodSequenceSystem : SharedFoodSequenceSystem
 
     private bool TryAddFoodElement(Entity<FoodSequenceStartPointComponent> start, Entity<FoodSequenceElementComponent> element, EntityUid? user = null)
     {
-        FoodSequenceElementEntry? elementData = null;
-        foreach (var entry in element.Comp.Entries)
-        {
-            if (entry.Key == start.Comp.Key)
-            {
-                elementData = entry.Value;
-                break;
-            }
-        }
+        // we can't add a live mouse to a burger.
+        if (!TryComp<FoodComponent>(element, out var elementFood))
+            return false;
+        if (elementFood.RequireDead && _mobState.IsAlive(element))
+            return false;
 
-        if (elementData is null)
+        //looking for a suitable FoodSequence prototype
+        if (!element.Comp.Entries.TryGetValue(start.Comp.Key, out var elementProto))
+            return false;
+        if (!_proto.TryIndex(elementProto, out var elementIndexed))
             return false;
 
         if (TryComp<FoodComponent>(element, out var elementFood) && elementFood.RequireDead)
@@ -66,10 +65,15 @@ public sealed class FoodSequenceSystem : SharedFoodSequenceSystem
         //If no specific sprites are specified, standard sprites will be used.
         if (elementData.Sprite is null && element.Comp.Sprite is not null)
             elementData.Sprite = element.Comp.Sprite;
-
-        elementData.LocalOffset = new Vector2(
-            _random.NextFloat(start.Comp.MinLayerOffset.X,start.Comp.MaxLayerOffset.X),
-            _random.NextFloat(start.Comp.MinLayerOffset.Y,start.Comp.MaxLayerOffset.Y));
+        //Generate new visual layer
+        var flip = start.Comp.AllowHorizontalFlip && _random.Prob(0.5f);
+        var layer = new FoodSequenceVisualLayer(elementIndexed,
+            _random.Pick(elementIndexed.Sprites),
+            new Vector2(flip ? -elementIndexed.Scale.X : elementIndexed.Scale.X, elementIndexed.Scale.Y),
+            new Vector2(
+                _random.NextFloat(start.Comp.MinLayerOffset.X, start.Comp.MaxLayerOffset.X),
+                _random.NextFloat(start.Comp.MinLayerOffset.Y, start.Comp.MaxLayerOffset.Y))
+        );
 
         start.Comp.FoodLayers.Add(elementData);
         Dirty(start);

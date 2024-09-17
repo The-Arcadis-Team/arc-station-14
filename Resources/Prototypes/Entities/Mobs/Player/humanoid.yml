@@ -160,6 +160,7 @@
   id: ERTChaplain
   parent: ERTLeader
   components:
+    - type: BibleUser
     - type: GhostRole
       name: ghost-role-information-ert-chaplain-name
       description: ghost-role-information-ert-chaplain-description
@@ -174,7 +175,6 @@
     - type: Loadout
       prototypes: [ ERTChaplainGear ]
       roleLoadout: [ RoleSurvivalExtended ]
-    - type: BibleUser
 
 - type: entity
   id: RandomHumanoidSpawnerERTChaplainEVA
