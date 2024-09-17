@@ -1,0 +1,28 @@
+- type: entity
+  parent: BaseSword
+  id: strangestick
+  abstract: false
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/strangestick.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: Objects/Weapons/Melee/strangestick.rsi
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 5
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/strangestick.rsi
+    slots:
+    - Back
+    - Belt
+  - type: EnergyKatana
+  - type: DashAbility
+  - type: LimitedCharges
+    maxCharges: 100
+    charges: 100
+  - type: AutoRecharge
+    rechargeDuration: 5

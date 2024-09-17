@@ -28,7 +28,6 @@
           closed: ""
           ajar: ""
           open: ""
-          cutie: ""
   - type: Damageable
   - type: Destructible
     thresholds:

@@ -1279,3 +1279,24 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsmerc ]
+
+#ICA
+
+- type: entity
+  parent: AirlockICA
+  id: AirlockICALocked
+  suffix: Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsICA ]
+
+- type: entity
+  parent: AirlockICAGlass
+  id: AirlockICAGlassLocked
+  suffix: Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsICA  ]
+

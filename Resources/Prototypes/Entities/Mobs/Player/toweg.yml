@@ -295,6 +295,7 @@
   - type: Strippable
   - type: Inventory
   - type: InventorySlots
+  - type: SpaceNinja
 
 - type: entity
   save: false
@@ -314,3 +315,4 @@
     jumpsuit: ClothingUniformJumpsuitNanotrasen
     ears: ClothingHeadsetNTPD
     neck: ClothingNeckCloakToweg
+    belt: strangestick

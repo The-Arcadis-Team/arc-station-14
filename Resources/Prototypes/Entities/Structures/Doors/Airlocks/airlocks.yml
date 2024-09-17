@@ -326,3 +326,30 @@
     securityLevel: medSecurity
   - type: Wires
     layoutId: AirlockSecurity
+
+#ICA
+
+- type: entity
+  parent: Airlock
+  id: AirlockICA
+  suffix: ICA
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/ICA.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockICAGlass
+  suffix: ICA
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/ICA.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockSecurity
+

@@ -80,3 +80,15 @@
     sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
   - type: Clothing
     sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
+
+#Urban enviro kit
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmeturban
+  name: Urban Solutions Envirosuit Kit helment
+  description: The main component of the Urban Solutions Envirokit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/envirokit.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/envirokit.rsi

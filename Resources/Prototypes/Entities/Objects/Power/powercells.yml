@@ -391,3 +391,26 @@
       visible: false
   - type: Battery
     startingCharge: 0
+
+#arc
+
+- type: entity
+  parent: BasePowerCell
+  id: PowerCellarc
+  name: arcanite power cell
+  description: A power cell, made from the mysterious element called arcanite.
+  suffix: Full
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: arcanitebattery
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5 
