@@ -296,7 +296,7 @@
   parent: GrenadeBase
   id: ClusterBangnuke
   name: clusternuke
-  description: Launches three mini nukes after the timer runs out, In short, your dead.
+  description: Launches three mini nukes after the timer runs out, In short, you're dead.
   suffix: Full
   components:
   - type: Sprite

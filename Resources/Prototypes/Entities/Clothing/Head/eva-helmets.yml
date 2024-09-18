@@ -80,3 +80,30 @@
     sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
   - type: Clothing
     sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
+
+#Urban enviro kit
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmeturban
+  name: Urban Solutions Envirosuit Kit helment
+  description: The main component of the Urban Solutions Envirokit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/envirokit.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/envirokit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.01
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      volume: 1
+      moles:
+        - 1.025689525 # oxygen
+      temperature: 293.15

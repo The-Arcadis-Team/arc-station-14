@@ -90,3 +90,33 @@
     sprite: Clothing/OuterClothing/Vests/tankharness.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/tankharness.rsi
+
+#Eviro vest
+
+- type: entity
+  parent: [ClothingOuterVestWeb, BaseMinorContraband] 
+  id: ClothingOuterVestWebenviro
+  name: Urban Solutions Envirosuit Kit
+  description: The main component of the Urban Solutions Envirosuit. For full protection, you should equip the accompanying jumpsuit.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Vests/Envirokitvest.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Vests/Envirokitvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7 
+        Slash: 0.7
+        Piercing: 0.5
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmeturban
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000

@@ -1325,10 +1325,30 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitcentcomintern
-  name: Centcom intern jumpsuit
+  name: centcom intern jumpsuit
   description: It's a green jumpsuit of your bosses boss's intern.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/centcom_intern.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/centcom_intern.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseMajorContraband]
+  id: ClothingUniformJumpsuiturban
+  name: Urban Solutions Envirosuit
+  description: A highly advanced suit used by Urban Solutions contractors that permits its wearer partial EVA protection for low-weight space operations. For full protection, you should equip the accompanying EVA kit.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/envirosuit.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/envirosuit.rsi
+  - type: TemperatureProtection
+    coefficient: 0.01
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Tag
+    tags:
+    - SuitEVA
+    - Hardsuit

@@ -197,6 +197,14 @@
   components:
   - type: Sprite
     sprite: Clothing/Neck/Cloaks/void.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodVoidCloak
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
   - type: TypingIndicatorClothing
     proto: alien
 
@@ -273,10 +281,38 @@
     sprite: Clothing/Neck/Cloaks/pan.rsi
 
 - type: entity
-  parent: ClothingNeckBase
+  parent: [ClothingNeckBase, BaseToggleClothing]
   id: ClothingNeckCloakToweg
   name: The one whom enjoys game's cloak
   description: It's nothingness.
   components:
   - type: Sprite
     sprite: Clothing/Neck/Cloaks/Toweg.rsi
+  - type: ToggleClothing
+    action: ActionTogglePhaseCloak
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      minVisibility: 0.01
+      lastVisibility: 0.01
+  - type: PowerCellDraw
+    drawRate: 0.1
+  - type: ToggleCellDraw
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: false
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellarc
+        disableEject: true
+  - type: AllowSuitStorage
+  - type: NinjaSuit
+  - type: UseDelay
+    delay: 2
+  - type: Unremoveable
