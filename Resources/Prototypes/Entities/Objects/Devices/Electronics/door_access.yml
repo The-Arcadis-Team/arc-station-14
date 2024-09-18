@@ -329,8 +329,8 @@
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsICA
-  suffix: ICA, Locked
+  id: DoorElectronicsITA
+  suffix: ITA, Locked
   components:
   - type: AccessReader
-    access: [["ICA"]]
+    access: [["ITA"]]

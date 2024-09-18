@@ -327,15 +327,15 @@
   - type: Wires
     layoutId: AirlockSecurity
 
-#ICA
+#ITA
 
 - type: entity
   parent: Airlock
-  id: AirlockICA
-  suffix: ICA
+  id: AirlockITA
+  suffix: ITA
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/ICA.rsi
+    sprite: Structures/Doors/Airlocks/Standard/ITA.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
@@ -343,11 +343,11 @@
 
 - type: entity
   parent: AirlockGlass
-  id: AirlockICAGlass
-  suffix: ICA
+  id: AirlockITAGlass
+  suffix: ITA
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/ICA.rsi
+    sprite: Structures/Doors/Airlocks/Glass/ITA.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
   - type: Wires
