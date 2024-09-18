@@ -270,7 +270,7 @@
   parent: [ClothingEyesBase, ShowMedicalIcons]
   id: ClothingEyesGlassesMedical
   name: medical glasses
-  description: sunglasses that provide flash immunity and a vital monitoring of organic person.
+  description: Upgraded sunglasses that provide flash immunity and a medical HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/medglasses.rsi
@@ -289,7 +289,7 @@
   parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityCommandContraband]
   id: ClothingEyesGlassesMedSec
   name: medsec glasses
-  description: Upgraded sunglasses that provide flash immunity and also both medical scan and background check of the people around the user.
+  description: Upgraded sunglasses that provide flash immunity and provide both medical HUD and security HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/medsecglasses.rsi
@@ -308,7 +308,7 @@
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityCommandContraband]
   id: ClothingEyesGlassesCR
   name: specialize NT glasses
-  description: A special sunglasses that protect user rentina from sudden flashing or sparking light and provide information regarding both structural and organic status. It also connected to "NT Security Server" for background check of nearby people.
+  description: A specially made sunglasses that provide flash immunity and eye protection. It also come with with medical HUD, security HUD and diagnostic HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/crglasses.rsi
