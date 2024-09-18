@@ -402,7 +402,6 @@
 
 - type: entity
   parent: [ ClothingHeadHelmetBase, BaseMinorContraband ]
-  parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetPodWars
   name: ironclad II helmet
   description: An ironclad II helmet, a relic of the pod wars.
