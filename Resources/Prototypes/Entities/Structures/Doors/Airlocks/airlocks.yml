@@ -326,3 +326,30 @@
     securityLevel: medSecurity
   - type: Wires
     layoutId: AirlockSecurity
+
+#ITA
+
+- type: entity
+  parent: Airlock
+  id: AirlockITA
+  suffix: ITA
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/ITA.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockITAGlass
+  suffix: ITA
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/ITA.rsi
+  - type: WiresPanelSecurity
+    securityLevel: medSecurity
+  - type: Wires
+    layoutId: AirlockSecurity
+

@@ -326,3 +326,11 @@
   components:
   - type: AccessReader
     access: [["merc"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsITA
+  suffix: ITA, Locked
+  components:
+  - type: AccessReader
+    access: [["ITA"]]

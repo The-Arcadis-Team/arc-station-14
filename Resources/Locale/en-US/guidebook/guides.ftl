@@ -139,7 +139,7 @@ guide-entry-writing = Writing
 guide-entry-glossary = Glossary
 
 guide-entry-factions = Factions
-guide-entry-nano = Nanotereson
+guide-entry-nano = Nanotrasen
 guide-entry-syndi = Syndicate
-guide-entry-urban = Urban Sulutions
+guide-entry-urban = Urban Solutions
 guide-entry-NTPD = NTPD
