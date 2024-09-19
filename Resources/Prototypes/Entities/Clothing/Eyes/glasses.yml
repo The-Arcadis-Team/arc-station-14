@@ -308,7 +308,7 @@
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityCommandContraband]
   id: ClothingEyesGlassesCR
   name: centcom glasses
-  description: A specially made sunglasses for Nanotransen field agent and official representative that provide both flash immunity and eye protection. It also come with with medical HUD, security HUD and diagnostic HUD.
+  description: Specially made sunglasses for Nanotransen field agents that provide both flash immunity and eye protection. They also provide a medical HUD, security HUD, and diagnostic HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/crglasses.rsi
