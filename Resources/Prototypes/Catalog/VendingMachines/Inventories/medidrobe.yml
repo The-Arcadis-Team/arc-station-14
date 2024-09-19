@@ -23,3 +23,7 @@
     ClothingHeadHatSurgcapBlue: 4
     ClothingHeadHatSurgcapPurple: 4
     ClothingShoesBootsWinterMed: 2
+  contrabandInventory: #temporary until i found a way to make the item craftable
+    ClothingEyesGlassesMedical: 2
+  emaggedInventory:
+    ClothingEyesGlassesMedSec: 1
