@@ -96,7 +96,7 @@
 - type: entity
   parent: ClothingHeadHardsuitWithLightMETABase
   id: ClothingHeadHelmetHardsuitMETA
-  name: Urban Solutions Command Shell Helment
+  name: Urban Solutions Command Shell Helmet
   description: There are small glyphs engraved in the helmet that make your head hurt when you look at them.
   components:
   - type: Sprite

@@ -923,8 +923,8 @@
       state: merc
     - type: RandomMetadata
       nameSegments:
-        - NamesFirstMilitaryLeader
-        - NamesLastMilitary
+        - NamesFirstmerc
+        - NamesLastmerc
     - type: RandomHumanoidSpawner
       settings: Mercinfo
 
@@ -943,8 +943,8 @@
       prototypes: [ mercoutfit ]
     - type: RandomMetadata
       nameSegments:
-        - NamesFirstMilitaryLeader
-        - NamesLastMilitary
+        - NamesFirstmerc
+        - NamesLastmerc
 
 #centcom intern
 
@@ -970,4 +970,30 @@
         settings: default
     - type: Loadout
       prototypes: [ CentcominternGear ]
+      roleLoadout: [ RoleSurvivalStandard ]
+
+#Urbsl
+
+- type: entity
+  name: Urban Solutions Guardsman
+  id: RandomHumanoidSpawnerurbsl
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: urbsl
+    - type: RandomHumanoidSpawner
+      settings: urbslsettings
+
+- type: randomHumanoidSettings
+  id: urbslsettings
+  parent: EventHumanoidMindShielded
+  components:
+    - type: GhostRole
+      name: ghost-role-information-urbsl-name
+      description: ghost-role-information-urbsl-description
+      rules: ghost-role-information-urbsl-rules
+      raffle:
+        settings: default
+    - type: Loadout
+      prototypes: [ Urbsloutfit ]
       roleLoadout: [ RoleSurvivalStandard ]

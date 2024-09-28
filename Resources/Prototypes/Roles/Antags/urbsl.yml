@@ -1,0 +1,8 @@
+- type: startingGear
+  id: Urbsloutfit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuiturban
+    back: ClothingBackpackMerc
+    shoes: ClothingShoesBootsCombatFilled
+    id: MercPDA
+    outerClothing: ClothingOuterVestWebenviro

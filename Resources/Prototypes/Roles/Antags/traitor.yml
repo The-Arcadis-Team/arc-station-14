@@ -87,7 +87,7 @@
     jumpsuit: ClothingUniformJumpsuitMercenary
     back: ClothingBackpackMerc
     mask: ClothingMaskGasMerc
-    ears: ClothingHeadsetMerc
+    ears: ClothingHeadsetFreelance
     gloves: ClothingHandsMercGlovesCombat
     shoes: ClothingShoesBootsMercFilled
     id: MercPDA
@@ -95,7 +95,6 @@
     back:
     - BoxSurvivalEngineering
     - BoxFlashbang
-    - DeathAcidifierImplanter
 
 - type: startingGear
   id: modmercoutfit
@@ -103,7 +102,7 @@
     jumpsuit: ClothingUniformJumpsuitMercenary
     back: ClothingBackpackMerc
     mask: ClothingMaskGasMerc
-    ears: ClothingHeadsetMerc
+    ears: ClothingHeadsetFreelance
     gloves: ClothingHandsMercGlovesCombat
     shoes: ClothingShoesBootsMercFilled
     id: MercPDA

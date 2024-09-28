@@ -1219,6 +1219,15 @@
     containers:
       board: [ DoorElectronicsNTPD ]
 
+- type: entity
+  parent: HighSecDoor
+  id: HighSecITALocked
+  suffix: ITA, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsITA ]
+
 #Airtight hatch
 
 - type: entity

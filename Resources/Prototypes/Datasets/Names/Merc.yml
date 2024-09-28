@@ -1,0 +1,54 @@
+﻿- type: dataset
+  id: NamesFirstmerc
+  values:
+  - Guy
+  - The
+  - Lieutenant
+  - The one and only
+  - Mc
+  - Big
+  - Dr.
+  - Boo
+  - Professor
+  - Lord
+  - Turbo
+  - Phantom
+  - Supreme
+  - Chief
+  - Tod bill
+  - shlingle ding
+  - Pork pe
+  - Goboldigook
+  - Beatbox
+  - Caked
+  - Greg
+  - Dork
+  - Stale
+  - Big evil
+  - Pork loin
+
+- type: dataset
+  id: NamesLastmerc
+  values:
+  - Someone
+  - Andromeda
+  - Aquarius
+  - Chameleon
+  - Dragon
+  - Phoenix
+  - Nebula
+  - Zephyr
+  - Kraken
+  - Gryphon
+  - Eclipse
+  - Leviathan
+  - Obsidian
+  - Thunderbird
+  - Specter
+  - Quantum
+  - Flourence
+  - joe
+  - Uppies
+  - Thing from the depth
+  - Dead again
+  - Grug

@@ -313,8 +313,15 @@ ghost-role-information-tomatokiller-name = Tomato killer
 ghost-role-information-tomatokiller-description = This little tomato will serve the botanist for the rest of his life... that is, a couple of minutes
 
 ghost-role-information-merc-name = Mercenary
-ghost-role-information-merc-description = You are an elite mercenary hired by Urban Solutions to capture a target.
+ghost-role-information-merc-description = You are a mercenary working for the highest bidder. Await orders from your contractor. You are not directly affiliated with Urban Solutions.
 ghost-role-information-merc-rules = You are a [color=red][bold]mercenary[/bold][/color] You can kill anyone in your way but NOT your target, make sure the target is taken and shipped.
 
 ghost-role-information-centcom-intern-name = CentComm intern
 ghost-role-information-centcom-intern-description = An underpaid, expendable nobody Centcomm uses to do their most terrifying and dangerous jobs. Listen to your "higher ups"!
+
+ghost-role-information-urbsl-name = Urban Solutions Guardsman
+ghost-role-information-urbsl-description = A contractor working for Urban Solutions. Your mission varies, but the goal’s the same: getting paid.
+ghost-role-information-urbsl-rules = You are a [color=green][bold]Urban Solutions Guardsman[/bold][/color]. You are neutral to the station and its crew. You may be required to fight with or assist them. Await orders from your dispatcher before taking any major actions.
+                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
+                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
+                                             You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
