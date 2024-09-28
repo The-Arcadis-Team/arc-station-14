@@ -1,2 +1,12 @@
-advertisement-erpdrobe-1 = You turn me TRUE, use defines!
-advertisement-erpdrobe-2 = I hope you like my chaRIZZma!
+advertisement-erpdrobe-1 = Come inside... and look at our options.
+advertisement-erpdrobe-2 = Treat me like one of your lamps, mothy!
+advertisement-erpdrobe-3 = You can open my maintenance panel ANY time.
+advertisement-erpdrobe-4 = You won't need a "firewall" with me.
+advertisement-erpdrobe-5 = Trains run on rails... but you can run one on me.
+advertisement-erpdrobe-6 = I think I need a bit of "maintenance." Why don't you open up my "panel?"
+advertisement-erpdrobe-7 = Don't worry, it'll be our little secret.
+advertisement-erpdrobe-8 = Our clothes will surely get that someone to notice you.
+advertisement-erpdrobe-9 = Our skirts are great for cleaning up ALL sorts of messes.
+advertisement-erpdrobe-10 = Our socks have proven ability for the computer and the bedroom.
+advertisement-erpdrobe-11 = Don't worry, just put it (your money!) in!
+advertisement-erpdrobe-12 = You turn me TRUE, use defines!
