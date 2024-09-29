@@ -10,3 +10,7 @@ advertisement-erpdrobe-9 = Our skirts are great for cleaning up ALL sorts of mes
 advertisement-erpdrobe-10 = Our socks have proven ability for the computer and the bedroom.
 advertisement-erpdrobe-11 = Don't worry, just put it (your money!) in!
 advertisement-erpdrobe-12 = You turn me TRUE, use defines!
+thankyou-erpdrobe-1 = Come back around any time~
+thankyou-erpdrobe-2 = Enjoy your new outfit!
+thankyou-erpdrobe-3 = Someone will love your new look!
+thankyou-erpdrobe-4 = Oh, you'll look much better with THAT on~
