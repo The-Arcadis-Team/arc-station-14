@@ -1472,7 +1472,6 @@
     key: cobblebricks
     base: cobblebrick
 
-<<<<<<< Updated upstream
 - type: entity
   parent: BaseWall
   id: newwall
@@ -1519,17 +1518,22 @@
     price: 250
   - type: RadiationBlocker
     resistance: 5
-=======
 # Admeme Only
 
 - type: entity
+  parent: MarkerBase
   id: WallAdminInvisible
   name: invisible wall
   suffix: Admeme
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
   components:
   - type: Tag
     tags:
       - Wall
+  - type: InteractionOutline
   - type: Physics
     bodyType: Static
   - type: Fixtures
@@ -1543,4 +1547,7 @@
         layer:
         - GlassLayer
   - type: Airtight
->>>>>>> Stashed changes
+  - type: Sprite
+    state: green
+
+
