@@ -76142,20 +76142,11 @@ entities:
     - type: Transform
       pos: -25.5,-18.5
       parent: 4812
-<<<<<<< HEAD
-- proto: TaikoInstrument
-  entities:
-  - uid: 4373
-    components:
-    - type: Transform
-      pos: -27.5,32.5
-=======
   - uid: 12665
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 24.5,-19.5
->>>>>>> upstream/master
       parent: 4812
 - proto: TargetHuman
   entities:
