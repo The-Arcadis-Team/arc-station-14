@@ -1,8 +1,9 @@
+
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerAlert
-  name: alerts computer
-  description: Used to access the station's automated alert system.
+  name: atmospheric alerts computer
+  description: Used to access the station's atmospheric automated alert system.
   components:
   - type: Computer
     board: AlertsComputerCircuitboard
@@ -13,7 +14,7 @@
     - map: ["computerLayerKeyboard"]
       state: generic_keyboard
     - map: ["computerLayerScreen"]
-      state: alert-2
+      state: alert-0
     - map: ["computerLayerKeys"]
       state: atmos_key
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
@@ -202,37 +203,6 @@
     stealGroup: CargoShuttleConsoleCircuitboard
 
 - type: entity
-  parent: BaseComputerShuttle
-  id: ComputerShuttleSalvage
-  name: salvage shuttle console
-  description: Used to pilot the salvage shuttle.
-  components:
-    - type: Sprite
-      layers:
-        - map: ["computerLayerBody"]
-          state: computer
-        - map: ["computerLayerKeyboard"]
-          state: generic_keyboard
-        - map: ["computerLayerScreen"]
-          state: shuttle
-        - map: ["computerLayerKeys"]
-          state: generic_keys
-    - type: DroneConsole
-      components:
-        - type: SalvageShuttle
-    - type: RadarConsole
-      maxRange: 256
-    - type: PointLight
-      radius: 1.5
-      energy: 1.6
-      color: "#43ccb5"
-    - type: Computer
-      board: SalvageShuttleConsoleCircuitboard
-    - type: StealTarget
-      stealGroup: SalvageShuttleConsoleCircuitboard
-
-- type: entity
-  parent: BaseComputer
   parent: BaseComputerAiAccess
   id: ComputerIFF
   name: IFF computer
@@ -670,8 +640,8 @@
     energy: 1.6
     color: "#3c5eb5"
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: StrongMetallic
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
 
 - type: entity
   parent: ComputerComms
@@ -952,8 +922,8 @@
     speechVerb: Robotic
     speechSounds: Pai
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: StrongMetallic
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
   - type: GuideHelp
     guides:
     - Cloning
@@ -1277,6 +1247,8 @@
       state: generic_panel_open
   - type: ApcPowerReceiver
     powerLoad: 1000
+  - type: Computer
+    board: StationAiUploadCircuitboard
   - type: AccessReader
     access: [ [ "ResearchDirector" ] ]
   - type: Lock
@@ -1294,6 +1266,7 @@
         name: circuit-holder
         insertSuccessPopup: silicon-laws-updated
         whitelist:
+          requireAll: true
           components:
           - SiliconLawProvider
           - Item
