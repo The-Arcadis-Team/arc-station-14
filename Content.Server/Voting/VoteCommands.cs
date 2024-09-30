@@ -1,7 +1,4 @@
 using System.Linq;
-using System.Net.Http;
-using System.Text.Json;
-using System.Text.Json.Nodes;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
@@ -11,10 +8,10 @@ using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Voting;
-using Robust.Server.Player;
-using Robust.Shared;
+using Robust.Server;
 using Robust.Shared.Configuration;
 using Robust.Shared.Console;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Voting
 {
@@ -72,8 +69,9 @@ namespace Content.Server.Voting
     }
 
     [AdminCommand(AdminFlags.Moderator)]
-    public sealed class CreateCustomCommand : IConsoleCommand
+    public sealed class CreateCustomCommand : LocalizedEntityCommands
     {
+        [Dependency] private readonly IVoteManager _voteManager = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly VoteWebhooks _voteWebhooks = default!;
@@ -83,16 +81,9 @@ namespace Content.Server.Voting
 
         private const int MaxArgCount = 10;
 
-        public string Command => "customvote";
-        public string Description => Loc.GetString("cmd-customvote-desc");
-        public string Help => Loc.GetString("cmd-customvote-help");
+        public override string Command => "customvote";
 
-        // Webhook stuff
-        private string _webhookUrl = string.Empty;
-        private ulong _webhookId;
-        private WebhookIdentifier? _webhookIdentifier;
-
-        public void Execute(IConsoleShell shell, string argStr, string[] args)
+        public override void Execute(IConsoleShell shell, string argStr, string[] args)
         {
             _sawmill = Logger.GetSawmill("vote");
 
@@ -104,8 +95,6 @@ namespace Content.Server.Voting
 
             var title = args[0];
 
-            var mgr = IoCManager.Resolve<IVoteManager>();
-
             var options = new VoteOptions
             {
                 Title = title,
@@ -116,41 +105,6 @@ namespace Content.Server.Voting
             {
                 options.Options.Add((args[i], i));
             }
-
-            // Set up the webhook payload
-            string _serverName = _cfg.GetCVar(CVars.GameHostName);
-            _webhookUrl = _cfg.GetCVar(CCVars.DiscordVoteWebhook);
-
-
-            var _gameTicker = _entitySystem.GetEntitySystem<GameTicker>();
-
-            var payload = new WebhookPayload()
-            {
-                Username = Loc.GetString("custom-vote-webhook-name"),
-                Embeds = new List<WebhookEmbed>
-                {
-                    new()
-                    {
-                        Title = $"{shell.Player}",
-                        Color = 13438992,
-                        Description = options.Title,
-                        Footer = new WebhookEmbedFooter
-                        {
-                            Text = $"{_serverName} {_gameTicker.RoundId} {_gameTicker.RunLevel}",
-                        },
-
-                        Fields = new List<WebhookEmbedField> {},
-                    },
-                },
-            };
-
-            foreach (var voteOption in options.Options)
-            {
-                var NewVote = new WebhookEmbedField() { Name = voteOption.text,  Value = "0"};
-                payload.Embeds[0].Fields.Add(NewVote);
-            }
-
-            WebhookMessage(payload);
 
             options.SetInitiatorOrServer(shell.Player);
 
@@ -165,17 +119,16 @@ namespace Content.Server.Voting
 
             vote.OnFinished += (_, eventArgs) =>
             {
-                var chatMgr = IoCManager.Resolve<IChatManager>();
                 if (eventArgs.Winner == null)
                 {
                     var ties = string.Join(", ", eventArgs.Winners.Select(c => args[(int) c]));
                     _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Custom vote {options.Title} finished as tie: {ties}");
-                    chatMgr.DispatchServerAnnouncement(Loc.GetString("cmd-customvote-on-finished-tie",("ties", ties)));
+                    _chatManager.DispatchServerAnnouncement(Loc.GetString("cmd-customvote-on-finished-tie", ("ties", ties)));
                 }
                 else
                 {
                     _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Custom vote {options.Title} finished: {args[(int) eventArgs.Winner]}");
-                    chatMgr.DispatchServerAnnouncement(Loc.GetString("cmd-customvote-on-finished-win",("winner", args[(int) eventArgs.Winner])));
+                    _chatManager.DispatchServerAnnouncement(Loc.GetString("cmd-customvote-on-finished-win", ("winner", args[(int) eventArgs.Winner])));
                 }
 
                 _voteWebhooks.UpdateWebhookIfConfigured(webhookState, eventArgs);
@@ -187,7 +140,7 @@ namespace Content.Server.Voting
             };
         }
 
-        public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
+        public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
             if (args.Length == 1)
                 return CompletionResult.FromHint(Loc.GetString("cmd-customvote-arg-title"));
@@ -199,7 +152,6 @@ namespace Content.Server.Voting
             return CompletionResult.FromHint(Loc.GetString("cmd-customvote-arg-option-n", ("n", n)));
         }
     }
-
 
     [AnyCommand]
     public sealed class VoteCommand : IConsoleCommand
