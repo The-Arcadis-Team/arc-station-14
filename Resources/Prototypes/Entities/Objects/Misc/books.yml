@@ -46,6 +46,31 @@
         Blunt: 1
 
 - type: entity
+  parent: BaseItem
+  id: BaseGuidebook
+  abstract: true
+  suffix: guidebook
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+  - type: Tag
+    tags:
+    - Book
+  - type: GuideHelp
+    openOnActivation: true
+    guides:
+    - SS14
+  - type: MeleeWeapon  # Should write it again since BaseGuidebook doesn't inherit BookBase
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Blunt: 1
+  - type: DamageOtherOnHit
+    damage:
+      types:
+
+- type: entity
   id: BookSpaceEncyclopedia
   parent: BaseItem
   name: space encyclopedia

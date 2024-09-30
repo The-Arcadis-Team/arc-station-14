@@ -18,6 +18,7 @@
     - id: RubberStampDenied
     - id: RubberStampQm
     - id: SalvageShuttleConsoleCircuitboard
+    - id: AstroNavCartridge
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -327,6 +328,7 @@
     - id: RubberStampHos
     - id: SecurityTechFabCircuitboard
     - id: WeaponDisabler
+    - id: WantedListCartridge
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

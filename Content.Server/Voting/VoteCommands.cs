@@ -5,8 +5,7 @@ using System.Text.Json.Nodes;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
-using Content.Server.Discord;
-using Content.Server.GameTicking;
+using Content.Server.Discord.WebhookMessages;
 using Content.Server.Voting.Managers;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
@@ -30,11 +29,17 @@ namespace Content.Server.Voting
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length != 1 && args[0] != StandardVoteType.Votekick.ToString())
             {
                 shell.WriteError(Loc.GetString("shell-need-exactly-one-argument"));
                 return;
             }
+            if (args.Length != 3 && args[0] == StandardVoteType.Votekick.ToString())
+            {
+                shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 3), ("currentAmount", args.Length)));
+                return;
+            }
+
 
             if (!Enum.TryParse<StandardVoteType>(args[0], ignoreCase: true, out var type))
             {
@@ -51,7 +56,7 @@ namespace Content.Server.Voting
                 return;
             }
 
-            mgr.CreateStandardVote(shell.Player, type);
+            mgr.CreateStandardVote(shell.Player, type, args.Skip(1).ToArray());
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
@@ -70,9 +75,9 @@ namespace Content.Server.Voting
     public sealed class CreateCustomCommand : IConsoleCommand
     {
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-        [Dependency] private readonly IEntitySystemManager _entitySystem = default!;
+        [Dependency] private readonly IChatManager _chatManager = default!;
+        [Dependency] private readonly VoteWebhooks _voteWebhooks = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
-        [Dependency] private readonly DiscordWebhook _discord = default!;
 
         private ISawmill _sawmill = default!;
 
@@ -154,7 +159,9 @@ namespace Content.Server.Voting
             else
                 _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Initiated a custom vote: {options.Title} - {string.Join("; ", options.Options.Select(x => x.text))}");
 
-            var vote = mgr.CreateVote(options);
+            var vote = _voteManager.CreateVote(options);
+
+            var webhookState = _voteWebhooks.CreateWebhookIfConfigured(options, _cfg.GetCVar(CCVars.DiscordVoteWebhook));
 
             vote.OnFinished += (_, eventArgs) =>
             {
@@ -171,17 +178,12 @@ namespace Content.Server.Voting
                     chatMgr.DispatchServerAnnouncement(Loc.GetString("cmd-customvote-on-finished-win",("winner", args[(int) eventArgs.Winner])));
                 }
 
-                for (int i = 0; i < eventArgs.Votes.Count; i++)
-                {
-                    var oldName = payload.Embeds[0].Fields[i].Name;
-                    var newValue = eventArgs.Votes[i].ToString();
-                    var newEmbed = payload.Embeds[0];
-                    newEmbed.Color = 2353993;
-                    payload.Embeds[0] = newEmbed;
-                    payload.Embeds[0].Fields[i] = new WebhookEmbedField() { Name = oldName, Value = newValue, Inline =  true};
-                }
+                _voteWebhooks.UpdateWebhookIfConfigured(webhookState, eventArgs);
+            };
 
-                WebhookMessage(payload, _webhookId);
+            vote.OnCancelled += _ =>
+            {
+                _voteWebhooks.UpdateCancelledWebhookIfConfigured(webhookState);
             };
         }
 
@@ -195,38 +197,6 @@ namespace Content.Server.Voting
 
             var n = args.Length - 1;
             return CompletionResult.FromHint(Loc.GetString("cmd-customvote-arg-option-n", ("n", n)));
-        }
-
-        // Sends the payload's message.
-        private async void WebhookMessage(WebhookPayload payload)
-        {
-            if (string.IsNullOrEmpty(_webhookUrl))
-                return;
-
-            if (await _discord.GetWebhook(_webhookUrl) is not { } identifier)
-                return;
-
-            _webhookIdentifier = identifier.ToIdentifier();
-
-            _sawmill.Debug(JsonSerializer.Serialize(payload));
-
-            var request = await _discord.CreateMessage(_webhookIdentifier.Value, payload);
-            var content = await request.Content.ReadAsStringAsync();
-            _webhookId = ulong.Parse(JsonNode.Parse(content)?["id"]!.GetValue<string>()!);
-        }
-
-        // Edits a pre-existing payload message, given an ID
-        private async void WebhookMessage(WebhookPayload payload, ulong id)
-        {
-            if (string.IsNullOrEmpty(_webhookUrl))
-                return;
-
-            if (await _discord.GetWebhook(_webhookUrl) is not { } identifier)
-                return;
-
-            _webhookIdentifier = identifier.ToIdentifier();
-
-            var request = await _discord.EditMessage(_webhookIdentifier.Value, id, payload);
         }
     }
 
