@@ -1,3 +1,4 @@
+using Content.Shared.Atmos.Consoles;
 using Content.Shared.Atmos.Monitor;
 using Robust.Shared.GameStates;
 using Robust.Shared.Map;
@@ -6,9 +7,15 @@ using Robust.Shared.Serialization;
 namespace Content.Shared.Atmos.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-//[Access(typeof(AtmosMonitoringConsoleSystem))]
+[Access(typeof(SharedAtmosAlertsComputerSystem))]
 public sealed partial class AtmosAlertsComputerComponent : Component
 {
+    /// <summary>
+    /// The current entity of interest (selected via the console UI)
+    /// </summary>
+    [ViewVariables]
+    public NetEntity? FocusDevice;
+
     /// <summary>
     /// A list of all the atmos devices that will be used to populate the nav map
     /// </summary>
@@ -16,15 +23,9 @@ public sealed partial class AtmosAlertsComputerComponent : Component
     public HashSet<AtmosAlertsDeviceNavMapData> AtmosDevices = new();
 
     /// <summary>
-    /// The current entity of interest (selected on the console UI)
-    /// </summary>
-    [ViewVariables, AutoNetworkedField]
-    public EntityUid? FocusDevice;
-
-    /// <summary>
     /// A list of all the air alarms that have had their alerts silenced on this particular console
     /// </summary>
-    [DataField]
+    [ViewVariables, AutoNetworkedField]
     public HashSet<NetEntity> SilencedDevices = new();
 }
 
@@ -76,7 +77,7 @@ public struct AtmosAlertsFocusDeviceData
     public (float, AtmosAlarmType) PressureData;
 
     /// <summary>
-    /// Moles, percentage, and related alert state, for all detected gases
+    /// Moles, percentage, and related alert state, for all detected gases 
     /// </summary>
     public Dictionary<Gas, (float, float, AtmosAlarmType)> GasData;
 
@@ -199,7 +200,7 @@ public sealed class AtmosAlertsComputerDeviceSilencedMessage : BoundUserInterfac
     public bool SilenceDevice = true;
 
     /// <summary>
-    /// Used to inform the server that the client has silenced alerts from the specified device to this atmos monitoring console
+    /// Used to inform the server that the client has silenced alerts from the specified device to this atmos monitoring console 
     /// </summary>
     public AtmosAlertsComputerDeviceSilencedMessage(NetEntity atmosDevice, bool silenceDevice = true)
     {
