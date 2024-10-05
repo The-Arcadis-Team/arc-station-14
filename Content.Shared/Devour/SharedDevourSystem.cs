@@ -43,8 +43,14 @@ public abstract class SharedDevourSystem : EntitySystem
     /// </summary>
     protected void OnDevourAction(EntityUid uid, DevourerComponent component, DevourActionEvent args)
     {
-        if (args.Handled || _whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Target))
+        if (args.Handled)
             return;
+
+        if (!component.IgnoreWhitelist)
+        {
+            if (_whitelistSystem.IsWhitelistFailOrNull(component.Whitelist, args.Target))
+                return;
+        }
 
         args.Handled = true;
         var target = args.Target;
@@ -63,7 +69,18 @@ public abstract class SharedDevourSystem : EntitySystem
                     });
                     break;
                 default:
-                    _popupSystem.PopupClient(Loc.GetString("devour-action-popup-message-fail-target-alive"), uid,uid);
+                    if (component.IgnoreWhitelist)
+                    {
+                        // Ignore the fact that they're alive due to the whitelist being disabled.
+                        _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, uid, component.DevourTime, new DevourDoAfterEvent(), uid, target: target, used: uid)
+                        {
+                            BreakOnMove = true,
+                        });
+                    }
+                    else
+                    {
+                        _popupSystem.PopupClient(Loc.GetString("devour-action-popup-message-fail-target-alive"), uid,uid);
+                    }
                     break;
             }
 
