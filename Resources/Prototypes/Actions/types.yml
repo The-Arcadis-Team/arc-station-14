@@ -139,8 +139,7 @@
   components:
   - type: InstantAction
     checkCanInteract: false
-    charges: 2
-    useDelay: 5
+    useDelay: 30 # Goobstation - Scrambler buff
     itemIconStyle: BigAction
     priority: -20
     icon:
