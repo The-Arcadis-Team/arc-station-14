@@ -330,3 +330,16 @@
     - HamsterWearable
   - type: IdentityBlocker
     coverage: EYES
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: ClothingEyesGlassesurbsl
+  name: Urban solutions glasses
+  description: Glasses.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/urdslglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/urdslglasses.rsi
+  - type: IdentityBlocker
+    coverage: EYES

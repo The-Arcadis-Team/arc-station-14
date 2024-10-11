@@ -1,0 +1,156 @@
+# Syndi command
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtgeneralS
+  name: General's uniform
+  description: A uniform made by the syndicate for the commander of syndicate stations, Whoever wears this should be treated with respect.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/general.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/general.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtlieutenantgeneralS
+  name: lieutenant general's uniform
+  description: A uniform for the lieutenant general.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/lieutenantgeneral.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/lieutenantgeneral.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtCPPS
+  name: CPP's uniform
+  description: A uniform for the chief practicing physician.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/chiefpracticingphysician.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/chiefpracticingphysician.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtCLOS
+  name: CLO's uniform
+  description: A uniform for the chief logistics officer.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/chieflogisticsofficer.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/chieflogisticsofficer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtVAS
+  name: vice admiral's uniform
+  description: A uniform for the vice admiral.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/viceadmiral.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/viceadmiral.rsi
+
+# Sickbay
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSBSE
+  name: sickbay uniform
+  description: A uniform for sickbay employees.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/sickbay.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/sickbay.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtCSBSC
+  name: chemistry uniform
+  description: A uniform for sickbay employees that work in chemistry.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/chemistry.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/chemistry.rsi
+
+# Logistics
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtLTS
+  name: logistics technician uniform
+  description: A uniform for a logistics technician.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/logisticstech.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/logisticstech.rsi
+
+# sci /TODO Change name of science
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSSS
+  name: Syndi scientist's uniform
+  description: A uniform for a scientist who works for the syndicate.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/scientist.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/scientist.rsi
+
+# enforce
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtenforcerS
+  name: enforcer's uniform
+  description: A uniform for the enforcers of the station.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/enforcer.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/enforcer.rsi
+
+# engineering
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSES
+  name: Syndi engineer's uniform
+  description: A uniform for engineers of syndicate stations.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/engineering.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/engineering.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSAES
+  name: Syndi atmos engineer's uniform
+  description: A uniform for atmospheric engineers of syndicate stations.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/atmosf.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/atmosf.rsi
+
+# service
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSBS
+  name: Syndi bartender's uniform
+  description: A uniform for bartenders of syndicate stations.
+  components:
+  - type: Sprite
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/bartender.rsi
+  - type: Clothing
+    sprite: Clothing/Syndicate_jobs/Jumpskirt/bartender.rsi
