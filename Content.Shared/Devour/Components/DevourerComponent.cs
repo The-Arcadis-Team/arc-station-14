@@ -8,7 +8,7 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 
 namespace Content.Shared.Devour.Components;
 
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SharedDevourSystem))]
 public sealed partial class DevourerComponent : Component
 {
@@ -49,6 +49,9 @@ public sealed partial class DevourerComponent : Component
 
     [ViewVariables(VVAccess.ReadWrite), DataField("shouldStoreDevoured")]
     public bool ShouldStoreDevoured = true;
+
+    [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite), DataField("ignoreWhitelist")]
+    public bool IgnoreWhitelist = false;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("whitelist")]
     public EntityWhitelist? Whitelist = new()

@@ -15,6 +15,10 @@ namespace Content.Shared.RCD.Components;
 [Access(typeof(RCDSystem))]
 public sealed partial class RCDComponent : Component
 {
+
+    [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite), DataField("ignoreWhitelistRCD")]
+    public bool IgnoreWhitelist = false;
+
     /// <summary>
     /// List of RCD prototypes that the device comes loaded with
     /// </summary>

@@ -482,13 +482,16 @@ public class RCDSystem : EntitySystem
         // Attempt to deconstruct an object
         else
         {
-            // The object is not in the whitelist
-            if (!TryComp<RCDDeconstructableComponent>(target, out var deconstructible) || !deconstructible.Deconstructable)
+            // The object is not in the whitelist AND whitelist component is true, if not then explode
+            if (!component.IgnoreWhitelist)
             {
-                if (popMsgs)
-                    _popup.PopupClient(Loc.GetString("rcd-component-deconstruct-target-not-on-whitelist-message"), uid, user);
+                if (!TryComp<RCDDeconstructableComponent>(target, out var deconstructible) || !deconstructible.Deconstructable)
+                {
+                    if (popMsgs)
+                        _popup.PopupClient(Loc.GetString("rcd-component-deconstruct-target-not-on-whitelist-message"), uid, user);
 
-                return false;
+                    return false;
+                }
             }
         }
 
