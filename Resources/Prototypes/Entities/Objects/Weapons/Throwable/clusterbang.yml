@@ -323,3 +323,38 @@
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
+
+
+
+- type: entity
+  parent: GrenadeBase
+  id: ClusterBangCleanade
+  name: cluster cleanade
+  description: Launches three cleanade. when it too messy for one cleanade how about 3 cleanade.(janitor.co does not responsible any mass slipping accident with this products)
+  suffix: Full
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Grenades/clusterclean.rsi
+      layers:
+      - state: icon
+        map: ["enum.TriggerVisualLayers.Base"]
+    - type: ClusterGrenade
+      fillPrototype: CleanerGrenade
+      distance: 3.5
+      velocity: 10
+    - type: TimerTriggerVisuals
+      primingSound:
+        path: /Audio/Effects/countdown.ogg
+    - type: GenericVisualizer
+      visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: primed }
+            Unprimed: { state: icon }
+    - type: EmitSoundOnTrigger
+      sound:
+        path: "/Audio/Machines/door_lock_off.ogg"
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+    

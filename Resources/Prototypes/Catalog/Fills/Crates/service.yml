@@ -7,7 +7,6 @@
   - type: StorageFill
     contents:
       - id: MopItem
-      - id: MopBucket
       - id: Bucket
         amount: 3
       - id: WetFloorSign
@@ -20,6 +19,8 @@
       - id: Plunger
         amount: 2
       - id: BoxCleanerGrenades
+      - id: ClusterBangCleanade
+        amount: 2
 
 - type: entity
   id: CrateServiceReplacementLights
