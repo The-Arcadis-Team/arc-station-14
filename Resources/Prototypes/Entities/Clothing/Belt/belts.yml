@@ -123,6 +123,7 @@
         - Geiger
         - TrayScanner
         - GasAnalyzer
+        - ClothingEyesGlassesMeson
   - type: ItemMapper
     mapLayers:
       drill:
@@ -223,6 +224,7 @@
         - WetFloorSign
         - HolosignProjector
         - Plunger
+        - ClusterBangCleanade
       components:
         - LightReplacer
         - SmokeOnTrigger
