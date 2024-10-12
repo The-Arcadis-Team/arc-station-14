@@ -45,6 +45,15 @@
     allowedDepartments: [ Command ]
 
 - type: entity
+  id: BaseSecurityContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Security ]
+
+
+- type: entity
   id: BaseSecurityCommandContraband
   parent: BaseRestrictedContraband
   abstract: true
