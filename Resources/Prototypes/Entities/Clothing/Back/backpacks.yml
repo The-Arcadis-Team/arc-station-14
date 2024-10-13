@@ -418,3 +418,12 @@
     maxItemSize: Huge
     grid:
     - 0,0,20,10
+
+- type: entity
+  parent: [ClothingBackpack, BaseRestrictedContraband]
+  id: ClothingBackpackurbsl
+  name: Urban solutions backpack
+  description: A very robust backpack for Urban Solutions operatives.
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Backpacks/urbslbackpack.rsi
