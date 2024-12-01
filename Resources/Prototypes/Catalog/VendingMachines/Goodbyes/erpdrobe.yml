@@ -1,0 +1,4 @@
+- type: messagePack
+  id: ERPDrobeGoodbyes
+  messages:
+  - thankyou-erp-1

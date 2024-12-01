@@ -1,0 +1,17 @@
+- type: messagePack
+  id: ERPDrobeAds
+  messages:
+    - advertisement-erp-1
+    - advertisement-erp-2
+    - advertisement-erp-3
+    - advertisement-erp-4
+    - advertisement-erp-5
+    - advertisement-erp-6
+    - advertisement-erp-7
+    - advertisement-erp-8
+    - advertisement-erp-9
+    - advertisement-erp-10
+    - advertisement-erp-11
+    - advertisement-erp-12
+    - advertisement-erp-13
+    - advertisement-erp-14

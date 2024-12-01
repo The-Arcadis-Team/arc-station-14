@@ -657,3 +657,23 @@
   - type: Paper
     content: book-text-janitor
 
+- type: entity
+  parent: BookBase
+  id: BookUnathiJanitor
+  name: the lusty unathi janitor
+  description: A dirty book with even dirtier contents.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_old
+      color: "#c526de"
+    - state: decor_wingette
+    - state: icon_bucket
+    - state: detail_bookmark
+      color: "#61363d"
+    - state: icon_time
+      color: "fffffff"
+  - type: Paper
+    content: book-text-lusty-unathi-janitor

@@ -2503,3 +2503,31 @@
     color: "#9dc5c9"
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineERPDrobe
+  name: ERPDrobe
+  description: A vending machine designed to dispense clothing known only to people who are really, really desperate.
+  components:
+  - type: VendingMachine
+    pack: ERPDrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: ERPDrobeAds
+  - type: SpeakOnUIClosed
+    pack: ERPDrobeGoodbyes
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/robodrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["Maintenance"]]
