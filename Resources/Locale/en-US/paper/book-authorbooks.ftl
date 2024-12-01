@@ -261,25 +261,4 @@ book-text-janitor = [bold][color=black][head=3]The Tales of a Tired Janitor[/hea
       Speaking of jumpsuits, the lack of respect is astronomical. The scientists and astronauts zoom past in their sleek suits, utterly oblivious to the fact that I'm the unsung hero keeping this place from turning into a cosmic trash heap. I bet they don't even know my name. "Hey, Space Janitor!" That's what I get. No appreciation for the elbow grease I put into keeping their precious station spick and span.
       And let's remember the hazards. Cleaning up alien slime? Yeah, that's a regular Tuesday for me. One wrong move and I'm dealing with an intergalactic biohazard. It's like playing Russian roulette with space critters that could burst out of some hidden nook and cranny. I signed up to mop floors, not play host to extraterrestrial invaders.
       Being a janitor on this so-called Space Station 14 is a cosmic joke. Where did the other 13 stations go? It's not all spacewalks and futuristic gadgets; it's scrubbing toilets and battling alien goo. If anyone thinks space is glamorous, they clearly haven't seen the mess we space janitors deal with every single day. It's time they appreciate the unsung heroes of the space station – the custodians of the cosmos.
-book-text-unathijanitor =                   [head=2]The Lusty Unathi Janitor[/head]
-                        [bold]Authored by Netti Ingman
-
-[italic]Alfonso Huff, Captain of Space Station 41 runs into the unathi Janitor, Lifts-Her-Tail on the corridor.[/italic]
-
-      "I'm so glad I have found you, my dear. I spilled milk on the floor in the bridge. I need your services."
-      "I would love to help, Captain, but the Head of Persssonnel will take my head if I don't finisssh cleaning up thisss pool of blood."
-      "Oh, but I need a trusty Janitor to let into the bridge, and my heart trusts none but you, my dumpling."
-      "You flatter me, Captain. Alright, let'sss head to the bridge."
-
-      [italic]Lifts-Her-Tail grabs the janitorial trolley with her tail and they start walking. After a few minutes, they arrive to the bridge and she starts cleaning up. Her hands move skillfully and she wears an expression of professionalism, but she can not hide the slightest hint of blush that appears on her face whenever she notices the Captain taking glances at her. After a good 10 minutes of cleaning she turns to him.[/italic]
-
-      "I am done, Captain. Could you let me out through the High SSSecurity Doorsss?"
-      "Is cleaning the only reason you came here, little one?"
-      "I have to idea what it isss you imply. I am jussst a sssimple Janitor."
-      "So you are, my dumpling. And a good one at that. I saw your strong legs and tail as you pulled your trolley."
-      "You embarrasss me, SSSir."
-      "Fear not, you are safe from any Syndicate agent here with me."
-      "But I mussst continue my cleaning dutiesss."
-      "Cleaning, eh? I have something for you. Haven't I told you? I spilled the milk on my lap, and now my uniform is dirty."
-      "But thisss ssstain isss huge. It could take all night to ssscrub."
-      [bold]"Plenty of time, my sweet. Plenty of time."[bold]
+book-text-unathijanitor =[italic]Alfonso Huff, Captain of Space Station 41 runs into the unathi Janitor, Lifts-Her-Tail on the corridor.[/italic] "I'm so glad I have found you, my dear. I spilled milk on the floor in the bridge. I need your services." "I would love to help, Captain, but the Head of Persssonnel will take my head if I don't finisssh cleaning up thisss pool of blood." "Oh, but I need a trusty Janitor to let into the bridge, and my heart trusts none but you, my dumpling." "You flatter me, Captain. Alright, let'sss head to the bridge." [italic]Lifts-Her-Tail grabs the janitorial trolley with her tail and they start walking. After a few minutes, they arrive to the bridge and she starts cleaning up. Her hands move skillfully and she wears an expression of professionalism, but she can not hide the slightest hint of blush that appears on her face whenever she notices the Captain taking glances at her. After a good 10 minutes of cleaning she turns to him.[/italic] "I am done, Captain. Could you let me out through the High SSSecurity Doorsss?" "Is cleaning the only reason you came here, little one?" "I have to idea what it isss you imply. I am jussst a sssimple Janitor." "So you are, my dumpling. And a good one at that. I saw your strong legs and tail as you pulled your trolley." "You embarrasss me, SSSir." "Fear not, you are safe from any Syndicate agent here with me." "But I mussst continue my cleaning dutiesss." "Cleaning, eh? I have something for you. Haven't I told you? I spilled the milk on my lap, and now my uniform is dirty." "But thisss ssstain isss huge. It could take all night to ssscrub." [bold]"Plenty of time, my sweet. Plenty of time."[bold]
