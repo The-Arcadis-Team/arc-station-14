@@ -24,7 +24,7 @@
     state: lollipop
   - type: Clothing
     slots: [mask]
-    sprite: Resources\Textures\Nyanotrasen\Objects\Consumable\Food\lollipop.rsi
+    sprite: Nyanotrasen/Objects/Consumable/Food/lollipop.rsi
 
 - type: entity
   parent: FoodBase
