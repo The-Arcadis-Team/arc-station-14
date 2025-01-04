@@ -209,6 +209,29 @@
     proto: CartridgeAntiMateriel
   - type: StaticPrice
     price: 0
+    
+- type: entity
+  name: antique rifle
+  parent: [BaseWeaponSniper, BaseGunWieldable]
+  id: WeaponSniperHdFbi
+  description: A weapon given to good citizens of a now defunct nation, prized for reliability in a pinch. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_hd_fbi.rsi
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+    fireOnDropChance: 1
+  - type: BallisticAmmoProvider
+    capacity: 5
+    proto: CartridgeLightRifle
+    whitelist:
+      tags:
+      - CartridgeLightRifle
   - type: MeleeWeapon
     attackRate: 1.2
     damage:
@@ -218,3 +241,4 @@
     wideAnimationRotation: 135
   - type: DamageOtherOnHit
     staminaCost: 5
+
