@@ -94,7 +94,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesCROmni
   name: omni glasses
-  description: glasses that show a whole lot more thing than normal glasses i guess.
+  description: A special pair of glasses that show a whole lot more than normal glasses.
   components:
   - type: Sprite
     sprite: _Arc/Clothing/eyes/crglasses.rsi
