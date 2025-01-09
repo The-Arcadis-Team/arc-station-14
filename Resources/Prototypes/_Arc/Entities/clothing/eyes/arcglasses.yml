@@ -89,3 +89,40 @@
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
   - type: ShowCriminalRecordIcons
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesCROmni
+  name: omni glasses
+  description: glasses that show a whole lot more thing than normal glasses i guess.
+  components:
+  - type: Sprite
+    sprite: _Arc/Clothing/eyes/crglasses.rsi
+  - type: Clothing
+    sprite: _Arc/Clothing/eyes/crglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 10
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    #- SecDogWearable # DeltaV - let Laika wear secglasses (no i dont wanna do another sprite shit for doggo)
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+    - Silicon
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+  - type: SolutionScanner
+  - type: ShowThirstIcons
+  - type: ShowHungerIcons
+  - type: ShowEthereal
+
