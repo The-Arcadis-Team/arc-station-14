@@ -1,0 +1,216 @@
+# killerguy
+
+- type: entity
+  name: ICA20
+  parent: WeaponPistolCobra
+  id: WeaponPistoldarkballer
+  description: A tactical pistol. Custom slide. Low rate of fire with high damage.
+  components:
+  - type: Sprite
+    sprite: Arcadis_station/Alternate_Universe_references/ICA20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Arcadis_station/Alternate_Universe_references/ICA20.rsi
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -16
+    availableModes:
+    - SemiAuto
+    fireOnDropChance: 0.2
+
+# SuperDeath
+
+- type: entity
+  id: skeletonSkullBlue
+  name: Strange Skull
+  description: An odd blue skull, does not belong to any species you know.
+  parent: BaseItem
+  components:
+    - type: Sprite
+      sprite: Arcadis_station/Alternate_Universe_references/Blue_skull.rsi
+      state: "icon"
+      scale: 0.5, 0.5
+    - type: Icon
+      sprite: Arcadis_station/Alternate_Universe_references/Blue_skull.rsi
+      state: "icon"
+
+# catastrophe
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetCatastrophe
+  name: Scary helmet
+  description: An extremely scary helmet, makes you feel an impending doom when looking at it.
+  components:
+  - type: Sprite
+    sprite: Arcadis_station/Alternate_Universe_references/legend.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: Arcadis_station/Alternate_Universe_references/legend.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+      - state: equipped-HELMET-unshaded
+        shader: unshaded
+  - type: PointLight
+    color: "#eb0202"
+    enabled: true
+    radius: 3
+    energy: 1
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    netsync: false
+  - type: Armor #This armor is crazy OP, it is *his* armor so it makes sense.
+    modifiers:
+      coefficients:
+        Blunt: 0.20
+        Slash: 0.20
+        Piercing: 0.50
+        Heat: 0.70
+        Radiation: 0.20
+        Caustic: 0.20
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+
+# Deity of hope
+
+- type: entity
+  name: legendary axe
+  parent: BaseItem
+  id: legendaryaxe
+  description: When you look at the axe, you feel an unexplainable fear.
+  components:
+  - type: Tag
+    tags:
+    - FireAxe
+  - type: Sharp
+  - type: Sprite
+    sprite: Arcadis_station/Alternate_Universe_references/legendaxe.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    swingLeft: true
+    attackRate: 1.3333
+    damage:
+      types:
+        Blunt: 6
+        Slash: 8
+        Structural: 15
+    heavyDamageBaseModifier: 1.0
+    heavyStaminaCost: 10
+    angle: 100
+    soundHit:
+      collection: MetalThud
+  - type: DamageOtherOnHit
+    meleeDamageMultiplier: 1.5
+    staminaCost: 18
+  - type: EmbeddableProjectile
+  - type: EmbedPassiveDamage
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 2
+        Slash: 5
+        Structural: 40
+  - type: Item
+    size: Ginormous
+  - type: Clothing
+    sprite: Arcadis_station/Alternate_Universe_references/legendaxe.rsi
+    quickEquip: false
+    slots:
+    - back
+  - type: Tool
+    qualities:
+      - Prying
+      - Axing
+  - type: ToolTileCompatible
+  - type: Prying
+  - type: UseDelay
+    delay: 1
+  - type: IgniteOnMeleeHit
+    fireStacks: -4
+  - type: Scalpel
+    speed: 0.3
+  - type: BoneSaw
+    speed: 0.5
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/Medical/Surgery/saw.ogg
+
+# Eliminate A Monarch
+
+- type: entity
+  parent: BaseItem
+  id: KnifePristine
+  name: Pristine Blade
+  description: A Pristine Blade... You know what must be done, eliminate a monarch. do other wise and they will destroy the world.
+  components:
+  - type: Sprite
+    sprite: Arcadis_station/Alternate_Universe_references/Pristine_blade.rsi
+    state: icon
+  - type: ThrowingAngle
+    angle: 225
+  - type: Item
+    sprite: Arcadis_station/Alternate_Universe_references/Pristine_blade.rsi
+    size: Small
+  - type: Tag
+    tags:
+    - Knife
+    - KitchenKnife
+  - type: Sharp
+  - type: Utensil
+    types:
+      - Knife
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 5
+    range: 1.2
+    damage:
+      types:
+        Slash: 10
+    heavyRateModifier: 1.25
+    heavyDamageBaseModifier: 1.2
+    maxTargets: 3
+    angle: 40
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: DamageOtherOnHit
+    staminaCost: 5
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+  - type: EmbedPassiveDamage
+  - type: Tool
+    qualities:
+      - Slicing
+    useSound:
+      path: /Audio/Items/Culinary/chop.ogg
+  - type: Scalpel
+    speed: 0.75
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/Medical/Surgery/scalpel2.ogg
+
+# Camera
+
+- type: entity
+  parent: SignBase
+  id: Signcamera
+  name: strange sign
+  description: Remember! if a future you tries to warn you about this test, DON'T LISTEN.
+  components:
+  - type: Sprite
+    sprite: Arcadis_station/Alternate_Universe_references/Sign.rsi
+    state: icon

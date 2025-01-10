@@ -96,6 +96,7 @@
       - PosterContrabandGotWood # DeltaV Poster, see Resources/Prototypes/DeltaV/Entities/Structures/Wallmount/Signs/posters.yml
       - PosterContrabandAyaya # Nyanotrasen Poster, see Resources/Prototypes/Nyanotrasen/Entities/Structures/Wallmount/Signs/posters.yml
       - PosterContrabandMissingSpacepen
+      - PosterLegitNTPDWanted
     chance: 1
 
 - type: entity
@@ -169,4 +170,5 @@
       - PosterLegitShoukou # Nyanotrasen Poster, see Resources/Prototypes/Nyanotrasen/Entities/Structures/Wallmount/Signs/posters.yml
       - PosterLegitCornzza # Nyanotrasen Poster, see Resources/Prototypes/Nyanotrasen/Entities/Structures/Wallmount/Signs/posters.yml
       - PosterLegitFuckAround # DeltaV Poster, see Resources/Prototypes/DeltaV/Entities/Structures/Wallmount/Signs/posters.yml
+      - PosterLegitNTPDWanted
     chance: 1

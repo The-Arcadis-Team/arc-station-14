@@ -1468,3 +1468,116 @@
           - Cartridge
   - type: ClothingAddFaction
     faction: Syndicate
+
+# NTPD
+
+- type: entity
+  parent: BasePDA
+  id: NTPDPDA
+  name: NTPD PDA
+  description: an NTPD PDA, now say that five times fast.
+  components:
+  - type: Pda
+    id: NTPDIDCard
+    state: pda-ntpd
+  - type: PdaBorderColor
+    borderColor: "#0d2d50"
+    accentVColor: "#0d2d50"
+  - type: Icon
+    state: pda-ntpd
+  - type: CartridgeLoader
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NewsReaderCartridge
+      - CrimeAssistCartridge
+      - SecWatchCartridge
+
+- type: entity
+  parent: IDCardStandard
+  id: NTPDIDCard
+  name: NTPD operative ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: NTPD
+    - state: department
+      color: "#0d2d50"
+    - state: subdepartment
+      color: "#0d2d50"
+    - state: idcentcom
+  - type: IdCard
+    jobTitle: NTPD operative
+    jobIcon: JobIconNanotrasen
+  - type: Access
+    tags:
+    - EmergencyShuttleRepealAll
+    - HeadOfPersonnel
+    - ChiefEngineer
+    - ChiefMedicalOfficer
+    - HeadOfSecurity
+    - ResearchDirector
+    - Command
+    - Cryogenics
+    - Security
+    - Detective
+    - Brig
+    - Lawyer
+    - Engineering
+    - Medical
+    - Quartermaster
+    - Salvage
+    - Cargo
+    - Research
+    - Service
+    - Maintenance
+    - External
+    - Janitor
+    - Theatre
+    - Bar
+    - Chemistry
+    - Kitchen
+    - Chapel
+    - Hydroponics
+    - Atmospherics
+    - NTPD
+    - CentralCommand
+
+# Merc
+
+- type: entity
+  parent: BasePDA
+  id: MERCPDA
+  name: merc PDA
+  description: a merc PDA. Urban Solutions standerd.
+  components:
+  - type: Pda
+    id: MERCIDCard
+    state: pda-merc
+  - type: PdaBorderColor
+    borderColor: "#484848"
+    accentVColor: "#484848"
+  - type: Icon
+    state: pda-merc
+  - type: CartridgeLoader
+    preinstalled:
+      - NotekeeperCartridge
+
+- type: entity
+  parent: IDCardStandard
+  id: MERCIDCard
+  name: Mercenary ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: rusty
+    - state: department
+      color: "#484848"
+    - state: subdepartment
+      color: "#484848"
+    - state: merc
+  - type: Access
+    tags:
+    - merc
+    - Maintenance
+    - External
