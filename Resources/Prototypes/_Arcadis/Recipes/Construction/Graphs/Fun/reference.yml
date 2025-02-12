@@ -1,0 +1,29 @@
+- type: constructionGraph
+  id: DustyPlush
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: DustyPlush
+      steps:
+      - item: PlushieMoth
+        doAfter: 1
+      - item: ClothingHeadHatCapcap
+        doAfter: 2
+  - node: DustyPlush
+    entity: PlushieDusty
+
+- type: constructionGraph
+  id: WyattPlush
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: WyattPlush
+      steps:
+      - item: PlushieMoth
+        doAfter: 1
+      - item: ClotingHeadHatHoshat
+        doAfter: 2
+  - node: WyattPlush
+    entity: PlushieWyatt
