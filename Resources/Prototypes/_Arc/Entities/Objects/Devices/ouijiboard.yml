@@ -24,7 +24,7 @@
   - type: ActivatableUI
     singleUser: false
     requireActiveHand: false
-    requiredComplex: false
+    requiresComplex: false
     key: enum.AACTabletKey.Key
   - type: Damageable
     damageContainer: Inorganic
