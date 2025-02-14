@@ -23,8 +23,8 @@
         shader: unshaded
   - type: ActivatableUI
     singleUser: false
-    RequireActiveHand: false
-    RequiredComplex: false
+    requireActiveHand: false
+    requiredComplex: false
     key: enum.AACTabletKey.Key
   - type: Damageable
     damageContainer: Inorganic
@@ -40,7 +40,7 @@
     interfaces:
       enum.AACTabletKey.Key:
         type: AACBoundUserInterface
-        RequireInputValidation: false
+        requireInputValidation: false
   - type: Speech
     speechSounds: Alto
   - type: OuijiBoard
