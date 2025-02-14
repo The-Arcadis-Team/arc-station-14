@@ -1,0 +1,47 @@
+- type: entity
+  parent: BaseItem
+  id: ouijiboard
+  name: ouiji board
+  description: board where not only human can use it but ghost as well...
+  components:
+  - type: Sprite
+    sprite: DeltaV/Objects/Devices/tablets.rsi
+    layers:
+      - state: aac_tablet
+      - state: aac_screen
+        shader: unshaded
+    state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: aac-inhand-left
+      - state: aac_screen-inhand-left
+        shader: unshaded
+      right:
+      - state: aac-inhand-right
+      - state: aac_screen-inhand-right
+        shader: unshaded
+  - type: ActivatableUI
+    singleUser: false
+    RequireActiveHand: false
+    RequiredComplex: false
+    key: enum.AACTabletKey.Key
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: UserInterface
+    interfaces:
+      enum.AACTabletKey.Key:
+        type: AACBoundUserInterface
+        RequireInputValidation: false
+  - type: Speech
+    speechSounds: Alto
+  - type: OuijiBoard
+  - type: VoiceMask
