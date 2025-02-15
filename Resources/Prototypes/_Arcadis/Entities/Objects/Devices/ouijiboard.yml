@@ -1,11 +1,11 @@
 - type: entity
   parent: BaseItem
   id: ouijiboard
-  name: ouiji board
-  description: board where not only human can use it but ghost as well...
+  name: ouiji table
+  description: modified AACTablet where not only human can use it but ghost as well...
   components:
   - type: Sprite
-    sprite: DeltaV/Objects/Devices/tablets.rsi
+    sprite: _Arcadis/Objects/Devices/ouijitablets.rsi
     layers:
       - state: aac_tablet
       - state: aac_screen
