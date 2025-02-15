@@ -12,3 +12,6 @@
 
 - type: Tag
   id: RifleBatteryMag
+
+- type: Tag
+  id: Durathread # trying to fix yaml fail
