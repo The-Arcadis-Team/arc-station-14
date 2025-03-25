@@ -174,7 +174,7 @@
   - UplinkDisruptionntpd
 
 - type: listing
-  id: UplinkDoorjack
+  id: UplinkDoorjack2
   name: uplink-doorjack-name
   description: A modified cryptographic sequencer, designed solely to breach NanoTrasen's updated airlocks. Does not tamper with anything else.
   productEntity: Doorjack
