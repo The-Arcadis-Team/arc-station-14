@@ -141,15 +141,16 @@
   categories:
   - UplinkDeceptionntpd
 
-- type: listing
-  id: UplinkNTPDpen2
-  name: NTPD pen
-  description: The best way to keep secrets, Write it down on paper!
-  productEntity: NTPDPen
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkDeceptionntpd
+# TODO reimplement NTPD pen
+#- type: listing
+#  id: UplinkNTPDpen2
+#  name: NTPD pen
+#  description: The best way to keep secrets, Write it down on paper!
+#  productEntity: NTPDPen
+#  cost:
+#    Telecrystal: 5
+#  categories:
+#  - UplinkDeceptionntpd
 
 - type: listing
   id: UplinkDecoyDisk2
@@ -265,7 +266,7 @@
   id: UplinkClothingNTPD2
   name: NTPD Magboots
   description: A state-of-the-art pair of magboots, fresh from R&D. Their light alloy results in no slowdown when worn.
-  productEntity: ClothingShoesBootsMagAdvNTPD
+  productEntity: ClothingShoesBootsMagNTPD
   cost:
     Telecrystal: 10
   categories:
