@@ -20,6 +20,7 @@
   randomizeName: false
   speciesBlacklist:
     - Shadowkin
+    - Plasmaman
   components:
     - type: MindShield
     - type: Loadout
@@ -72,6 +73,7 @@
   randomizeName: false
   speciesBlacklist:
     - Shadowkin
+    - Plasmaman
   components:
     - type: MindShield
     - type: Loadout
@@ -108,8 +110,8 @@
       state: full
     - type: RandomMetadata
       nameSegments:
-        - NamesFirstmerc
-        - NamesLastmerc
+        - names_first
+        - names_last
     - type: RandomHumanoidSpawner
       settings: MERCSettings
 
@@ -118,14 +120,15 @@
   randomizeName: false
   speciesBlacklist:
     - Shadowkin
+    - Plasmaman
   components:
     - type: MindShield
     - type: Loadout
       prototypes: [ MERCGear ]
     - type: RandomMetadata
       nameSegments:
-        - NamesFirstmerc
-        - NamesLastmerc
+        - names_first
+        - names_last
 
 # Merc Gear
 
@@ -137,6 +140,7 @@
     mask: ClothingMaskGasMerc
     ears: ClothingHeadsetMERC
     gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterVestWebMerc
     suitstorage: AirTankFilled
     shoes: ClothingShoesBootsMerc
     id: MERCPDA
