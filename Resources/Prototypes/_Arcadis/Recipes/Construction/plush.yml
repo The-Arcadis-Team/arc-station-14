@@ -1,0 +1,21 @@
+- type: construction
+  name: captain plushie
+  id: PlushieDusty
+  graph: DustyPlush
+  startNode: start
+  targetNode: DustyPlush
+  category: construction-category-misc
+  description: A small plushie of a moth captain. It's a bit dusty.
+  icon: { sprite: Objects/Fun/toys.rsi, state: plushie_dusty }
+  objectType: Item
+
+- type: construction
+  name: head of security plushie
+  id: PlushieWyatt
+  graph: WyattPlush
+  startNode: start
+  targetNode: WyattPlush
+  category: construction-category-misc
+  description: A plushie of a moffic Head of Security. It even comes with a stun baton... not a very good one, though.
+  icon: { sprite: Objects/Fun/toys.rsi, state: plushie_wyatt }
+  objectType: Item
