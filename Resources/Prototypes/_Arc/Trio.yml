@@ -228,7 +228,6 @@
     - Crab
     - Sign
   - type: FootPrints
-  - type: Flashable
   - type: PassiveDamage
     allowedStates:
     - Alive
