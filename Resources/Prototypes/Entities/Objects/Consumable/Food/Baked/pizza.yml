@@ -1332,6 +1332,7 @@
     - Meat
     - Pizza
     - HighRiskItem
+
 - type: entity
   name: spicy rock pizza
   parent: FoodPizzaBase
@@ -1353,6 +1354,20 @@
     tags:
     - Meat
     - Pizza
+  - type: PointLight
+    enabled: true
+    radius: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Radium
+          Quantity: 4
+        - ReagentId: Uranium
+          Quantity: 16
 
 - type: entity
   name: slice of BoBo's pizza
@@ -2140,21 +2155,6 @@
     - Meat
     - Pizza
     - HighRiskItem
-
-  - type: PointLight
-    enabled: true
-    radius: 2
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 40
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 20
-        - ReagentId: Radium
-          Quantity: 4
-        - ReagentId: Uranium
-          Quantity: 16
 
 - type: entity
   name: slice of spicy rock pizza
