@@ -71,7 +71,9 @@
     - BypassInteractionRangeChecks
   - type: UniversalLanguageSpeaker # Ghosts should understand any language.
   - type: PointLight
+    netsync: false
     radius: 6
+    castShadows: false
     enabled: false
   - type: UserInterface
     interfaces:
@@ -86,6 +88,9 @@
   id: MobObserver
   components:
   - type: Spectral
+  - type: Tag
+    tags:
+    - AllowGhostShownByEvent
 
 - type: entity
   id: ActionGhostBoo
