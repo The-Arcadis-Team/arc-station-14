@@ -193,12 +193,6 @@
     - Mouse
     - SimpleHostile
 
-- type: npcFaction
-  id: Birb
-
-- type: npcFaction
-  id: AnimalFriend
-
 # Arcode begins
 
 - type: npcFaction
@@ -366,17 +360,3 @@
 
 - type: npcFaction
   id: AnimalFriend
-
-- type: npcFaction
-  id: SAN
-  hostile:
-  - NanoTrasen
-  - SimpleHostile
-  - Syndicate
-  - Xeno
-  - Zombie
-  - Revolutionary
-  - Dragon
-  - Changeling
-  - Shadowling
-
