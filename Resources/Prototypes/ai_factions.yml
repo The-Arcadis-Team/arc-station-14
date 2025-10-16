@@ -188,9 +188,6 @@
     - Mailman
 
 - type: npcFaction
-  id: Mailman
-
-- type: npcFaction
   id: Cat
   hostile:
     - Mouse
@@ -362,89 +359,13 @@
   - Blob # Goobstation - Blob
 
 - type: npcFaction
-  id: Pibble
-  friendly:
-  - AnimalFriend
-  hostile:
-  - Cat
-  - Birb
-  - Mailman
-
-- type: npcFaction
   id: Mailman
-
-- type: npcFaction
-  id: Cat
-  hostile:
-  - Mouse
-  - SimpleHostile
 
 - type: npcFaction
   id: Birb
 
 - type: npcFaction
   id: AnimalFriend
-
-- type: npcFaction
-  id: GladiabotFFA
-  hostile:
-  - GladiabotFFA
-  - GladiabotRed
-  - GladiabotGreen
-  - GladiabotBlue
-  - GladiabotYellow
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
-
-- type: npcFaction
-  id: GladiabotRed
-  hostile:
-  - GladiabotFFA
-  - GladiabotGreen
-  - GladiabotBlue
-  - GladiabotYellow
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
-
-- type: npcFaction
-  id: GladiabotGreen
-  hostile:
-  - GladiabotFFA
-  - GladiabotRed
-  - GladiabotBlue
-  - GladiabotYellow
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
-
-- type: npcFaction
-  id: GladiabotBlue
-  hostile:
-  - GladiabotFFA
-  - GladiabotRed
-  - GladiabotGreen
-  - GladiabotYellow
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
-
-- type: npcFaction
-  id: GladiabotYellow
-  hostile:
-  - GladiabotFFA
-  - GladiabotRed
-  - GladiabotGreen
-  - GladiabotBlue
-  - SimpleHostile
-  - Xeno
-  - Zombie
-  - Dragon
 
 - type: npcFaction
   id: SAN
