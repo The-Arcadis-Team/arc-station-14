@@ -199,6 +199,7 @@
       species:
         - Harpy
         - IPC
+        - Protogen
     - !type:CharacterTraitRequirement
       inverted: true
       traits:

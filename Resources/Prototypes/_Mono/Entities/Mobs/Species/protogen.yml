@@ -4,7 +4,7 @@
   name: Urist McHardDrive
   abstract: true
   components:
-  - type: HarpySinger # Mono
+  - type: Singer # Mono
   - type: Instrument # Mono
     allowPercussion: true
     allowProgramChange: true
