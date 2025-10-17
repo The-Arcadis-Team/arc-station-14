@@ -136,6 +136,7 @@
       inverted: true
       species:
         - IPC
+        - Protogen
   functions:
     - !type:TraitAddComponent
       components:

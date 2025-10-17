@@ -51,6 +51,15 @@
   id: Clone
   nameKey: lifepath_name_clone
   descriptionKey: lifepath_description_clone
+  requirements:
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - Uncloneable
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - Protogen
 
 - type: lifepath
   id: Miner

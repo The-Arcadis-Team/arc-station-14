@@ -13,8 +13,6 @@
   - type: LanguageKnowledge
     speaks:
     - TauCetiBasic
-    - Canilunzt
     understands:
     - TauCetiBasic
-    - Canilunzt
     - RobotTalk

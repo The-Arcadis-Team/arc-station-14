@@ -1,0 +1,78 @@
+# I have commmitted a sin today.
+
+- type: polymorph
+  id: Protogenized
+  configuration:
+    entity: MobProtogenRandom
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: false # breaks proot appearance, kis
+    inventory: Transfer
+    revertOnDeath: false
+    revertOnCrit: false
+
+- type: entity
+  id: ProjectilePolyboltProtogen
+  parent: ProjectilePolyboltBase
+  name: protogen polybolt
+  description: Nooo, I don't wanna be a protogen!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
+    layers:
+    - state: spell
+      color: '#FFA500'
+  - type: Projectile
+    damage:
+      types:
+        Genetic: 10
+  - type: PolymorphOnCollide
+    polymorph: Protogenized
+    whitelist:
+      components:
+      - Body
+
+# Well, time to make a gun that shoots a bullet that polymorphs you.
+# Why did I do this.
+
+- type: entity
+  name: the protogenizer
+  parent: [ BaseWeaponBatterySmall, BaseRestrictedContraband ]
+  id: WeaponProtogenizer
+  description: An odd, strangely constructed gun with some sort of orange canister inside. Seeing this makes you feel an immense sense of dread.
+  components:
+  - type: Item
+    size: Normal  # Intentionally larger than other pistols!
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: ProjectilePolyboltProtogen
+    fireCost: 100
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 20000
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 8
+  - type: DamageOtherOnHit
+    staminaCost: 6

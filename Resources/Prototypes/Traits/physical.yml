@@ -406,6 +406,7 @@
         - Shadowkin # Shadowkins also have claws.
         - Xelthia # Claws don't make sense on tentacle arms
         # - Vulpkanin # Vulpkanin have "Blunt" claws. One could argue this trait "Sharpens" their claws.
+        - Protogen # proots have claws already!!
     - !type:CharacterTraitRequirement
       inverted: true
       traits:

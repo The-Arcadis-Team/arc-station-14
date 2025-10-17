@@ -1,0 +1,12 @@
+- type: trait
+  id: Cloneable
+  category: Physical
+  points: -2
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+        - Protogen
+  functions:
+    - !type:TraitRemoveComponent
+      components:
+        - type: Uncloneable

@@ -10,4 +10,4 @@ trait-description-DogVision = Whether through custom bionic eyes, random mutatio
                           or being a Vulpkanin, you have red–green colour blindness.
 
 trait-name-Uncloneable = Uncloneable
-trait-description-Uncloneable = Cannot be cloned
+trait-description-Uncloneable = Whether by genetic corruption, sheer bad luck, or some other reason, your character is entirely uncloneable.
