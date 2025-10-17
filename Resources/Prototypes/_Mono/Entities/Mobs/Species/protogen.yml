@@ -5,6 +5,7 @@
   abstract: true
   components:
   - type: Singer # Mono
+    singerProto: HarpySinger
   - type: Instrument # Mono
     allowPercussion: true
     allowProgramChange: true
