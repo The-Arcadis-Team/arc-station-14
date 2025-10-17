@@ -1,7 +1,7 @@
 - type: species
   id: Protogen
   name: species-name-protogen
-  roundStart: false # NT doesnt hire these mfs yet
+  roundStart: true # NT doesnt hire these mfs yet
   prototype: MobProtogen
   sprites: MobProtogenSprites
   defaultSkinTone: "#ffda93"
