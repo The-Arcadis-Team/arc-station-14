@@ -1,0 +1,30 @@
+#this is for starting gear that are use for SetOutfit command
+
+- type: startingGear
+  id: CRCentcomGear
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficialAlt
+    back: ClothingModsuitCorporate
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcomcap
+    eyes: ClothingEyesGlassesCR
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorCentcomReactiveArmor
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: BlueShieldShieldFilled
+    pocket1: CRWeaponPistolEnergy
+    pocket2: ToolDebug
+  storage:
+    back:
+    - MindShieldImplanter
+    - BluespaceLifelineImplanter
+    - OmnimedTool
+    - Hypospray
+    - WelderExperimental
+    - RCDExperimental
+    - CQCManual
+    - NocturineChemistryBottle
+    - OmnizineChemistryBottle
