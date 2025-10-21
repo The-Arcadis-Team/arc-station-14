@@ -47,6 +47,7 @@
     fx: EffectRCDDeconstruct2
   - type: Physics
     bodyType: Static
+    canCollide: false #Arcadis Station - REMOVE COLLISION WHO THINK THIS IS A GOOD IDEA TO GIVE LIGHT COLLISION
   - type: Fixtures
     fixtures:
       fix1:
