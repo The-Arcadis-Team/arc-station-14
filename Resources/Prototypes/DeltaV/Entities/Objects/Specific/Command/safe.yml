@@ -21,7 +21,7 @@
             components:
             - IdCard
     - type: AccessReader
-      access: [["DV-SpareSafe"]]
+      access: [["Command"]] #Arcadis Station - fix invalid access
     - type: SpareIDSafe
 
 - type: entity
