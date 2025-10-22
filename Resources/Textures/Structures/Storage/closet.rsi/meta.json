@@ -606,6 +606,15 @@
         },
         {
             "name": "representative_door"
+        },
+        {
+            "name": "NTPD"
+        },
+        {
+            "name": "NTPD_door"
+        },
+        {
+            "name": "NTPD_open"
         }
     ]
 }
