@@ -24,11 +24,15 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutLogisticsOfficerGloves
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutLogisticsOfficerGloves
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutCommandQMBlackGlove
+    - type: loadout
+      id: LoadoutCommandQMKnuckleDuster
+
 - type: characterItemGroup
   id: LoadoutLogisticsOfficerHead
   maxItems: 1
