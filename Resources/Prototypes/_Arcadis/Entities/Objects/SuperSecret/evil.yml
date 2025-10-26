@@ -1,0 +1,11 @@
+- type: entity
+  name: cassidy's special pen
+  parent: [BaseAdvancedPen]
+  id: PenSpecialCassidy
+  categories: [ HideSpawnMenu ] # shhhhh... you're not supposed to have this one.
+  description: A sleek, golden pen with lightly glowing red joints. The ink is highly corrosive, to the point where it can actively overwrite previous written passages and annihilate most living things it touches. The ballpoint itself is also capable of quickly tearing through every material Nanotrasen has.
+  components:
+  - type: Sprite
+    state: pen_centcom
+  - type: Item
+    heldPrefix: pen_centcom
