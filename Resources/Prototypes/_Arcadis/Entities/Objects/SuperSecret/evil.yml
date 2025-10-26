@@ -16,10 +16,10 @@
     wideAnimationRotation: -45
     damage:
       types:
-        Piercing: 51811666632254
+        Piercing: 51811666
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 51811666632254
+        Piercing: 51811666
