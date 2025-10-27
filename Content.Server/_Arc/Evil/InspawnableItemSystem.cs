@@ -3,6 +3,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Content.Server.Popups;
 using Content.Shared._Arc.Evil;
+using Content.Shared.Popups;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
@@ -31,8 +32,8 @@ public sealed class InspawnableItemSystem : EntitySystem
     private void NiceTryFederal(EntityUid uid, InspawnableItemComponent component, ComponentRemove args)
     {
         _popup.PopupCoordinates(
-            _transform.GetMapCoordinates(uid),
             component.DissapearanceText,
+            Transform(uid).Coordinates,
             PopupType.LargeCaution);
         _entMan.DeleteEntity(uid); // You tried.
     }
@@ -47,8 +48,8 @@ public sealed class InspawnableItemSystem : EntitySystem
             if (!_confirmedUIDs.Contains(uid.Id))
             {
                 _popup.PopupCoordinates(
-                    _transform.GetMapCoordinates(uid),
-                    component.DissapearanceText,
+                    comp.DissapearanceText,
+                    Transform(uid).Coordinates,
                     PopupType.LargeCaution);
                 _entMan.DeleteEntity(uid);
                 continue;
