@@ -42,6 +42,7 @@
   id: WeaponProtogenizer
   description: An odd, strangely constructed gun with some sort of orange canister inside. Seeing this makes you feel an immense sense of dread.
   components:
+  - type: InspawnableItem
   - type: Item
     size: Normal  # Intentionally larger than other pistols!
   - type: Sprite

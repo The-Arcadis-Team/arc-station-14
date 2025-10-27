@@ -5,6 +5,7 @@
   categories: [ HideSpawnMenu ] # shhhhh... you're not supposed to have this one.
   description: A sleek, golden pen with lightly glowing red joints. The ink is highly corrosive, to the point where it can actively overwrite previous written passages and annihilate most living things it touches. The ballpoint itself is also capable of quickly tearing through every material Nanotrasen has.
   components:
+  - type: InspawnableItem
   - type: Sprite
     sprite: _Arc/Secrets/pen.rsi
     state: pen_cassidy
@@ -16,10 +17,10 @@
     wideAnimationRotation: -45
     damage:
       types:
-        Piercing: 51811666
+        Piercing: 5181166
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 51811666
+        Piercing: 5181166
