@@ -11,5 +11,5 @@ namespace Content.Shared._Arc.Evil;
 public sealed partial class InspawnableItemComponent : Component
 {
     [DataField]
-    public string DissapearanceText = "The item fizzles out of existence. Stop trying.";
+    public string DissapearanceText = "The item fizzles out of existence.";
 }

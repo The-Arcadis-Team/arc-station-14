@@ -30,6 +30,10 @@ public sealed class InspawnableItemSystem : EntitySystem
 
     private void NiceTryFederal(EntityUid uid, InspawnableItemComponent component, ComponentRemove args)
     {
+        _popup.PopupCoordinates(
+            _transform.GetMapCoordinates(uid),
+            component.DissapearanceText,
+            PopupType.LargeCaution);
         _entMan.DeleteEntity(uid); // You tried.
     }
 
@@ -42,6 +46,10 @@ public sealed class InspawnableItemSystem : EntitySystem
         {
             if (!_confirmedUIDs.Contains(uid.Id))
             {
+                _popup.PopupCoordinates(
+                    _transform.GetMapCoordinates(uid),
+                    component.DissapearanceText,
+                    PopupType.LargeCaution);
                 _entMan.DeleteEntity(uid);
                 continue;
             }
