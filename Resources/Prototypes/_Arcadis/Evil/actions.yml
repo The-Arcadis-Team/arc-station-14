@@ -1,0 +1,8 @@
+- type: entity
+  id: ActionRemoveVisor
+  name: Take off visor
+  description: Take off the strange visor, and return back to normal.
+  components:
+  - type: InstantAction
+    icon: { sprite: _Arc/Clothing/Mask/visor.rsi, state: icon }
+    event: !type:VisorRemoveActionEvent

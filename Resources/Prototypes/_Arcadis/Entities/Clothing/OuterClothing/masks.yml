@@ -1,0 +1,37 @@
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskVisor
+  name: protogen's visor
+  abstract: true
+  description: The disembodied visor of a Protogen. Equipping it might have ill effects.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    scale: 0.75, 0.75
+    sprite: _Arc/Clothing/Mask/visor.rsi
+  - type: IngestionBlocker
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Snout
+  - type: IdentityBlocker
+    coverage: MOUTH
+
+- type: entity
+  parent: ClothingMaskVisor
+  id: ClothingMaskVisorCursed
+  suffix: Cursed, Manual
+  components:
+  - type: CursedVisor
+
+- type: entity
+  parent: ClothingMaskVisor
+  id: ClothingMaskVisorCursedAlternate
+  suffix: Cursed, Manual, Alternate
+  components:
+  - type: CursedVisor
+    popupOnDequip: "visor-popup-dequip-alternate"
+    popupOnEquip: "visor-popup-equip-alternate"
+    chatMesssageOnEquip: "visor-chat-equip-alternate"
+
