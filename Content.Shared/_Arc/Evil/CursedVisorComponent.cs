@@ -27,6 +27,9 @@ public sealed partial class CursedVisorComponent : Component
     [DataField]
     public string? PopupOnDequip = "visor-popup-dequip";
 
+    [DataField]
+    public bool HideItem = true;
+
 }
 
 [RegisterComponent, NetworkedComponent]

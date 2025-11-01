@@ -75,9 +75,24 @@ public sealed class CursedVisorSystem : EntitySystem
 
         SubscribeLocalEvent<VisorConvertedComponent, VisorRemoveActionEvent>(OnVisorRemoveEvent);
         SubscribeLocalEvent<CursedVisorComponent, EntGotInsertedIntoContainerMessage>(OnClothingEquipped);
+        SubscribeLocalEvent<CursedVisorComponent, EntRemovedFromContainerMessage>(OnClothingUnequipped);
+    }
+
+    private void OnClothingUnequipped(EntityUid uid, CursedVisorComponent component,
+        EntRemovedFromContainerMessage args)
+    {
+        var target = args.Container.Owner;
+
+        if (args.Container.ID != component.EquipTo)
+            return;
+
+        if (!TryComp<VisorConvertedComponent>(target, out var convertedComp))
+            return;
+
+        OnVisorRemoveEvent(uid, convertedComp, null);
     }
     private void OnVisorRemoveEvent(EntityUid uid, VisorConvertedComponent component,
-        VisorRemoveActionEvent args)
+        VisorRemoveActionEvent? _)
     {
         if (Deleted(uid))
             return;
@@ -153,6 +168,11 @@ public sealed class CursedVisorSystem : EntitySystem
 
         MakeSentientCommand.MakeSentient(child, EntityManager);
 
+        if (component.HideItem)
+            TransferEntityInventoriesExceptMask(target, child, component.EquipTo);
+        else
+            _inventory.TransferEntityInventories(target, child);
+
         var convertedComp = _compFact.GetComponent<VisorConvertedComponent>();
         convertedComp.Parent = target;
         convertedComp.VisorEnt = uid;
@@ -166,18 +186,22 @@ public sealed class CursedVisorSystem : EntitySystem
 
         if (component.ChatMesssageOnEquip != null)
         {
-            var session = _playerMan.GetSessionById(playerData.UserId);
-            if (session == null)
+            if (TryComp<ActorComponent>(target, out var actorComp))
+            {
+                var session = actorComp.PlayerSession;
+                if (session == null)
+                    return;
+                var chatMessage = Loc.GetString(component.ChatMesssageOnEquip, ("name", childMetadata.EntityName));
+                var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", chatMessage));
+                _chatManager.ChatMessageToOne(Shared.Chat.ChatChannel.Server,
+                chatMessage,
+                wrappedMessage,
+                default,
+                false,
+                session.Channel,
+                Color.Gray);
                 return;
-            var chatMessage = Loc.GetString(component.ChatMesssageOnEquip, ("name", childMetadata.EntityName));
-            var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", chatMessage));
-            _chatManager.ChatMessageToOne(Shared.Chat.ChatChannel.Server,
-            chatMessage,
-            wrappedMessage,
-            default,
-            false,
-            session.Channel,
-            Color.Gray);
+            }
         }
 
         if (component.PopupOnEquip != null)
@@ -186,7 +210,6 @@ public sealed class CursedVisorSystem : EntitySystem
         if (_container.TryGetContainingContainer((target, targetTransformComp, null), out var cont))
             _container.Insert(child, cont);
 
-        TransferEntityInventoriesExceptMask(target, child);
         foreach (var hand in _hands.EnumerateHeld(target))
         {
             _hands.TryDrop(target, hand, checkActionBlocker: false);
@@ -228,7 +251,7 @@ public sealed class CursedVisorSystem : EntitySystem
         return true;
     }
 
-    public void TransferEntityInventoriesExceptMask(Entity<InventoryComponent?> source, Entity<InventoryComponent?> target)
+    public void TransferEntityInventoriesExceptMask(Entity<InventoryComponent?> source, Entity<InventoryComponent?> target, string slotToIgnore = "mask")
     {
         if (!Resolve(source.Owner, ref source.Comp) || !Resolve(target.Owner, ref target.Comp))
             return;
@@ -236,7 +259,7 @@ public sealed class CursedVisorSystem : EntitySystem
         var enumerator = new InventorySlotEnumerator(source.Comp);
         while (enumerator.NextItem(out var item, out var slot))
         {
-            if (slot.Name == "mask")
+            if (slot.Name == slotToIgnore)
                 continue;
 
             if (_inventory.TryUnequip(source, slot.Name, true, true, inventory: source.Comp))
