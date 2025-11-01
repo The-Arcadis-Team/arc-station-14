@@ -168,15 +168,15 @@ public sealed class CursedVisorSystem : EntitySystem
 
         MakeSentientCommand.MakeSentient(child, EntityManager);
 
-        if (component.HideItem)
-            TransferEntityInventoriesExceptMask(target, child, component.EquipTo);
-        else
-            _inventory.TransferEntityInventories(target, child);
-
         var convertedComp = _compFact.GetComponent<VisorConvertedComponent>();
         convertedComp.Parent = target;
         convertedComp.VisorEnt = uid;
         AddComp(child, convertedComp);
+
+        if (component.HideItem)
+            TransferEntityInventoriesExceptMask(target, child, component.EquipTo);
+        else
+            _inventory.TransferEntityInventories(target, child);
 
         var childXform = Transform(child);
         _transform.SetLocalRotation(child, targetTransformComp.LocalRotation, childXform);
