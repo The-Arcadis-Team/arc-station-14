@@ -194,13 +194,13 @@ public sealed class CursedVisorSystem : EntitySystem
                 var chatMessage = Loc.GetString(component.ChatMesssageOnEquip, ("name", childMetadata.EntityName));
                 var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", chatMessage));
                 _chatManager.ChatMessageToOne(Shared.Chat.ChatChannel.Server,
-                chatMessage,
-                wrappedMessage,
-                default,
-                false,
-                session.Channel,
-                Color.Gray);
-                return;
+                    chatMessage,
+                    wrappedMessage,
+                    default,
+                    false,
+                    session.Channel,
+                    Color.Gray
+                );
             }
         }
 
