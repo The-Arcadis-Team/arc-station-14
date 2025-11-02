@@ -75,6 +75,13 @@
     modifiers:
       coefficients:
         Piercing: 2.25
+  - type: LifeDrainer
+    damage:
+      types:
+        Asphyxiation: 200
+    whitelist:
+      components:
+      - Psionic
   - type: Damageable
     damageContainer: BiologicalMetaphysical
     damageModifierSet: HalfSpirit
