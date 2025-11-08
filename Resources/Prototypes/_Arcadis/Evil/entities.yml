@@ -15,7 +15,7 @@
 - type: polymorph
   id: VoidJaunt
   configuration:
-    entity: PolymorphShadowJaunt
+    entity: PolymorphVoidJaunt
     forced: false
 
 - type: entity
