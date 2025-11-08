@@ -12,7 +12,7 @@ namespace Content.Shared._Arc.Evil;
 public sealed partial class InnateMagicComponent : Component
 {
     [DataField]
-    public List<string> ActionsToAdd = new();
+    public List<string> ActionsToAdd = new() { "No", "No", "No", "No", "No" };
 }
 
 public sealed partial class AntivoidFormItemEvent : InstantActionEvent;

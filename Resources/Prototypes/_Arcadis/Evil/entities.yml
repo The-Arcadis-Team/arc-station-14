@@ -17,6 +17,7 @@
   configuration:
     entity: PolymorphVoidJaunt
     forced: false
+    duration: 15
 
 - type: entity
   id: PolymorphVoidJaunt
