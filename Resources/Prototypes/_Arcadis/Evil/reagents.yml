@@ -1,0 +1,31 @@
+- type: reagent
+  id: PureVoid
+  name: reagent-name-purevoid
+  desc: reagent-desc-purevoid
+  group: Medicine
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: chalky
+  color: "#000000"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:NoMoreExisting
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.01
+
+- type: reagent
+  id: PureAntivoid
+  name: reagent-name-pureantivoid
+  desc: reagent-desc-pureantivoid
+  group: Medicine
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: chalky
+  color: "#ffffff"
+  metabolisms:
+    Poison:
+      effects:
+      - !type:NoMoreExisting
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.01

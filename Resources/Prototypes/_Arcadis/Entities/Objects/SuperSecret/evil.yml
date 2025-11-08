@@ -17,10 +17,45 @@
     wideAnimationRotation: -45
     damage:
       types:
-        Piercing: 5181166
+        Piercing: 51811
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: DamageOtherOnHit
     damage:
       types:
-        Piercing: 5181166
+        Piercing: 51811
+
+- type: entity
+  name: energy cutlass
+  parent: [BaseMeleeWeaponEnergy, BaseMajorContraband]
+  id: CondensedEnergyBlade
+  description: An overcharged variant of a typical energy cutlass. Causes immense damage to anomalies, destroying them on contact.
+  components:
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+        types:
+            Slash: 12
+            Heat: 36
+            Shock: 12
+    deactivatedSecret: true
+#  - type: ComponentToggler
+#    components:
+#    - type: AnomalySlicer
+  - type: Sprite
+    sprite: DeltaV/Objects/Weapons/Melee/e_cutlass.rsi
+    layers:
+      - state: e_cutlass
+      - state: e_cutlass_blade
+        color: "#e95151"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: MeleeWeapon
+    attackRate: 1.5
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
+    damage:
+      types:
+        Blunt: 4
+  - type: Item
+    sprite: DeltaV/Objects/Weapons/Melee/e_cutlass.rsi

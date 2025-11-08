@@ -35,3 +35,18 @@
     popupOnEquip: "visor-popup-equip-alternate"
     chatMesssageOnEquip: "visor-chat-equip-alternate"
 
+- type: entity
+  parent: ClothingHeadHatCapcap
+  id: ClothingHeadHatCapcapCursedDusty
+  suffix: DustyCurse
+  components:
+  - type: CursedVisor
+    hideItem: false
+    equipTo: "head"
+    playerCopyFrom: "FederalBureau"
+    playerCharacterCopyFromIndex: 11
+    popupOnEquip: "visor-popup-equip-alternate-hat"
+    popupOnDequip: "visor-popup-dequip-alternate-hat"
+    chatMesssageOnEquip: "visor-chat-equip-nomem"
+
+

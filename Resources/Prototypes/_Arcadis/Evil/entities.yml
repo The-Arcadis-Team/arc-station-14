@@ -1,0 +1,32 @@
+- type: entity
+  id: PolymorphVoidDropFormAnimation
+  name: Unknown
+  description: You can't figure out what that is.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Arcadis/Objects/polymorphs.rsi
+    state: void_jaunt
+    loop: false
+  - type: TimedDespawn
+    lifetime: 1
+
+- type: polymorph
+  id: VoidJaunt
+  configuration:
+    entity: PolymorphShadowJaunt
+    forced: false
+
+- type: entity
+  id: PolymorphVoidJaunt
+  name: The Void
+  description: Pure nothingness.
+  parent: BaseMobJaunt
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 12
+    baseWalkSpeed: 8
+  - type: Actions # :3
+

@@ -1,8 +1,33 @@
 - type: entity
   id: ActionRemoveVisor
-  name: Take off visor
-  description: Take off the strange visor, and return back to normal.
+  name: Turn Back
+  description: Take off whatever converted you into a different form.
   components:
   - type: InstantAction
     icon: { sprite: _Arc/Clothing/Mask/visor.rsi, state: icon }
     event: !type:VisorRemoveActionEvent
+
+- type: entity
+  id: ActionFormItem
+  name: Form Item
+  description: Use the Antivoid to form something.
+  components:
+  - type: InstantAction
+    event: !type:AntivoidFormItemEvent
+
+- type: entity
+  id: ActionFormVoid
+  name: Form Void (Toggle)
+  description: Use the Void to amplify your unarmed attacks. Or stop amplifying them.
+  components:
+  - type: InstantAction
+    event: !type:VoidAmplifyAttacksEvent
+
+
+- type: entity
+  id: ActionDropForm
+  name: Drop Form
+  description: Melt into the Void and become a ghost for a bit.
+  components:
+  - type: InstantAction
+    event: !type:VoidDropFormEvent
