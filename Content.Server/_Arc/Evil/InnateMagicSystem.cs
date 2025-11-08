@@ -44,18 +44,20 @@ public sealed class InnateMagicSystem : EntitySystem
 
     private void OnVoidAmplifyAttacks(Entity<InnateMagicComponent> ent, ref VoidAmplifyAttacksEvent args)
     {
+        if (!TryComp<MetaDataComponent>(ent, out var meta))
+            return;
         if (TryComp<VoidAttacksAmplificationComponent>(ent, out var _))
         {
             _entMan.RemoveComponent<VoidAttacksAmplificationComponent>(ent);
             _popup.PopupEntity(Loc.GetString("void-amplification-end-self"), ent, ent, PopupType.Medium);
-            _popup.PopupCoordinates(Loc.GetString("void-amplification-end", ("target", ent)), Transform(ent).Coordinates, Filter.PvsExcept(ent.Owner), true, PopupType.MediumCaution);
+            _popup.PopupCoordinates(Loc.GetString("void-amplification-end", ("target", meta.EntityName)), Transform(ent).Coordinates, Filter.PvsExcept(ent.Owner), true, PopupType.MediumCaution);
 
         }
         else
         {
             AddComp<VoidAttacksAmplificationComponent>(ent.Owner);
             _popup.PopupEntity(Loc.GetString("void-amplification-start-self"), ent, ent, PopupType.Medium);
-            _popup.PopupCoordinates(Loc.GetString("void-amplification-start", ("target", ent)), Transform(ent).Coordinates, Filter.PvsExcept(ent.Owner), true, PopupType.MediumCaution);
+            _popup.PopupCoordinates(Loc.GetString("void-amplification-start", ("target", meta.EntityName)), Transform(ent).Coordinates, Filter.PvsExcept(ent.Owner), true, PopupType.MediumCaution);
         }
     }
 
