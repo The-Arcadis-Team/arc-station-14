@@ -158,6 +158,17 @@
   categories:
   - UplinkWeaponry
 
+- type: listing
+  id: UplinkGlovesKnuckleDusters
+  name: uplink-gloves-knuckleduster-name
+  description: uplink-gloves-knuckleduster-desc
+  icon: { sprite: _Goobstation/Clothing/Hands/Gloves/knuckleduster.rsi, state: syndicateknuckleduster }
+  productEntity: ClothingHandsKnuckleDustersSyndicate
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkWeaponry
+
 # Wearables
 
 - type: listing

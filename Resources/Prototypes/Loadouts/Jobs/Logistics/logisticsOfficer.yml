@@ -10,6 +10,31 @@
 # Eyes
 
 # Gloves
+- type: loadout
+  id: LoadoutCommandQMBlackGlove
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingHandsGlovesColorBlack
+
+- type: loadout
+  id: LoadoutCommandQMKnuckleDuster
+  category: JobsLogisticsLogisticsOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutLogisticsOfficerGloves
+    - !type:CharacterJobRequirement
+      jobs:
+        - Quartermaster
+  items:
+    - ClothingHandsKnuckleDustersQM
 
 # Head
 - type: loadout
