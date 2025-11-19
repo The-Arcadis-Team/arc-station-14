@@ -25,12 +25,12 @@
 
 - type: entity
   parent: NTPDUplinkRadio
-  id: NTPDUplinkRadio50TC
-  suffix: 50 TC
+  id: NTPDUplinkRadio300TC
+  suffix: 300 TC
   components:
   - type: Store
     balance:
-      Telecrystal: 50
+      Telecrystal: 300
 
 - type: entity
   parent: NTPDUplinkRadio

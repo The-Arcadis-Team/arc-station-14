@@ -7,7 +7,7 @@
   description: An excellent fully automatic Heavy SMG.
   productEntity: WeaponSubMachineGunDrozd
   cost:
-    Telecrystal: 10
+    Telecrystal: 80
   categories:
   - UplinkWeaponryntpd
 
@@ -17,7 +17,7 @@
   description: A rather traditionally made LMG with a pleasantly lacquered wooden pistol grip. Uses .30 rifle ammo.
   productEntity: WeaponLightMachineGunL6
   cost:
-    Telecrystal: 15
+    Telecrystal: 150
   categories:
   - UplinkWeaponryntpd
 
@@ -28,18 +28,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Melee/e_sword.rsi, state: icon }
   productEntity: EnergySword
   cost:
-    Telecrystal: 8
-  categories:
-  - UplinkWeaponryntpd
-
-- type: listing
-  id: UplinkgunNTPD
-  name: NTPD Pistol
-  description: R&D at the NTPD made a pulse pistol that uses void energy to make it "super". This pistols battery only needs to be recharged once every 2 months.
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Battery/NTPD_pulse_pistol.rsi, state: icon }
-  productEntity: WeaponNTPDPulsePistol
-  cost:
-    Telecrystal: 50
+    Telecrystal: 40
   categories:
   - UplinkWeaponryntpd
 
@@ -51,7 +40,7 @@
   description: uplink-explosive-grenade-desc
   productEntity: ExGrenade
   cost:
-    Telecrystal: 3
+    Telecrystal: 20
   categories:
   - UplinkExplosivesntpd
 
@@ -61,17 +50,7 @@
   description: uplink-flash-grenade-desc
   productEntity: GrenadeFlashBang
   cost:
-    Telecrystal: 1
-  categories:
-  - UplinkExplosivesntpd
-
-- type: listing
-  id: UplinkvoidGrenade
-  name: Weaponized void husks
-  description: This grenade uses small portals to throw void husks at your enemy. watch out though, it will attack everyone including the one who threw the grenade.
-  productEntity: ClusterGrenadevoid
-  cost:
-    Telecrystal: 10
+    Telecrystal: 5
   categories:
   - UplinkExplosivesntpd
 
@@ -81,7 +60,7 @@
   description: uplink-c4-desc
   productEntity: C4
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
   - UplinkExplosivesntpd
 
@@ -91,7 +70,7 @@
   description: uplink-shrapnel-grenade-desc
   productEntity: GrenadeShrapnel
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
   categories:
   - UplinkExplosivesntpd
 
@@ -103,17 +82,17 @@
   description: .30 ammo for reliable guns.
   productEntity: MagazinePistolSubMachineGun
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
   - UplinkAmmontpd
 
 - type: listing
   id: uplinkBaseMagazineL6saw
   name: L6 SAW magazine box (.30 rifle).
-  description: .30 magazine box for the L6 saw
+  description: .30 magazine box for the L6 SAW.
   productEntity: MagazineLightRifleBox
   cost:
-    Telecrystal: 2
+    Telecrystal: 15
   categories:
   - UplinkAmmontpd
 
@@ -126,7 +105,7 @@
   icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: vials }
   productEntity: ChemicalSynthesisKit
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
   categories:
   - UplinkChemicalsntpd
 
@@ -136,7 +115,7 @@
   description: uplink-combat-medkit-desc
   productEntity: MedkitCombatFilled
   cost:
-    Telecrystal: 5
+    Telecrystal: 20
   categories:
   - UplinkChemicalsntpd
 
@@ -148,7 +127,7 @@
   description: uplink-stealth-box-desc
   productEntity: StealthBox
   cost:
-    Telecrystal: 5
+    Telecrystal: 25
   categories:
   - UplinkDeceptionntpd
 
@@ -158,19 +137,20 @@
   description: uplink-chameleon-projector-desc
   productEntity: ChameleonProjector
   cost:
-    Telecrystal: 7
+    Telecrystal: 35
   categories:
   - UplinkDeceptionntpd
 
-- type: listing
-  id: UplinkNTPDpen2
-  name: NTPD pen
-  description: The best way to keep secrets, Write it down on paper!
-  productEntity: NTPDPen
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkDeceptionntpd
+# TODO reimplement NTPD pen
+#- type: listing
+#  id: UplinkNTPDpen2
+#  name: NTPD pen
+#  description: The best way to keep secrets, Write it down on paper!
+#  productEntity: NTPDPen
+#  cost:
+#    Telecrystal: 5
+#  categories:
+#  - UplinkDeceptionntpd
 
 - type: listing
   id: UplinkDecoyDisk2
@@ -178,7 +158,7 @@
   description: uplink-decoy-disk-desc
   productEntity: NukeDiskFake
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
   - UplinkDeceptionntpd
 
@@ -187,10 +167,20 @@
 - type: listing
   id: UplinkEmag2
   name: uplink-emag-name
-  description: The business card of the syndicate, that we stole. This sequencer is able to break open airlocks and tamper with a variety of station devices. made to have an unlimited charge
-  productEntity: EmagUnlimited
+  description: The business card of the Syndicate, that we stole. This sequencer is able to tamper with a variety of station devices. Rendered obsolete against airlocks.
+  productEntity: Emag
   cost:
-    Telecrystal: 10
+    Telecrystal: 20
+  categories:
+  - UplinkDisruptionntpd
+
+- type: listing
+  id: UplinkDoorjack2
+  name: uplink-doorjack-name
+  description: A modified cryptographic sequencer, designed solely to breach NanoTrasen's updated airlocks. Does not tamper with anything else.
+  productEntity: Doorjack
+  cost:
+    Telecrystal: 30
   categories:
   - UplinkDisruptionntpd
 
@@ -200,12 +190,11 @@
   description: uplink-radio-jammer-desc
   productEntity: RadioJammer
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
   categories:
   - UplinkDisruptionntpd
 
-# Allies
-# to be done
+# Allies TODO
 
 # Implants
 
@@ -215,7 +204,7 @@
   description: uplink-storage-implanter-desc
   productEntity: StorageImplanter
   cost:
-    Telecrystal: 8
+    Telecrystal: 40
   categories:
     - UplinkImplantsntpd
 
@@ -225,7 +214,7 @@
   description: HONK!
   productEntity: BikeHornImplanter
   cost:
-    Telecrystal: 8
+    Telecrystal: 20
   categories:
     - UplinkImplantsntpd
 
@@ -235,28 +224,28 @@
   description: If you some how get cuffed, get out with these!
   productEntity: FreedomImplanter
   cost:
-    Telecrystal: 8
+    Telecrystal: 25
   categories:
     - UplinkImplantsntpd
 
 - type: listing
   id: UplinkScramImplanter2
   name: Scram Implanter
-  description: About to die? escape with this! you will be teleported away using bluespace tech.
+  description: uplink-scram-implanter-desc
   productEntity: ScramImplanter
   cost:
-    Telecrystal: 8
+    Telecrystal: 30
   categories:
     - UplinkImplantsntpd
 
 - type: listing
   id: UplinkDeathAcidifierImplanter2
   name: uplink-death-acidifier-implant-name
-  description: We can let the enemy have your loot now can we?
+  description: uplink-death-acidifier-implant-desc
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 4
+    Telecrystal: 5
   categories:
     - UplinkImplantsntpd
 
@@ -269,20 +258,18 @@
   description: The best way to take evidence off of people, be sure to be quick!
   productEntity: ThievingGloves
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
   categories:
   - UplinkWearablesntpd
 
 - type: listing
   id: UplinkClothingNTPD2
-  name: NTPD mag boots
-  description: NTPD magboots! made with some black stuff we found that makes the boots work... like any other pair of mag boots.
-  productEntity: ClothingShoesBootsMagAdvNTPD
+  name: NTPD Magboots
+  description: A state-of-the-art pair of magboots, fresh from R&D. Their light alloy results in no slowdown when worn.
+  productEntity: ClothingShoesBootsMagNTPD
   cost:
-    Telecrystal: 12
+    Telecrystal: 10
   categories:
   - UplinkWearablesntpd
 
- # Pointless
-
- #todo
+ # Pointless TODO
